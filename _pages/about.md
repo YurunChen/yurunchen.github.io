@@ -29,7 +29,7 @@ My Citation is <a href='https://scholar.google.com/citations?hl=zh-CN&user=DGRec
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TSC</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10568383)
@@ -37,7 +37,8 @@ My Citation is <a href='https://scholar.google.com/citations?hl=zh-CN&user=DGRec
 Haiyang Yu, **Yurun Chen**, Zhen Yang, Yuwen Chen, Shui Yu
 
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DGRecXEAAAAJ&citation_for_view=DGRecXEAAAAJ:u-x6o8ySG0sC) <strong><span class='show_paper_citations' data='DGRecXEAAAAJ:u-x6o8ySG0sC'></span></strong>
-*IEEE Transactions on Services Computing*
+
+- *IEEE Transactions on Services Computing*
 </div>
 </div>
 
