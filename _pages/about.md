@@ -39,8 +39,6 @@ Haiyang Yu, **Yurun Chen**, Zhen Yang, Yuwen Chen, Shui Yu
 Published in *IEEE Transactions on Services Computing*
 
 [**Project**](https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=DGRecXEAAAAJ&citation_for_view=DGRecXEAAAAJ:u-x6o8ySG0sC)
-| [**BibTex**](https://scholar.googleusercontent.com/scholar.bib?q=info:JA88oFczc0EJ:scholar.google.com/&output=citation&scisdr=ClGvtl4gEJmFu8rinFU:AFWwaeYAAAAAZ2DkhFX6n03b01o1-JMkatNIvsU&scisig=AFWwaeYAAAAAZ2DkhCP50skRaBwzAWJP1B3bZfU&scisf=4&ct=citation&cd=-1&hl=zh-CN)
-
 </div>
 </div>
 
