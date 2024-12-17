@@ -7,7 +7,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 {% if site.google_scholar_stats_use_cdn %}
 {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %}
@@ -17,6 +16,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
+# 🧐 About Me
 I will obtain my Master’s degree from Beijing University of Technology (BJUT) in June 2025 and will pursue my PhD at Zhejiang University (ZJU) thereafter.
 
 My research interests focus on Large Language Model (LLM) security and cloud auditing.
