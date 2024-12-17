@@ -17,11 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I obtained my Master's degree from Beijing University of Technology (BJUT) and will pursue my PhD at Zhejiang University (ZJU).
+I will obtain my Master’s degree from Beijing University of Technology (BJUT) in June 2025 and will pursue my PhD at Zhejiang University (ZJU) thereafter.
 
-My research interests include LLM security and cloud auditing. 
+My research interests focus on Large Language Model (LLM) security and cloud auditing.
 
-My Citation is <a href='https://scholar.google.com/citations?hl=zh-CN&user=DGRecXEAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
+My citation count is <a href='https://scholar.google.com/citations?hl=zh-CN&user=DGRecXEAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
 # 🔥 News
