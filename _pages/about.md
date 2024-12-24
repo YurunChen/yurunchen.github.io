@@ -73,4 +73,4 @@ Preprint.
 
 # 💻 Internships
 - *2024.06 - 2024.09*，DiDi(滴滴), China.
-- *2024.01 - 2024.04*, MeiTuan(美团), China.</div>
+- *2024.01 - 2024.04*, MeiTuan(美团), China.
