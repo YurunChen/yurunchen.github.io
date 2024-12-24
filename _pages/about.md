@@ -25,7 +25,7 @@ My citation count is <a href='https://scholar.google.com/citations?hl=zh-CN&user
 
 
 # 🔥 News
-- *2024.06*: &nbsp;🎉🎉 My paper was Accepted by Transaction on Service Compution!
+- *2024.06*: &nbsp;🎉🎉 Our paper was Accepted by Transaction on Service Compution!
 
 # 📝 Publications 
 
@@ -39,6 +39,20 @@ Haiyang Yu, **Yurun Chen**, Zhen Yang, Yuwen Chen, Shui Yu
 Published in *IEEE Transactions on Services Computing*
 
 [**Project**](https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=DGRecXEAAAAJ&citation_for_view=DGRecXEAAAAJ:u-x6o8ySG0sC)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/System model-update.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[OS Agents: A Survey on MLLM-based Agents
+for General Computing Devices Use](https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf)
+
+Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, **Yurun Chen**
+
+Preprint.
+
+[**Project**](https://github.com/OS-Agent-Survey/OS-Agent-Survey)
 </div>
 </div>
 
