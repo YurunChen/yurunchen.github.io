@@ -29,7 +29,7 @@ My citation count is <a href='https://scholar.google.com/citations?hl=zh-CN&user
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TSC</div><img src='images/System model-update.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TSC</div><img src='images/1_teaser_os_agent_00.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10568383)
