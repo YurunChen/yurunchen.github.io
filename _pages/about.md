@@ -49,7 +49,7 @@ Published in *IEEE Transactions on Services Computing*
 [OS Agents: A Survey on MLLM-based Agents
 for General Computing Devices Use](https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf)
 
-Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, **Yurun Chen**
+Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, **Yurun Chen** etc.
 
 Preprint.
 
