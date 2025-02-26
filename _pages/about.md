@@ -26,11 +26,11 @@ My citation count is <a href='https://scholar.google.com/citations?hl=zh-CN&user
 
 # 📝 Publications 
 
-[TSC] Haiyang Yu, **Yurun Chen**, Zhen Yang, Yuwen Chen, Shui Yu, [EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage](https://ieeexplore.ieee.org/document/10568383) in *IEEE Transactions on Services Computing*.
+- [TSC] Haiyang Yu, **Yurun Chen**, Zhen Yang, Yuwen Chen, Shui Yu, [EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage](https://ieeexplore.ieee.org/document/10568383) in *IEEE Transactions on Services Computing*.
 
-[TMC] Xiaohu Shan; Haiyang Yu; Yurun Chen; Yuwen Chen; Zhen Yang, [S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT](https://ieeexplore.ieee.org/document/10568383) in *IEEE Transactions on Services Computing*.
+- [TMC] Xiaohu Shan; Haiyang Yu; Yurun Chen; Yuwen Chen; Zhen Yang, [S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT](https://ieeexplore.ieee.org/document/10568383) in *IEEE Transactions on Services Computing*.
 
-[ARXIV] Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, **Yurun Chen** etc. [OS Agents: A Survey on MLLM-based Agents
+- [ARXIV] Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, **Yurun Chen** etc. [OS Agents: A Survey on MLLM-based Agents
 for General Computing Devices Use](https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf).
 
 # 🎖 Honors and Awards
