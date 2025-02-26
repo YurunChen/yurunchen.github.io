@@ -19,7 +19,7 @@ redirect_from:
 # 🧐 About Me 
 I will obtain my Master’s degree from Beijing University of Technology (BJUT) in June 2025 and will pursue my PhD at Zhejiang University (ZJU) thereafter.
 
-My research interests focus on Large Language Model (LLM) security and cloud auditing.
+My research interests focus on Large Language Model (LLM) security, storage auditing and blockchain.
 
 My citation count is <a href='https://scholar.google.com/citations?hl=zh-CN&user=DGRecXEAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
