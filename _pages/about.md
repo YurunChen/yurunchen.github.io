@@ -24,38 +24,14 @@ My research interests focus on Large Language Model (LLM) security and cloud aud
 My citation count is <a href='https://scholar.google.com/citations?hl=zh-CN&user=DGRecXEAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 
-# 🔥 News
-- *2024.06*: &nbsp;🎉🎉 Our paper was Accepted by Transaction on Service Compution!
-
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TSC</div><img src='images/System model-update.jpg' alt="sym" width="100%"></div></div>
-  
-<div class='paper-box-text' markdown="1">
+[TSC] Haiyang Yu, **Yurun Chen**, Zhen Yang, Yuwen Chen, Shui Yu, [EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10568383) in *IEEE Transactions on Services Computing*.
 
-[EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10568383)
+[TMC] Xiaohu Shan; Haiyang Yu; Yurun Chen; Yuwen Chen; Zhen Yang, [S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT](https://ieeexplore.ieee.org/document/10568383) in *IEEE Transactions on Services Computing*.
 
-Haiyang Yu, **Yurun Chen**, Zhen Yang, Yuwen Chen, Shui Yu
-
-Published in *IEEE Transactions on Services Computing*
-
-[**Project**](https://scholar.google.com.hk/citations?view_op=view_citation&hl=zh-CN&user=DGRecXEAAAAJ&citation_for_view=DGRecXEAAAAJ:u-x6o8ySG0sC)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/1_teaser_os_agent_00.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[OS Agents: A Survey on MLLM-based Agents
-for General Computing Devices Use](https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf)
-
-Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, **Yurun Chen** etc.
-
-Preprint.
-
-[**Project**](https://github.com/OS-Agent-Survey/OS-Agent-Survey)
-</div>
-</div>
+[ARXIV] Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, **Yurun Chen** etc. [OS Agents: A Survey on MLLM-based Agents
+for General Computing Devices Use](https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf).
 
 # 🎖 Honors and Awards
 - *2024.10* Received Xiaomi Scholarship.
