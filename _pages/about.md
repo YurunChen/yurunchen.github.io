@@ -26,7 +26,7 @@ My citation count is <a href='https://scholar.google.com/citations?hl=zh-CN&user
 
 # 📝 Publications 
 
-[TSC] Haiyang Yu, **Yurun Chen**, Zhen Yang, Yuwen Chen, Shui Yu, [EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10568383) in *IEEE Transactions on Services Computing*.
+[TSC] Haiyang Yu, **Yurun Chen**, Zhen Yang, Yuwen Chen, Shui Yu, [EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage](https://ieeexplore.ieee.org/document/10568383) in *IEEE Transactions on Services Computing*.
 
 [TMC] Xiaohu Shan; Haiyang Yu; Yurun Chen; Yuwen Chen; Zhen Yang, [S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT](https://ieeexplore.ieee.org/document/10568383) in *IEEE Transactions on Services Computing*.
 
