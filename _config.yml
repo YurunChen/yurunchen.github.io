@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yurun Chen"
-description              : "This is Yurun Chen's homepage! "
+description              : "Nice to meet you! "
 repository               : "YurunChen/yurunchen.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yurun Chen"
   avatar           : "images/yurun_chen.jpg"
-  bio              : "Be the ONE."
+  bio              : ""
   location         : "Beijing, China"
   employer         : "Beijing University of Technology"
   pubmed           : 
