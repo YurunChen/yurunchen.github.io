@@ -17,9 +17,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # 🧐 About Me 
-I will obtain my Master’s degree from Beijing University of Technology (BJUT) in June 2025 and will pursue my PhD at Zhejiang University (ZJU) thereafter.
-
-My research interests focus on Large Language Model (LLM) security, storage auditing and blockchain.
+I am currently pursuing my Ph.D. at Zhejiang University.
+My research interests lie primarily in the areas of Large Language Model (LLM)/Agent security.
+If you are interested in my work or would like to discuss potential academic cooperation, please feel free to contact me via [email](yurunchen.research@gmail.com). 
 
 
 
