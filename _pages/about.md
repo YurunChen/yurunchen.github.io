@@ -18,7 +18,7 @@ redirect_from:
 
 # 🧐 About Me 
 I am currently pursuing my Ph.D. at Zhejiang University.
-My research interests lie primarily in the areas of Large Language Model (LLM)/Agent security.
+My research interests lie primarily in the areas of LLM/Agent security.
 
 If you are interested in my work or would like to discuss potential academic cooperation, please feel free to contact me via email. 
 
