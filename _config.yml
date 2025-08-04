@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yurun Chen"
   avatar           : "images/yurun_chen.jpg"
-  bio              : ""
-  location         : ""
+  bio              : 
+  location         : 
   employer         : "Zhejiang University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=DGRecXEAAAAJ&hl=zh-CN"
