@@ -60,3 +60,63 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+/* Publication page styles */
+.publication-year {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #e9e9e9;
+    color: #2c3e50;
+}
+
+.publication-item {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background-color: #f8f9fa;
+    border-left: 4px solid #00369f;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+}
+
+.publication-item h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #2c3e50;
+}
+
+.publication-item p {
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+}
+
+.publication-item a {
+    color: #00369f;
+    text-decoration: none;
+}
+
+.publication-item a:hover {
+    text-decoration: underline;
+}
+
+.publication-authors {
+    font-weight: 500;
+    color: #495057;
+}
+
+.publication-venue {
+    font-style: italic;
+    color: #6c757d;
+}
+
+.publication-year-label {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1em;
+}
