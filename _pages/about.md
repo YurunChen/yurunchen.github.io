@@ -70,7 +70,7 @@ If you are interested in my work or would like to discuss potential academic coo
             <p class="paper-description">A comprehensive survey of MLLM-based agents designed for general computing devices, covering their architectures, capabilities, and applications across different platforms including computers, phones, and browsers.</p>
             <div class="paper-buttons">
                 <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf" class="btn btn-primary" target="_blank">View Paper</a>
-                <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="btn btn-secondary" target="_blank">View Project</a>
+                <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="btn btn-primary" target="_blank">View Project</a>
             </div>
         </div>
     </div>
