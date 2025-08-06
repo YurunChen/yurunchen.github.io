@@ -232,6 +232,58 @@ h1:before, .anchor:before {
     }
     
     // List item styling (for non-paper-box publications)
+    .publication-content {
+        position: relative;
+        padding: 1em;
+        background: #f8f9fa;
+        border-left: 4px solid #3498db;
+        border-radius: 0 8px 8px 0;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            background: #e3f2fd;
+            transform: translateX(5px);
+        }
+        
+        .badge {
+            position: absolute;
+            top: 0.8em;
+            left: 0.8em;
+            padding: 0.3em 0.8em;
+            color: white;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            font-size: 0.7em;
+            font-weight: 600;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            z-index: 10;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        p {
+            margin: 0;
+            padding-left: 4em;
+            line-height: 1.6;
+            
+            a {
+                color: #2c3e50;
+                text-decoration: none;
+                font-weight: 500;
+                
+                &:hover {
+                    color: #3498db;
+                }
+            }
+            
+            em {
+                color: #3498db;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    // Fallback for direct p styling (without publication-content wrapper)
     p {
         margin: 0;
         padding: 1em;
