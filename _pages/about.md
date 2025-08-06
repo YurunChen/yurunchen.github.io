@@ -18,7 +18,7 @@ redirect_from:
 
 # 🧐 About Me 
 I am currently pursuing my Ph.D. at Zhejiang University.
-My research interests lie primarily in the areas of LLM/Agent security.
+My research interests lie primarily in the areas of `LLM/Agent security`.
 
 If you are interested in my work or would like to discuss potential academic cooperation, please feel free to contact me via email. 
 
@@ -82,7 +82,7 @@ If you are interested in my work or would like to discuss potential academic coo
         <span class="paper-title">S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT</span>
     </div>
     <div class="journal-paper-content">
-        <p class="authors">Xiaohu Shan; Haiyang Yu; Yurun Chen; Yuwen Chen; Zhen Yang</p>
+        <p class="authors">Xiaohu Shan; Haiyang Yu; <strong>Yurun Chen</strong>; Yuwen Chen; Zhen Yang</p>
         <p class="journal-info"><em>IEEE Transactions on Mobile Computing</em>, 2025</p>
         <a href="https://ieeexplore.ieee.org/document/10568383" class="paper-link" target="_blank">View Paper</a>
     </div>
@@ -109,8 +109,10 @@ If you are interested in my work or would like to discuss potential academic coo
 
 
 # 📖 Educations
-- *2022.09 - 2025.06 (now)*, Master's Degree, Beijing University of Technology. 
-- *2018.09 - 2022.06*, Bachelor's Degree, Jiangsu University.  
+- *2025.09 - now*, Doctor Degree, Zhejiang University (ZJU).
+- *2022.09 - 2025.06*, Master's Degree, Beijing University of Technology (BJUT). 
+- *2019.09 - 2021.06* Bachelor's Degree, California State University, San Bernardino (CSUSB). 
+- *2018.09 - 2022.06*, Bachelor's Degree, Jiangsu University (JSU).  
 
 
 # 💻 Internships

@@ -244,6 +244,10 @@ h1:before, .anchor:before {
             background: #e3f2fd;
             transform: translateX(5px);
         }
+
+        strong {
+            color: #3498db;
+        }
         
         .journal-tag {
             position: absolute;
