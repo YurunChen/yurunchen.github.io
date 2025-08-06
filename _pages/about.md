@@ -22,7 +22,14 @@ My research interests lie primarily in the areas of LLM/Agent security.
 
 If you are interested in my work or would like to discuss potential academic cooperation, please feel free to contact me via email. 
 
+<span class='anchor' id='-news'></span>
 
+# 💬 News
+- 2025.07 Our paper *"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"* has been accepted by ACM MM 2025!
+- 2025.06 We have published our arXiv paper *"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"*.
+- 2025.06 Our survey paper *"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"* has been selected as Oral Paper!
+- 2025.04 Our survey paper *"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"* has been accepted by ACL 2025!
+- 2024.12 We published our preprint paper *"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"*.
 
 
 # 📝 Publications 
@@ -60,8 +67,6 @@ Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, **Yurun Chen** etc.
 - *2022.09 - 2025.06 (now)*, Master's Degree, Beijing University of Technology. 
 - *2018.09 - 2022.06*, Bachelor's Degree, Jiangsu University.  
 
-# 💬 Invited Talks
-- none
 
 # 💻 Internships
 - *2024.06 - 2024.09*，DiDi(滴滴), China.
