@@ -263,57 +263,87 @@ h1:before, .anchor:before {
     }
 }
 
-// Journal publication styling
-.journal-publication-item {
+// Journal paper styling
+.journal-paper {
     margin-bottom: 1.5em;
-    position: relative;
-    padding: 1em;
-    background: #f8f9fa;
-    border-left: 4px solid #3498db;
-    border-radius: 0 8px 8px 0;
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    display: block;
-    clear: both;
+    overflow: hidden;
     
     &:hover {
-        background: #e3f2fd;
-        transform: translateX(5px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        transform: translateY(-2px);
+        border-color: #3498db;
     }
     
-    .journal-label {
-        display: inline-block;
-        padding: 0.3em 0.8em;
-        color: white;
+    .journal-paper-header {
         background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-        font-size: 0.75em;
-        font-weight: 600;
-        border-radius: 4px;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        margin-right: 1em;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        vertical-align: top;
+        padding: 1em;
+        color: white;
+        
+        .journal-name {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.3em 0.8em;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 1em;
+        }
+        
+        .paper-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            line-height: 1.4;
+        }
     }
     
-    p {
-        margin: 0;
-        display: inline;
-        line-height: 1.6;
-        vertical-align: top;
+    .journal-paper-content {
+        padding: 1.5em;
         
-        a {
+        .authors {
+            margin: 0 0 0.5em 0;
             color: #2c3e50;
-            text-decoration: none;
-            font-weight: 500;
+            font-size: 0.95em;
+            line-height: 1.5;
             
-            &:hover {
+            strong {
                 color: #3498db;
             }
         }
         
-        em {
-            color: #3498db;
-            font-weight: 600;
+        .journal-info {
+            margin: 0 0 1em 0;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            
+            em {
+                color: #3498db;
+                font-weight: 600;
+            }
+        }
+        
+        .paper-link {
+            display: inline-block;
+            padding: 0.5em 1.2em;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: #2980b9;
+                transform: translateY(-1px);
+                box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+            }
         }
     }
 }
