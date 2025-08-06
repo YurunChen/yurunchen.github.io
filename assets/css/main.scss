@@ -120,3 +120,159 @@ h1:before, .anchor:before {
     color: #2c3e50;
     margin-bottom: 1em;
 }
+
+/* Paper Box Styles */
+.paper-box {
+    display: flex;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.paper-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.paper-box-image {
+    flex: 0 0 200px;
+    margin-right: 1.5em;
+    position: relative;
+}
+
+.paper-box-image > div {
+    position: relative;
+}
+
+.paper-box-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.paper-box-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paper-box-text h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+.paper-box-text h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.paper-box-text h3 a:hover {
+    color: #00369f;
+    text-decoration: underline;
+}
+
+.paper-box-text p {
+    margin: 0;
+    color: #495057;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* Responsive design for paper-box */
+@media (max-width: 768px) {
+    .paper-box {
+        flex-direction: column;
+        padding: 1em;
+    }
+    
+    .paper-box-image {
+        flex: none;
+        margin-right: 0;
+        margin-bottom: 1em;
+        max-width: 150px;
+    }
+    
+    .paper-box-text h3 {
+        font-size: 1.1em;
+    }
+    
+    .badge {
+        font-size: 0.7em;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .paper-box {
+        padding: 0.8em;
+    }
+    
+    .paper-box-image {
+        max-width: 120px;
+    }
+    
+    .paper-box-text h3 {
+        font-size: 1em;
+    }
+    
+    .paper-box-text p {
+        font-size: 0.9em;
+    }
+}
+
+/* Additional enhancements for paper-box */
+.paper-box .badge {
+    z-index: 2;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.paper-box-image img {
+    transition: transform 0.3s ease;
+}
+
+.paper-box:hover .paper-box-image img {
+    transform: scale(1.02);
+}
+
+/* Enhanced publication items */
+.publication-item {
+    border-left: 4px solid #00369f;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.publication-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 0;
+    background-color: #0056b3;
+    transition: height 0.3s ease;
+}
+
+.publication-item:hover::before {
+    height: 100%;
+}
+
+.publication-item:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
