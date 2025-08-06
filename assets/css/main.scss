@@ -247,32 +247,3 @@ h1:before, .anchor:before {
 .paper-box:hover .paper-box-image img {
     transform: scale(1.02);
 }
-
-/* Enhanced publication items */
-.publication-item {
-    border-left: 4px solid #00369f;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.publication-item::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 4px;
-    height: 0;
-    background-color: #0056b3;
-    transition: height 0.3s ease;
-}
-
-.publication-item:hover::before {
-    height: 100%;
-}
-
-.publication-item:hover {
-    background-color: #e9ecef;
-    transform: translateX(5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
