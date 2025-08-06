@@ -51,7 +51,6 @@ If you are interested in my work or would like to discuss potential academic coo
             <p class="paper-description">This paper investigates the vulnerability of multimodal agents to active environmental injection attacks, where adversaries can manipulate the agent's environment to cause misbehavior. We propose a comprehensive evaluation framework and demonstrate that current agents are susceptible to various attack vectors.</p>
             <div class="paper-buttons">
                 <a href="https://arxiv.org/abs/2502.13053" class="btn btn-primary" target="_blank">View Paper</a>
-                <a href="#" class="btn btn-secondary" target="_blank">View Project</a>
             </div>
         </div>
     </div>

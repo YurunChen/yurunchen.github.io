@@ -297,6 +297,8 @@ h1:before, .anchor:before {
     transition: all 0.3s ease;
     list-style: none;
     position: relative;
+    display: block;
+    line-height: 1.4;
 }
 
 .news-section ul li:hover {
