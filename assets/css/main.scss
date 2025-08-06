@@ -40,6 +40,53 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+.paper-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px #efefef solid;
+    padding: 2em 0 2em 0;
+    
+
+    .paper-box-image{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        order: 2;
+        img {
+            max-width: 400px;
+            box-shadow: 3px 3px 6px #888;
+            object-fit: cover;
+        }
+    }
+    
+    .paper-box-text{
+        max-width: 100%;
+        order: 1;
+    }
+    
+    @include breakpoint($medium) {
+        .paper-box-image{
+            justify-content: left;
+            min-width: 200px;
+            max-width: 40%;
+            order: 1;
+        }
+        
+        .paper-box-text{
+            justify-content: left;
+            padding-left: 2em;
+            max-width: 60%;
+            order: 2;
+        }
+
+    }
+
+
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 
@@ -59,191 +106,4 @@ h1:before, .anchor:before {
     color: white;
     background-color: #00369f;
     font-size: .8em;
-}
-
-/* Publication page styles */
-.publication-year {
-    margin-top: 2em;
-    margin-bottom: 1em;
-    padding-bottom: 0.5em;
-    border-bottom: 2px solid #e9e9e9;
-    color: #2c3e50;
-}
-
-.publication-item {
-    margin-bottom: 1.5em;
-    padding: 1em;
-    background-color: #f8f9fa;
-    border-left: 4px solid #00369f;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.publication-item:hover {
-    background-color: #e9ecef;
-    transform: translateX(5px);
-}
-
-.publication-item h3 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    color: #2c3e50;
-}
-
-.publication-item p {
-    margin-bottom: 0.5em;
-    line-height: 1.6;
-}
-
-.publication-item a {
-    color: #00369f;
-    text-decoration: none;
-}
-
-.publication-item a:hover {
-    text-decoration: underline;
-}
-
-.publication-authors {
-    font-weight: 500;
-    color: #495057;
-}
-
-.publication-venue {
-    font-style: italic;
-    color: #6c757d;
-}
-
-.publication-year-label {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 1em;
-}
-
-/* Paper Box Styles */
-.paper-box {
-    display: flex;
-    margin-bottom: 2em;
-    padding: 1.5em;
-    background-color: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.paper-box:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
-}
-
-.paper-box-image {
-    flex: 0 0 200px;
-    margin-right: 1.5em;
-    position: relative;
-}
-
-.paper-box-image > div {
-    position: relative;
-}
-
-.paper-box-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: block;
-}
-
-.paper-box-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.paper-box-text h3 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    font-size: 1.2em;
-    line-height: 1.4;
-}
-
-.paper-box-text h3 a {
-    color: #2c3e50;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.paper-box-text h3 a:hover {
-    color: #00369f;
-    text-decoration: underline;
-}
-
-.paper-box-text p {
-    margin: 0;
-    color: #495057;
-    line-height: 1.6;
-    font-size: 0.95em;
-}
-
-/* Responsive design for paper-box */
-@media (max-width: 768px) {
-    .paper-box {
-        flex-direction: column;
-        padding: 1em;
-    }
-    
-    .paper-box-image {
-        flex: none;
-        margin-right: 0;
-        margin-bottom: 1em;
-        max-width: 150px;
-    }
-    
-    .paper-box-text h3 {
-        font-size: 1.1em;
-    }
-    
-    .badge {
-        font-size: 0.7em;
-        padding-left: 0.8rem;
-        padding-right: 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .paper-box {
-        padding: 0.8em;
-    }
-    
-    .paper-box-image {
-        max-width: 120px;
-    }
-    
-    .paper-box-text h3 {
-        font-size: 1em;
-    }
-    
-    .paper-box-text p {
-        font-size: 0.9em;
-    }
-}
-
-/* Additional enhancements for paper-box */
-.paper-box .badge {
-    z-index: 2;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.paper-box-image img {
-    transition: transform 0.3s ease;
-}
-
-.paper-box:hover .paper-box-image img {
-    transform: scale(1.02);
 }
