@@ -22,7 +22,6 @@ My research interests lie primarily in the areas of `LLM/Agent security`.
 
 If you are interested in my work or would like to discuss potential academic cooperation, please feel free to contact me via email. 
 
-My citation is <span class='show_paper_citations' data='DGRecXEAAAAJ'></span>.
 
 <span class='anchor' id='-news'></span>
 
@@ -51,6 +50,7 @@ My citation is <span class='show_paper_citations' data='DGRecXEAAAAJ'></span>.
         <div class='paper-box-text'>
             <h3><a href="https://arxiv.org/abs/2502.13053">Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</a></h3>
             <p><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
+            <p>Citations: <span class='show_paper_citations' data='DGRecXEAAAAJ:W7OEmFMy1HYC'></span></p>
             <p class="paper-description">This work introduces Active Environment Injection Attacks (AEIA), where attackers disguise malicious inputs as environmental elements to manipulate AI agents’ decisions. By analyzing Android OS interactions, the study reveals two key vulnerabilities and proposes the AEIA-MN attack, which achieves up to 93% success against advanced MLLM-based agents.</p>
             <div class="paper-buttons">
                 <a href="https://arxiv.org/abs/2502.13053" class="btn btn-primary" target="_blank">View Paper</a>
@@ -70,6 +70,7 @@ My citation is <span class='show_paper_citations' data='DGRecXEAAAAJ'></span>.
         <div class='paper-box-text'>
             <h3><a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
             <p>Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong> etc.</p>
+            <p>Citations: <span class='show_paper_citations' data='DGRecXEAAAAJ:eQOLeE2rZwMC'></span></p>
             <p class="paper-description">This survey explores OS Agents—(M)LLM-based agents that operate within OS environments (e.g., GUI, CLI) on computers, phones, and browsers to automate tasks. It reviews their core components, construction methods, evaluation benchmarks, and outlines key challenges and future directions.</p>
             <div class="paper-buttons">
                 <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf" class="btn btn-primary" target="_blank">View Paper</a>
@@ -86,6 +87,7 @@ My citation is <span class='show_paper_citations' data='DGRecXEAAAAJ'></span>.
     </div>
     <div class="journal-paper-content">
         <p class="authors">Xiaohu Shan; Haiyang Yu; <strong>Yurun Chen</strong>; Yuwen Chen; Zhen Yang</p>
+        <p>Citations: <span class='show_paper_citations' data='DGRecXEAAAAJ:qjMakFHDy7sC'></span></p>
         <p class="journal-info"><em>IEEE Transactions on Mobile Computing</em>, 2025</p>
         <a href="https://ieeexplore.ieee.org/document/10568383" class="paper-link" target="_blank">View Paper</a>
     </div>
@@ -98,6 +100,7 @@ My citation is <span class='show_paper_citations' data='DGRecXEAAAAJ'></span>.
     </div>
     <div class="journal-paper-content">
         <p class="authors">Haiyang Yu, <strong>Yurun Chen</strong>, Zhen Yang, Yuwen Chen, Shui Yu</p>
+        <p>Citations: <span class='show_paper_citations' data='DGRecXEAAAAJ:u-x6o8ySG0sC'></span></p>
         <p class="journal-info"><em>IEEE Transactions on Services Computing</em>, 2024</p>
         <a href="https://ieeexplore.ieee.org/document/10568383" class="paper-link" target="_blank">View Paper</a>
     </div>
