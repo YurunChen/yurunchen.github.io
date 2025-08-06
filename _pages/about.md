@@ -27,11 +27,11 @@ If you are interested in my work or would like to discuss potential academic coo
 # 💬 News
 <div class="news-section">
 <ul>
-<li><span class="news-date">2025.07</span> Our paper <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em> has been accepted by ACM MM 2025!</li>
-<li><span class="news-date">2025.06</span> We have published our arXiv paper <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>.</li>
-<li><span class="news-date">2025.06</span> Our survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> has been selected as Oral Paper!</li>
-<li><span class="news-date">2025.04</span> Our survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> has been accepted by ACL 2025!</li>
-<li><span class="news-date">2024.12</span> We published our preprint paper <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>.</li>
+<li>2025.07 Our paper <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em> has been accepted by ACM MM 2025!</li>
+<li>2025.06 We have published our arXiv paper <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>.</li>
+<li>2025.06 Our survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> has been selected as Oral Paper!</li>
+<li>2025.04 Our survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> has been accepted by ACL 2025!</li>
+<li>2024.12 We published our preprint paper <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>.</li>
 </ul>
 </div>
 
