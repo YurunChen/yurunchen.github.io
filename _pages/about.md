@@ -27,11 +27,12 @@ If you are interested in my work or would like to discuss potential academic coo
 # 💬 News
 <div class="news-section">
 <ul>
+<li>2025.08 We publish project <em><a href="https://github.com/YurunChen/HarmonyGuard" target="_blank">"HarmonyGuard"</a></em> has been accepted by ACM MM 2025!</li>
 <li>2025.07 Our paper <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em> has been accepted by ACM MM 2025!</li>
 <li>2025.06 Our survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> has been selected as Oral Paper!</li>
 <li>2025.04 Our survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> has been accepted by ACL 2025!</li>
-<li>2025.02 We published our arXiv paper <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>.</li>
-<li>2024.12 We published our preprint paper <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>.</li>
+<li>2025.02 We published paper in arXiv: <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>.</li>
+<li>2024.12 We published preprint paper: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>.</li>
 </ul>
 </div>
 
