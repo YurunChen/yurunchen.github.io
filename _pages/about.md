@@ -78,19 +78,20 @@ If you are interested in my work or would like to discuss potential academic coo
 
 <div class="publication-item">
     <div class="publication-content">
-        <div class="badge">TMC</div>
+        <div class="journal-tag">TMC</div>
         <p>Xiaohu Shan; Haiyang Yu; Yurun Chen; Yuwen Chen; Zhen Yang, <a href="https://ieeexplore.ieee.org/document/10568383">S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT</a>. <em>IEEE Transactions on Mobile Computing</em>, 2025.</p>
     </div>
 </div>
 
 <div class="publication-item">
     <div class="publication-content">
-        <div class="badge">TSC</div>
+        <div class="journal-tag">TSC</div>
         <p>Haiyang Yu, <strong>Yurun Chen</strong>, Zhen Yang, Yuwen Chen, Shui Yu, <a href="https://ieeexplore.ieee.org/document/10568383">EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage</a>. <em>IEEE Transactions on Services Computing</em>, 2024.</p>
     </div>
 </div>
 
 # 🎖 Honors and Awards
+- *2025.06* Received the title of Outstanding Graduate of Beijing City and the title of Top 100 Graduates of Beijing University of Technology.
 - *2024.10* Received Xiaomi Scholarship.
 - *2024.09* Received National Scholarship.
 - *2023.08* Provincial Second Prize in the Graduate Electronic Design Competition.
