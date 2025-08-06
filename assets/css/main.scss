@@ -161,6 +161,22 @@
                         transform: translateY(-1px);
                         box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
                     }
+                    
+                    // Fixed style for View Project button when href="#"
+                    &[href="#"] {
+                        background-color: #95a5a6;
+                        color: white;
+                        border-color: #95a5a6;
+                        cursor: not-allowed;
+                        opacity: 0.7;
+                        
+                        &:hover {
+                            background-color: #95a5a6;
+                            color: white;
+                            transform: none;
+                            box-shadow: none;
+                        }
+                    }
                 }
             }
         }
@@ -222,15 +238,24 @@ h1:before, .anchor:before {
     margin-top: -$scroll_offset;
 }
 
-// Publications list styling
-.paper-box + ul {
-    li {
-        margin-bottom: 1em;
+// Publications styling
+.publication-item {
+    margin-bottom: 1.5em;
+    
+    // Paper-box styling
+    .paper-box {
+        margin: 0;
+    }
+    
+    // List item styling (for non-paper-box publications)
+    p {
+        margin: 0;
         padding: 1em;
         background: #f8f9fa;
         border-left: 4px solid #3498db;
         border-radius: 0 8px 8px 0;
         transition: all 0.3s ease;
+        line-height: 1.6;
         
         &:hover {
             background: #e3f2fd;
@@ -245,6 +270,11 @@ h1:before, .anchor:before {
             &:hover {
                 color: #3498db;
             }
+        }
+        
+        em {
+            color: #3498db;
+            font-weight: 600;
         }
     }
 }
