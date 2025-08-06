@@ -76,16 +76,16 @@ If you are interested in my work or would like to discuss potential academic coo
     </div>
 </div>
 
-<div class="publication-item">
-    <div class="publication-content">
-        <div class="journal-tag">TMC</div>
+<div class="journal-publication">
+    <div class="journal-publication-item">
+        <span class="journal-label">TMC</span>
         <p>Xiaohu Shan; Haiyang Yu; Yurun Chen; Yuwen Chen; Zhen Yang, <a href="https://ieeexplore.ieee.org/document/10568383">S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT</a>. <em>IEEE Transactions on Mobile Computing</em>, 2025.</p>
     </div>
 </div>
 
-<div class="publication-item">
-    <div class="publication-content">
-        <div class="journal-tag">TSC</div>
+<div class="journal-publication">
+    <div class="journal-publication-item">
+        <span class="journal-label">TSC</span>
         <p>Haiyang Yu, <strong>Yurun Chen</strong>, Zhen Yang, Yuwen Chen, Shui Yu, <a href="https://ieeexplore.ieee.org/document/10568383">EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage</a>. <em>IEEE Transactions on Services Computing</em>, 2024.</p>
     </div>
 </div>
