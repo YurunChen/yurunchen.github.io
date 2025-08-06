@@ -33,24 +33,40 @@ If you are interested in my work or would like to discuss potential academic coo
 
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='images/Attack_Methods7_00.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks](https://arxiv.org/abs/2502.13053)
-
-**Yurun Chen**, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang
-
+<div class='paper-box'>
+    <div class='paper-box-image'>
+        <div>
+            <div class="badge">ACM MM 2025</div>
+            <img src='images/Attack_Methods7_00.png' alt="sym" width="100%">
+        </div>
+    </div>
+    <div class='paper-box-text' markdown="1">
+        <h3>[Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks](https://arxiv.org/abs/2502.13053)</h3>
+        <p><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
+        <p class="paper-description">This paper investigates the vulnerability of multimodal agents to active environmental injection attacks, where adversaries can manipulate the agent's environment to cause misbehavior. We propose a comprehensive evaluation framework and demonstrate that current agents are susceptible to various attack vectors.</p>
+        <div class="paper-buttons">
+            <a href="https://arxiv.org/abs/2502.13053" class="btn btn-primary" target="_blank">View Paper</a>
+            <a href="https://github.com/your-repo/attack-methods" class="btn btn-secondary" target="_blank">View Project</a>
+        </div>
+    </div>
 </div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/1_teaser_os_agent_00.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf)
-
-Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, **Yurun Chen** etc.
-
-</div>
+<div class='paper-box'>
+    <div class='paper-box-image'>
+        <div>
+            <div class="badge">ACL 2025</div>
+            <img src='images/1_teaser_os_agent_00.png' alt="sym" width="100%">
+        </div>
+    </div>
+    <div class='paper-box-text' markdown="1">
+        <h3>[OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf)</h3>
+        <p>Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong> etc.</p>
+        <p class="paper-description">A comprehensive survey of MLLM-based agents designed for general computing devices, covering their architectures, capabilities, and applications across different platforms including computers, phones, and browsers.</p>
+        <div class="paper-buttons">
+            <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf" class="btn btn-primary" target="_blank">View Paper</a>
+            <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="btn btn-secondary" target="_blank">View Project</a>
+        </div>
+    </div>
 </div>
 
 - [TMC] Xiaohu Shan; Haiyang Yu; Yurun Chen; Yuwen Chen; Zhen Yang, [S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT](https://ieeexplore.ieee.org/document/10568383). *IEEE Transactions on Mobile Computing*, 2025.
