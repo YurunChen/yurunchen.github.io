@@ -22,6 +22,8 @@ My research interests lie primarily in the areas of `LLM/Agent security`.
 
 If you are interested in my work or would like to discuss potential academic cooperation, please feel free to contact me via email. 
 
+My citation is <span class='show_paper_citations' data='DGRecXEAAAAJ'></span>.
+
 <span class='anchor' id='-news'></span>
 
 # 💬 News
@@ -110,7 +112,7 @@ If you are interested in my work or would like to discuss potential academic coo
 
 
 # 📖 Educations
-- *2025.09 - now*, Doctor Degree, Zhejiang University (ZJU).
+- *NOW*, pursuing a Ph.D. at Zhejiang University (ZJU).
 - *2022.09 - 2025.06*, Master's Degree, Beijing University of Technology (BJUT). 
 - *2019.09 - 2021.06* Bachelor's Degree, California State University, San Bernardino (CSUSB). 
 - *2018.09 - 2022.06*, Bachelor's Degree, Jiangsu University (JSU).  
