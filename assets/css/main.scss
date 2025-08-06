@@ -236,25 +236,27 @@ h1:before, .anchor:before {
 }
 
 // News section styling with underline
-.anchor[id="-news"] + h2 + ul {
-    li {
-        margin-bottom: 0.8em;
-        padding: 0.5em 0;
-        border-bottom: 1px solid #e1e8ed;
-        transition: all 0.3s ease;
-        
-        &:hover {
-            border-bottom-color: #3498db;
-            padding-left: 0.5em;
-        }
-        
-        &:last-child {
-            border-bottom: none;
-        }
-        
-        em {
-            color: #3498db;
-            font-weight: 600;
+.news-section {
+    ul {
+        li {
+            margin-bottom: 0.8em;
+            padding: 0.5em 0;
+            border-bottom: 1px solid #e1e8ed;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                border-bottom-color: #3498db;
+                padding-left: 0.5em;
+            }
+            
+            &:last-child {
+                border-bottom: none;
+            }
+            
+            em {
+                color: #3498db;
+                font-weight: 600;
+            }
         }
     }
 }

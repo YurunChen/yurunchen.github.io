@@ -25,11 +25,13 @@ If you are interested in my work or would like to discuss potential academic coo
 <span class='anchor' id='-news'></span>
 
 # 💬 News
+<div class="news-section">
 - 2025.07 Our paper *"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"* has been accepted by ACM MM 2025!
 - 2025.06 We have published our arXiv paper *"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"*.
 - 2025.06 Our survey paper *"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"* has been selected as Oral Paper!
 - 2025.04 Our survey paper *"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"* has been accepted by ACL 2025!
 - 2024.12 We published our preprint paper *"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"*.
+</div>
 
 
 # 📝 Publications 
