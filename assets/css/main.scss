@@ -60,7 +60,7 @@
         border-color: #3498db;
     }
 
-    .paper-box-image{
+    .paper-box-image {
         justify-content: center;
         display: flex;
         width: 100%;
@@ -82,7 +82,7 @@
         }
     }
     
-    .paper-box-text{
+    .paper-box-text {
         max-width: 100%;
         order: 1;
         
@@ -169,7 +169,7 @@
         align-items: flex-start;
         padding: 2em;
         
-        .paper-box-image{
+        .paper-box-image {
             justify-content: flex-start;
             min-width: 200px;
             max-width: 35%;
@@ -182,7 +182,7 @@
             }
         }
         
-        .paper-box-text{
+        .paper-box-text {
             justify-content: flex-start;
             max-width: 65%;
             order: 2;

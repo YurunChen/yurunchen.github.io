@@ -42,8 +42,8 @@ If you are interested in my work or would like to discuss potential academic coo
             <img src='images/Attack_Methods7_00.png' alt="sym" width="100%">
         </div>
     </div>
-    <div class='paper-box-text' markdown="1">
-        <h3>[Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks](https://arxiv.org/abs/2502.13053)</h3>
+    <div class='paper-box-text'>
+        <h3><a href="https://arxiv.org/abs/2502.13053">Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</a></h3>
         <p><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
         <p class="paper-description">This paper investigates the vulnerability of multimodal agents to active environmental injection attacks, where adversaries can manipulate the agent's environment to cause misbehavior. We propose a comprehensive evaluation framework and demonstrate that current agents are susceptible to various attack vectors.</p>
         <div class="paper-buttons">
@@ -60,8 +60,8 @@ If you are interested in my work or would like to discuss potential academic coo
             <img src='images/1_teaser_os_agent_00.png' alt="sym" width="100%">
         </div>
     </div>
-    <div class='paper-box-text' markdown="1">
-        <h3>[OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf)</h3>
+    <div class='paper-box-text'>
+        <h3><a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
         <p>Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong> etc.</p>
         <p class="paper-description">A comprehensive survey of MLLM-based agents designed for general computing devices, covering their architectures, capabilities, and applications across different platforms including computers, phones, and browsers.</p>
         <div class="paper-buttons">
