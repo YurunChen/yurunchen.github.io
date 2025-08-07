@@ -410,3 +410,25 @@ h1:before, .anchor:before {
     color: #c0392b;
     transform: scale(1.05);
 }
+
+// News item styling with underline
+.news-item {
+    margin-bottom: 1em;
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid #e1e8ed;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    border-bottom-color: #3498db;
+    padding-left: 0.5em;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-item em {
+    color: #3498db;
+    font-weight: 600;
+}

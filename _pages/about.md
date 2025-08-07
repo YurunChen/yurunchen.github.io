@@ -27,26 +27,40 @@ If you are interested in my work or would like to discuss potential academic coo
 
 # 💬 News
 
+<div class="news-item">
 <span class="news-time">[08/2025]</span>
 🎉 Published new work in arXiv: <em><a href="https://arxiv.org/abs/2508.04010" target="_blank">"HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization"</a></em>!
+</div>
 
+<div class="news-item">
 <span class="news-time">[08/2025]</span>
 🎉 Released github project <em><a href="https://github.com/YurunChen/HarmonyGuard" target="_blank">"HarmonyGuard"</a></em>!
+</div>
 
+<div class="news-item">
 <span class="news-time">[07/2025]</span>
 🎉 Paper <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em> accepted by ACM MM 2025!
+</div>
 
+<div class="news-item">
 <span class="news-time">[06/2025]</span>
 🎉 Survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> selected as Oral Paper!
+</div>
 
+<div class="news-item">
 <span class="news-time">[04/2025]</span>
 🎉 Survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> accepted by ACL 2025!
+</div>
 
+<div class="news-item">
 <span class="news-time">[02/2025]</span>
 🎉 Published new work in arXiv: <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>!
+</div>
 
+<div class="news-item">
 <span class="news-time">[12/2024]</span>
 🎉 Published preprint paper: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>!
+</div>
 
 
 # 📝 Publications 
@@ -125,7 +139,7 @@ If you are interested in my work or would like to discuss potential academic coo
         <div class='paper-box-image'>
             <div>
                 <div class="badge">arXiv</div>
-                <img src='images/HarmonyGuard.pdf' alt="sym" width="100%">
+                <img src='images/HarmonyGuard_00.png' alt="sym" width="100%">
             </div>
         </div>
         <div class='paper-box-text'>
