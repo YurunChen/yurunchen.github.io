@@ -167,7 +167,7 @@ If you are interested in my work or would like to discuss potential academic coo
             <p>Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
             <p class="paper-description">We propose EcoAgent, an Edge-Cloud Collaborative multi-agent framework for mobile automation that features a closed-loop collaboration among cloud-based Planning Agent and edge-based Execution and Observation Agents. Experiments on AndroidWorld show that EcoAgent achieves task success rates comparable to cloud-based mobile agents while significantly reducing MLLM token consumption, enabling efficient and practical mobile automation.</p>
             <div class="paper-buttons">
-                <a href="#" class="btn btn-primary" target="_blank">View Paper</a>
+                <a href="https://arxiv.org/abs/2505.05440" class="btn btn-primary" target="_blank">View Paper</a>
             </div>
         </div>
     </div>
