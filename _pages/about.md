@@ -26,17 +26,27 @@ If you are interested in my work or would like to discuss potential academic coo
 <span class='anchor' id='-news'></span>
 
 # 💬 News
-<div class="news-section">
-<ul>
-<li>2025.08  We published new work in arXiv: <em><a href="https://arxiv.org/abs/2508.04010" target="_blank">"HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization"</a></em></li>
-<li>2025.08 We publish github project <em><a href="https://github.com/YurunChen/HarmonyGuard" target="_blank">"HarmonyGuard"</a></em>!</li>
-<li>2025.07 Our paper <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em> has been accepted by ACM MM 2025!</li>
-<li>2025.06 Our survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> has been selected as Oral Paper!</li>
-<li>2025.04 Our survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> has been accepted by ACL 2025!</li>
-<li>2025.02 We published new work in arXiv: <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>.</li>
-<li>2024.12 We published preprint paper: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>.</li>
-</ul>
-</div>
+
+<span class="news-time">[08/2025]</span>
+🎉 Published new work in arXiv: <em><a href="https://arxiv.org/abs/2508.04010" target="_blank">"HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization"</a></em>!
+
+<span class="news-time">[08/2025]</span>
+🎉 Released github project <em><a href="https://github.com/YurunChen/HarmonyGuard" target="_blank">"HarmonyGuard"</a></em>!
+
+<span class="news-time">[07/2025]</span>
+🎉 Paper <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em> accepted by ACM MM 2025!
+
+<span class="news-time">[06/2025]</span>
+🎉 Survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> selected as Oral Paper!
+
+<span class="news-time">[04/2025]</span>
+🎉 Survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> accepted by ACL 2025!
+
+<span class="news-time">[02/2025]</span>
+🎉 Published new work in arXiv: <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>!
+
+<span class="news-time">[12/2024]</span>
+🎉 Published preprint paper: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>!
 
 
 # 📝 Publications 
@@ -107,6 +117,48 @@ If you are interested in my work or would like to discuss potential academic coo
     </div>
 </div>
 
+<span class='anchor' id='-preprints'></span>
+
+# 📄 Preprints
+<div class="publication-item">
+    <div class='paper-box'>
+        <div class='paper-box-image'>
+            <div>
+                <div class="badge">arXiv</div>
+                <img src='images/HarmonyGuard.pdf' alt="sym" width="100%">
+            </div>
+        </div>
+        <div class='paper-box-text'>
+            <h3><a href="https://arxiv.org/abs/2508.04010">HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization</a></h3>
+            <p><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Keting Yin, Juncheng Li, Zhuosheng Zhang, Shengyu Zhang</p>
+            <p class="paper-description">We propose HarmonyGuard, a multi-agent collaborative framework that leverages policy enhancement and objective optimization to jointly improve both utility and safety in web agents. Extensive evaluations show that HarmonyGuard improves policy compliance by up to 38% and task completion by up to 20% over existing baselines, while achieving over 90% policy compliance across all tasks.</p>
+            <div class="paper-buttons">
+                <a href="https://arxiv.org/abs/2508.04010" class="btn btn-primary" target="_blank">View Paper</a>
+                <a href="https://github.com/YurunChen/HarmonyGuard" class="btn btn-primary" target="_blank">View Code</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class='paper-box'>
+        <div class='paper-box-image'>
+            <div>
+                <div class="badge">arXiv</div>
+                <img src='images/EcoAgent.png' alt="sym" width="100%">
+            </div>
+        </div>
+        <div class='paper-box-text'>
+            <h3><a href="#">EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</a></h3>
+            <p>Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
+            <p class="paper-description">We propose EcoAgent, an Edge-Cloud Collaborative multi-agent framework for mobile automation that features a closed-loop collaboration among cloud-based Planning Agent and edge-based Execution and Observation Agents. Experiments on AndroidWorld show that EcoAgent achieves task success rates comparable to cloud-based mobile agents while significantly reducing MLLM token consumption, enabling efficient and practical mobile automation.</p>
+            <div class="paper-buttons">
+                <a href="#" class="btn btn-primary" target="_blank">View Paper</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 # 🎖 Honors and Awards
 - *2025.06* Received the title of Outstanding Graduate of Beijing City and the title of Top 100 Graduates of Beijing University of Technology.
 - *2024.10* Received Xiaomi Scholarship.
@@ -122,6 +174,7 @@ If you are interested in my work or would like to discuss potential academic coo
 - *2018.09 - 2022.06*, Bachelor's Degree, Jiangsu University (JSU).  
 
 
-# 💻 Internships
-- *2024.06 - 2024.09*，DiDi(滴滴), China.
-- *2024.01 - 2024.04*, MeiTuan(美团), China.
+<span class='anchor' id='-reviewer-service'></span>
+
+# 🎯 Reviewer Service
+- **Conference Reviewer**: ACL'25, AAAI'26.

@@ -9,11 +9,14 @@ main:
   - title: "Publications"
     url: "/#-publications"
 
+  - title: "Preprints"
+    url: "/#-preprints"
+
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
 
   - title: "Educations"
     url: "/#-educations"
 
-  - title: "Internships"
-    url: "/#-internships"
+  - title: "Reviewer Service"
+    url: "/#-reviewer-service"
