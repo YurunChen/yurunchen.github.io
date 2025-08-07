@@ -56,6 +56,21 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+  text-align: center;
+  
+  p {
+    margin: 0.5em 0;
+    color: mix(#fff, $gray, 25%);
+    
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .page__footer-follow {
