@@ -32,6 +32,10 @@ redirect_from:
 <span class='anchor' id='-news'></span>
 
 # 💬 News
+<div class="news-item">
+<span class="news-time">[08/2025]</span>
+🎉 Published paper in arXiv: <em><a href="https://arxiv.org/abs/2508.04482" target="_blank">"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</a></em>!
+</div>
 
 <div class="news-item">
 <span class="news-time">[08/2025]</span>
@@ -65,7 +69,7 @@ redirect_from:
 
 <div class="news-item">
 <span class="news-time">[12/2024]</span>
-🎉 Published preprint paper: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>!
+🎉 Published paper in PrePrint: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>!
 </div>
 
 
