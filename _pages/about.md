@@ -104,7 +104,7 @@ redirect_from:
             </div>
         </div>
         <div class='paper-box-text'>
-            <h3><a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
+            <h3><a href="https://arxiv.org/abs/2508.04482">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
             <p>Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong> etc.</p>
             <p class="conference-info">The 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)</p>
 
@@ -186,7 +186,7 @@ redirect_from:
 </div>
 
 # 🎖 Honors and Awards
-- *2025.06* Received the title of Outstanding Graduate of Beijing City and the title of Top 100 Graduates of Beijing University of Technology.
+- *2025.06* Received the title of Outstanding Graduate of Beijing and the title of Top 100 Graduates of BJUT.
 - *2024.10* Received Xiaomi Scholarship.
 - *2024.09* Received National Scholarship.
 - *2023.08* Provincial Second Prize in the Graduate Electronic Design Competition.
