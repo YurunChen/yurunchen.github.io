@@ -205,8 +205,8 @@ redirect_from:
 # 🤝 Collaborators
 - **[Juncheng Li](https://person.zju.edu.cn/juncheng#0)** - Zhejiang University
 - **[Zhuosheng Zhang](https://infosec.sjtu.edu.cn/DirectoryDetail.aspx?id=179)** - Shanghai Jiao Tong University
-- **[Xavier Hu](https://github.com/xavierhu)** - Zhejiang University
-- **[Biao Yi](https://github.com/biaoyi)** - Zhejiang University
+- **Xavier Hu - Zhejiang University
+- **Biao Yi - Zhejiang University
 - **[Yuhan Liu](https://yuhan-xx.github.io/)** - Xiamen University
 
 
