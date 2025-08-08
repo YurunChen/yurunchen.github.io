@@ -16,11 +16,17 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# 🧐 About Me 
-I am currently pursuing my Ph.D. at Zhejiang University.
-My research interests lie primarily in the areas of `LLM/Agent security`.
+# 🧐 Who I Am 
+👋 Hi there! I'm a Ph.D. student at Zhejiang University, working under the guidance of [Shengyu Zhang](https://shengyuzhang.github.io/) and [Keting Yin](https://person.zju.edu.cn/ykt). I also collaborate closely with Prof. [Juncheng Li](https://person.zju.edu.cn/juncheng#0) (Zhejiang University) and Prof. [Zhuosheng Zhang](https://infosec.sjtu.edu.cn/DirectoryDetail.aspx?id=179) (Shanghai Jiao Tong University).
 
-If you are interested in my work or would like to discuss potential academic cooperation, please feel free to contact me via email. 
+🔬 My research focuses on **LLM/Agent security**, specifically:
+- **Adversarial attacks** and knowledge poisoning targeting AI agents
+- **Robust agent architectures** using external security policies
+- **Defense mechanisms** against emerging AI threats
+
+💡 I'm passionate about making AI systems more secure and trustworthy as they become increasingly integrated into our daily lives.
+
+🤝 If you're interested in my work or have ideas for collaboration, feel free to reach out via [email](mailto:yurunchen.research@gmail.com)!
 
 
 <span class='anchor' id='-news'></span>
