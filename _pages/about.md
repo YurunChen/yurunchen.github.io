@@ -48,7 +48,7 @@ redirect_from:
 
 <div class="news-item">
 <span class="news-time">[08/2025]</span>
-🎉 Published new work in arXiv: <em><a href="https://arxiv.org/abs/2508.04010" target="_blank">"HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization"</a></em>!
+🎉 Published paper in arXiv: <em><a href="https://arxiv.org/abs/2508.04010" target="_blank">"HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization"</a></em>!
 </div>
 
 <div class="news-item">
@@ -73,7 +73,7 @@ redirect_from:
 
 <div class="news-item">
 <span class="news-time">[02/2025]</span>
-🎉 Published new work in arXiv: <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>!
+🎉 Published paper in arXiv: <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>!
 </div>
 
 <div class="news-item">
