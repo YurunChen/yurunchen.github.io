@@ -31,7 +31,6 @@ redirect_from:
 <span class='anchor' id='-news'></span>
 
 # 💬 News
-<div id="news-container">
 <div class="news-item">
 <span class="news-time">[10/2025]</span>
 🎉 Released github project <em><a href="https://github.com/YurunChen/Graph2Eval" target="_blank">"Graph2Eval"</a></em>!
