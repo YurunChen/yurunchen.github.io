@@ -128,6 +128,19 @@ redirect_from:
 
 <div class="journal-paper">
     <div class="journal-paper-header">
+        <span class="journal-name">TIFS</span>
+        <span class="paper-title">DART: Distributed Zero Knowledge Data Auditing with Retrievability for Blockchain-Based Decentralized Storage Networks</span>
+    </div>
+    <div class="journal-paper-content">
+        <p class="authors">Haiyang Yu, <strong>Yurun Chen</strong>, Shen Su∗, Jian Su∗, Yuwen Chen, Zhen Yang</p>
+
+        <p class="journal-info"><em>IEEE Transactions on Information Forensics and Security</em>, 2025</p>
+        <a href="" class="paper-link" target="_blank">Accepted, in press</a>
+    </div>
+</div>
+
+<div class="journal-paper">
+    <div class="journal-paper-header">
         <span class="journal-name">TMC</span>
         <span class="paper-title">S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT</span>
     </div>
