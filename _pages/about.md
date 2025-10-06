@@ -225,12 +225,6 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
 - *2023.02* Excellence Award in CCF&ATEC First Undergraduate Blockchain Security, Privacy Technology, and Innovative Application Competition.
 
 
-# 📖 Educations
-- *NOW*, pursuing a Ph.D. at Zhejiang University (ZJU).
-- *2022.09 - 2025.06*, Master's Degree, Beijing University of Technology (BJUT). 
-- *2019.09 - 2021.06* Bachelor's Degree, California State University, San Bernardino (CSUSB). 
-- *2018.09 - 2022.06*, Bachelor's Degree, Jiangsu University (JSU).  
-
 
 <span class='anchor' id='-collaborators'></span>
 
