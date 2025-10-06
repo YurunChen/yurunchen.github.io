@@ -178,6 +178,27 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
     </div>
 </div>
 
+
+<div class="publication-item">
+    <div class='paper-box'>
+        <div class='paper-box-image'>
+            <div>
+                <div class="badge">arXiv</div>
+                <img src='images/GUI-PRA.png' alt="sym" width="100%">
+            </div>
+        </div>
+        <div class='paper-box-text'>
+            <h3><a href="https://arxiv.org/abs/2509.23263">GUI-PRA: Process Reward Agent for GUI Tasks</a></h3>
+            <p>Tao Xiong, Xavier Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
+            <p class="paper-description">To overcome the "lost in the middle" phenomenon and the lack of GUI change awareness in standard Process Reward Models (PRMs), we introduce GUI-PRA, a judge agent that employs a dynamic memory mechanism and an adaptive UI perception mechanism to provide more accurate process rewards for GUI tasks.</p>
+            <div class="paper-buttons">
+                <a href="https://arxiv.org/abs/2510.00507" class="btn btn-primary" target="_blank">View Paper</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div class="publication-item">
     <div class='paper-box'>
         <div class='paper-box-image'>
