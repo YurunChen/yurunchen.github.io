@@ -32,6 +32,16 @@ redirect_from:
 
 # 💬 News
 <div class="news-item">
+<span class="news-time">[10/2025]</span>
+🎉 Released github project <em><a href="https://github.com/YurunChen/Graph2Eval" target="_blank">"Graph2Eval"</a></em>!
+</div>
+
+<div class="news-item">
+<span class="news-time">[10/2025]</span>
+🎉 Published paper in arXiv: <em><a href="https://arxiv.org/abs/2510.00507" target="_blank">"Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs"</a></em>!
+</div>
+
+<div class="news-item">
 <span class="news-time">[08/2025]</span>
 🎉 Published paper in arXiv: <em><a href="https://arxiv.org/abs/2508.04482" target="_blank">"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</a></em>!
 </div>
@@ -145,6 +155,29 @@ redirect_from:
 <span class='anchor' id='-preprints'></span>
 
 # 📄 Preprints
+<div class="publication-item">
+    <div class='paper-box'>
+        <div class='paper-box-image'>
+            <div>
+                <div class="badge">arXiv</div>
+                <img src='images/Methods4_00.png' alt="sym" width="100%">
+            </div>
+        </div>
+        <div class='paper-box-text'>
+            <h3><a href="https://arxiv.org/abs/2510.00507">Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</a></h3>
+            <p><strong>Yurun Chen</strong>,  Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
+            <p class="paper-description">We propose Graph2Eval, a knowledge
+graph–based framework that automatically generates both multimodal document
+comprehension tasks and web interaction tasks, enabling comprehensive eval-
+uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
+            <div class="paper-buttons">
+                <a href="https://arxiv.org/abs/2510.00507" class="btn btn-primary" target="_blank">View Paper</a>
+                <a href="https://github.com/YurunChen/Graph2Eval" class="btn btn-primary" target="_blank">View Code</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="publication-item">
     <div class='paper-box'>
         <div class='paper-box-image'>
