@@ -82,63 +82,6 @@ redirect_from:
 🎉 Published paper in PrePrint: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>!
 </div>
 
-<!-- Additional news items that will be hidden initially -->
-<div class="news-item news-item-hidden">
-<span class="news-time">[11/2024]</span>
-🎉 Paper <em>"EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage"</em> accepted by IEEE TSC!
-</div>
-
-<div class="news-item news-item-hidden">
-<span class="news-time">[09/2024]</span>
-🎉 Published paper in arXiv: <em>"S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT"</em>!
-</div>
-
-<div class="news-item news-item-hidden">
-<span class="news-time">[08/2024]</span>
-🎉 Received Xiaomi Scholarship for outstanding academic performance!
-</div>
-
-<div class="news-item news-item-hidden">
-<span class="news-time">[06/2024]</span>
-🎉 Graduated with Outstanding Graduate title and Top 100 Graduates of BJUT!
-</div>
-
-<div class="news-item news-item-hidden">
-<span class="news-time">[05/2024]</span>
-🎉 Received National Scholarship for academic excellence!
-</div>
-
-<div class="news-item news-item-hidden">
-<span class="news-time">[03/2024]</span>
-🎉 Started collaboration with Prof. Zhuosheng Zhang from Shanghai Jiao Tong University!
-</div>
-
-<div class="news-item news-item-hidden">
-<span class="news-time">[01/2024]</span>
-🎉 Joined Zhejiang University as a Ph.D. student under Prof. Shengyu Zhang!
-</div>
-
-<div class="news-item news-item-hidden">
-<span class="news-time">[08/2023]</span>
-🎉 Won Provincial Second Prize in Graduate Electronic Design Competition!
-</div>
-
-<div class="news-item news-item-hidden">
-<span class="news-time">[02/2023]</span>
-🎉 Received Excellence Award in CCF&ATEC Blockchain Security Competition!
-</div>
-
-<div class="news-item news-item-hidden">
-<span class="news-time">[09/2022]</span>
-🎉 Started Master's program at Beijing University of Technology!
-</div>
-</div>
-
-<div id="news-controls" style="text-align: center; margin-top: 1em;">
-<button id="view-more-btn" class="btn btn-primary">View More</button>
-<span id="news-count" style="margin-left: 1em; color: #666; font-size: 0.9em;"></span>
-</div>
-
 
 # 📝 Publications 
 <div class="publication-item">
