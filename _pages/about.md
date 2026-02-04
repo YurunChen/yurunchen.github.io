@@ -32,6 +32,13 @@ redirect_from:
 
 # 💬 News
 <div class="news-item">
+<span class="news-time">[02/2026]</span>
+🎉 Published paper in arXiv: <em><a href="https://arxiv.org/abs/2602.01725" target="_blank">"SafePred: A Predictive Guardrail for Computer-Using Agents via World Models"</a></em>!
+</div>
+
+
+
+<div class="news-item">
 <span class="news-time">[10/2025]</span>
 🎉 Released github project <em><a href="https://github.com/YurunChen/Graph2Eval" target="_blank">"Graph2Eval"</a></em>!
 </div>
@@ -83,6 +90,26 @@ redirect_from:
 
 
 # 📝 Publications 
+
+<div class="publication-item">
+    <div class='paper-box'>
+        <div class='paper-box-image'>
+            <div>
+                <div class="badge">AAAI</div>
+                <img src='images/EcoAgent.png' alt="sym" width="100%">
+            </div>
+        </div>
+        <div class='paper-box-text'>
+            <h3><a href="#">EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</a></h3>
+            <p>Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
+            <p class="paper-description">We propose EcoAgent, an Edge-Cloud Collaborative multi-agent framework for mobile automation that features a closed-loop collaboration among cloud-based Planning Agent and edge-based Execution and Observation Agents. Experiments on AndroidWorld show that EcoAgent achieves task success rates comparable to cloud-based mobile agents while significantly reducing MLLM token consumption, enabling efficient and practical mobile automation.</p>
+            <div class="paper-buttons">
+                <a href="https://arxiv.org/abs/2505.05440" class="btn btn-primary" target="_blank">View Paper</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="publication-item">
     <div class='paper-box'>
         <div class='paper-box-image'>
@@ -232,24 +259,7 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
     </div>
 </div>
 
-<div class="publication-item">
-    <div class='paper-box'>
-        <div class='paper-box-image'>
-            <div>
-                <div class="badge">arXiv</div>
-                <img src='images/EcoAgent.png' alt="sym" width="100%">
-            </div>
-        </div>
-        <div class='paper-box-text'>
-            <h3><a href="#">EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</a></h3>
-            <p>Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
-            <p class="paper-description">We propose EcoAgent, an Edge-Cloud Collaborative multi-agent framework for mobile automation that features a closed-loop collaboration among cloud-based Planning Agent and edge-based Execution and Observation Agents. Experiments on AndroidWorld show that EcoAgent achieves task success rates comparable to cloud-based mobile agents while significantly reducing MLLM token consumption, enabling efficient and practical mobile automation.</p>
-            <div class="paper-buttons">
-                <a href="https://arxiv.org/abs/2505.05440" class="btn btn-primary" target="_blank">View Paper</a>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 # 🎖 Honors and Awards
 - *2025.06* Received the title of Outstanding Graduate of Beijing and the title of Top 100 Graduates of BJUT.
