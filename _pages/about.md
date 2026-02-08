@@ -95,7 +95,7 @@ redirect_from:
     <div class='paper-box'>
         <div class='paper-box-image'>
             <div>
-                <div class="badge">AAAI</div>
+                <div class="badge">AAAI 2025</div>
                 <img src='images/EcoAgent.png' alt="sym" width="100%">
             </div>
         </div>
@@ -162,7 +162,7 @@ redirect_from:
         <p class="authors">Haiyang Yu, <strong>Yurun Chen</strong>, Shen Su∗, Jian Su∗, Yuwen Chen, Zhen Yang</p>
 
         <p class="journal-info"><em>IEEE Transactions on Information Forensics and Security</em>, 2025</p>
-        <a href="" class="paper-link" target="_blank">Accepted, in press</a>
+        <a href="https://ieeexplore.ieee.org/document/11187397" class="paper-link" target="_blank">View Paper</a>
     </div>
 </div>
 
