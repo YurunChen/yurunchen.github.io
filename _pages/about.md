@@ -123,7 +123,7 @@ redirect_from:
     <div class='paper-box'>
         <div class='paper-box-image'>
             <div>
-                <div class="badge">arXiv</div>
+                <div class="badge">CVPR 2026</div>
                 <img src='images/Methods4_00.png' alt="sym" width="100%">
             </div>
         </div>
@@ -147,7 +147,7 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
     <div class='paper-box'>
         <div class='paper-box-image'>
             <div>
-                <div class="badge">AAAI 2025</div>
+                <div class="badge">AAAI 2026</div>
                 <img src='images/EcoAgent.png' alt="sym" width="100%">
             </div>
         </div>
