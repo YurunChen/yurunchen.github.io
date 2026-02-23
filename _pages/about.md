@@ -31,12 +31,17 @@ redirect_from:
 <span class='anchor' id='-news'></span>
 
 # 💬 News
+
+<div class="news-list-wrapper" id="news-list-wrapper">
+<div class="news-item">
+<span class="news-time">[02/2026]</span>
+🎉  Paper <em>"Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs"</em> accepted by CVPR 2026!
+</div>
+
 <div class="news-item">
 <span class="news-time">[02/2026]</span>
 🎉 Published paper in arXiv: <em><a href="https://arxiv.org/abs/2602.01725" target="_blank">"SafePred: A Predictive Guardrail for Computer-Using Agents via World Models"</a></em>!
 </div>
-
-
 
 <div class="news-item">
 <span class="news-time">[10/2025]</span>
@@ -87,9 +92,56 @@ redirect_from:
 <span class="news-time">[12/2024]</span>
 🎉 Published paper in PrePrint: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>!
 </div>
+</div>
 
+<p class="news-view-more-wrap">
+<button type="button" class="news-view-more-btn" id="news-view-more-btn" aria-expanded="false">View more</button>
+</p>
+
+<script>
+(function() {
+  var wrapper = document.getElementById('news-list-wrapper');
+  var btn = document.getElementById('news-view-more-btn');
+  if (!wrapper || !btn) return;
+  var items = wrapper.querySelectorAll('.news-item');
+  if (items.length <= 10) {
+    var wrap = btn.parentElement;
+    if (wrap) wrap.style.display = 'none';
+    return;
+  }
+  btn.addEventListener('click', function() {
+    var expanded = wrapper.classList.toggle('show-all');
+    btn.setAttribute('aria-expanded', expanded);
+    btn.textContent = expanded ? 'View less' : 'View more';
+  });
+})();
+</script>
 
 # 📝 Publications 
+
+<div class="publication-item">
+    <div class='paper-box'>
+        <div class='paper-box-image'>
+            <div>
+                <div class="badge">arXiv</div>
+                <img src='images/Methods4_00.png' alt="sym" width="100%">
+            </div>
+        </div>
+        <div class='paper-box-text'>
+            <h3><a href="https://arxiv.org/abs/2510.00507">Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</a></h3>
+            <p><strong>Yurun Chen</strong>,  Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
+             <p class="conference-info">The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026 (CVPR 2026)</p>
+            <p class="paper-description">We propose Graph2Eval, a knowledge
+graph–based framework that automatically generates both multimodal document
+comprehension tasks and web interaction tasks, enabling comprehensive eval-
+uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
+            <div class="paper-buttons">
+                <a href="https://arxiv.org/abs/2510.00507" class="btn btn-primary" target="_blank">View Paper</a>
+                <a href="https://github.com/YurunChen/Graph2Eval" class="btn btn-primary" target="_blank">View Code</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="publication-item">
     <div class='paper-box'>
@@ -102,6 +154,7 @@ redirect_from:
         <div class='paper-box-text'>
             <h3><a href="#">EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</a></h3>
             <p>Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
+            <p class="conference-info">The 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026)</p>
             <p class="paper-description">We propose EcoAgent, an Edge-Cloud Collaborative multi-agent framework for mobile automation that features a closed-loop collaboration among cloud-based Planning Agent and edge-based Execution and Observation Agents. Experiments on AndroidWorld show that EcoAgent achieves task success rates comparable to cloud-based mobile agents while significantly reducing MLLM token consumption, enabling efficient and practical mobile automation.</p>
             <div class="paper-buttons">
                 <a href="https://arxiv.org/abs/2505.05440" class="btn btn-primary" target="_blank">View Paper</a>
@@ -195,30 +248,6 @@ redirect_from:
 <span class='anchor' id='-preprints'></span>
 
 # 📄 Preprints
-<div class="publication-item">
-    <div class='paper-box'>
-        <div class='paper-box-image'>
-            <div>
-                <div class="badge">arXiv</div>
-                <img src='images/Methods4_00.png' alt="sym" width="100%">
-            </div>
-        </div>
-        <div class='paper-box-text'>
-            <h3><a href="https://arxiv.org/abs/2510.00507">Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</a></h3>
-            <p><strong>Yurun Chen</strong>,  Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
-            <p class="paper-description">We propose Graph2Eval, a knowledge
-graph–based framework that automatically generates both multimodal document
-comprehension tasks and web interaction tasks, enabling comprehensive eval-
-uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
-            <div class="paper-buttons">
-                <a href="https://arxiv.org/abs/2510.00507" class="btn btn-primary" target="_blank">View Paper</a>
-                <a href="https://github.com/YurunChen/Graph2Eval" class="btn btn-primary" target="_blank">View Code</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 <div class="publication-item">
     <div class='paper-box'>
         <div class='paper-box-image'>

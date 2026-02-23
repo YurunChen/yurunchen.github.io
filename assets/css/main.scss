@@ -430,6 +430,37 @@ h1:before, .anchor:before {
     font-weight: 600;
 }
 
+// News list: show first 10, hide rest until "View more"
+.news-list-wrapper .news-item:nth-child(n+11) {
+    display: none;
+}
+.news-list-wrapper.show-all .news-item:nth-child(n+11) {
+    display: block;
+}
+
+.news-view-more-wrap {
+    margin: 0.5em 0 1.5em 0;
+}
+.news-view-more-btn {
+    display: inline-block;
+    padding: 0.5em 1.2em;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: #3498db;
+    border: 1px solid #3498db;
+    cursor: pointer;
+    font-family: $sans-serif;
+}
+.news-view-more-btn:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
 // Conference info styling
 .conference-info {
     color: #3498db;
