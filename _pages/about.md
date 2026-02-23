@@ -35,7 +35,7 @@ redirect_from:
 <div class="news-list-wrapper" id="news-list-wrapper">
 <div class="news-item">
 <span class="news-time">[02/2026]</span>
-🎉  Paper <em>"Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs"</em> accepted by CVPR 2026!
+🎉  Paper <em><a href="https://arxiv.org/abs/2510.00507" target="_blank">"Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs"</a></em> accepted by CVPR 2026!
 </div>
 
 <div class="news-item">
