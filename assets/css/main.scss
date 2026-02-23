@@ -430,35 +430,50 @@ h1:before, .anchor:before {
     font-weight: 600;
 }
 
-// News list: show first 10, hide rest until "View more"
-.news-list-wrapper .news-item:nth-child(n+11) {
+// News list: show first 10, hide .news-item-fold until "View more"
+.news-list-wrapper .news-item-fold {
     display: none;
 }
-.news-list-wrapper.show-all .news-item:nth-child(n+11) {
+.news-list-wrapper.show-all .news-item-fold {
     display: block;
 }
 
 .news-view-more-wrap {
-    margin: 0.5em 0 1.5em 0;
+    margin: 1em 0 1.5em 0;
+    text-align: center;
 }
+
 .news-view-more-btn {
     display: inline-block;
-    padding: 0.5em 1.2em;
-    border-radius: 4px;
-    font-size: 0.85em;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    background-color: transparent;
+    padding: 0.55em 1.5em;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+    background-color: #f8f9fa;
     color: #3498db;
-    border: 1px solid #3498db;
+    border: 1.5px solid #3498db;
     cursor: pointer;
     font-family: $sans-serif;
+    outline: none;
 }
+
 .news-view-more-btn:hover {
     background-color: #3498db;
     color: white;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+    border-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.35);
+}
+
+.news-view-more-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(52, 152, 219, 0.25);
+}
+
+.news-view-more-btn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.35);
 }
 
 // Conference info styling

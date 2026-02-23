@@ -83,12 +83,12 @@ redirect_from:
 🎉 Survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> accepted by ACL 2025!
 </div>
 
-<div class="news-item">
+<div class="news-item news-item-fold">
 <span class="news-time">[02/2025]</span>
 🎉 Published paper in arXiv: <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>!
 </div>
 
-<div class="news-item">
+<div class="news-item news-item-fold">
 <span class="news-time">[12/2024]</span>
 🎉 Published paper in PrePrint: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>!
 </div>
@@ -103,8 +103,8 @@ redirect_from:
   var wrapper = document.getElementById('news-list-wrapper');
   var btn = document.getElementById('news-view-more-btn');
   if (!wrapper || !btn) return;
-  var items = wrapper.querySelectorAll('.news-item');
-  if (items.length <= 10) {
+  var folded = wrapper.querySelectorAll('.news-item-fold');
+  if (folded.length === 0) {
     var wrap = btn.parentElement;
     if (wrap) wrap.style.display = 'none';
     return;
