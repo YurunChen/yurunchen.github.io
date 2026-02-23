@@ -83,12 +83,12 @@ redirect_from:
 🎉 Survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> accepted by ACL 2025!
 </div>
 
-<div class="news-item news-item-fold">
+<div class="news-item">
 <span class="news-time">[02/2025]</span>
 🎉 Published paper in arXiv: <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>!
 </div>
 
-<div class="news-item news-item-fold">
+<div class="news-item">
 <span class="news-time">[12/2024]</span>
 🎉 Published paper in PrePrint: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>!
 </div>
@@ -100,17 +100,20 @@ redirect_from:
 
 <script>
 (function() {
+  var NEWS_SHOW_COUNT = 5; // Number of news items visible by default; change this to show more/fewer
+
   function initNewsFold() {
     var wrapper = document.getElementById('news-list-wrapper');
     var btn = document.getElementById('news-view-more-btn');
     if (!wrapper || !btn) return;
-    var folded = wrapper.querySelectorAll('.news-item-fold');
+    var items = wrapper.querySelectorAll('.news-item');
+    var folded = [];
+    for (var i = NEWS_SHOW_COUNT; i < items.length; i++) folded.push(items[i]);
     if (folded.length === 0) {
       var wrap = btn.parentElement;
       if (wrap) wrap.style.display = 'none';
       return;
     }
-    // Hide folded items by JS so it works regardless of CSS load order
     function hideFolded() {
       for (var i = 0; i < folded.length; i++) folded[i].style.display = 'none';
     }
