@@ -100,20 +100,43 @@ redirect_from:
 
 <script>
 (function() {
-  var wrapper = document.getElementById('news-list-wrapper');
-  var btn = document.getElementById('news-view-more-btn');
-  if (!wrapper || !btn) return;
-  var folded = wrapper.querySelectorAll('.news-item-fold');
-  if (folded.length === 0) {
-    var wrap = btn.parentElement;
-    if (wrap) wrap.style.display = 'none';
-    return;
+  function initNewsFold() {
+    var wrapper = document.getElementById('news-list-wrapper');
+    var btn = document.getElementById('news-view-more-btn');
+    if (!wrapper || !btn) return;
+    var folded = wrapper.querySelectorAll('.news-item-fold');
+    if (folded.length === 0) {
+      var wrap = btn.parentElement;
+      if (wrap) wrap.style.display = 'none';
+      return;
+    }
+    // Hide folded items by JS so it works regardless of CSS load order
+    function hideFolded() {
+      for (var i = 0; i < folded.length; i++) folded[i].style.display = 'none';
+    }
+    function showFolded() {
+      for (var i = 0; i < folded.length; i++) folded[i].style.display = 'block';
+    }
+    hideFolded();
+    btn.addEventListener('click', function() {
+      if (wrapper.classList.contains('show-all')) {
+        wrapper.classList.remove('show-all');
+        hideFolded();
+        btn.setAttribute('aria-expanded', 'false');
+        btn.textContent = 'View more';
+      } else {
+        wrapper.classList.add('show-all');
+        showFolded();
+        btn.setAttribute('aria-expanded', 'true');
+        btn.textContent = 'View less';
+      }
+    });
   }
-  btn.addEventListener('click', function() {
-    var expanded = wrapper.classList.toggle('show-all');
-    btn.setAttribute('aria-expanded', expanded);
-    btn.textContent = expanded ? 'View less' : 'View more';
-  });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initNewsFold);
+  } else {
+    initNewsFold();
+  }
 })();
 </script>
 

@@ -430,12 +430,12 @@ h1:before, .anchor:before {
     font-weight: 600;
 }
 
-// News list: show first 10, hide .news-item-fold until "View more"
+// News list: hide .news-item-fold until "View more" (JS also sets display for reliability)
 .news-list-wrapper .news-item-fold {
-    display: none;
+    display: none !important;
 }
 .news-list-wrapper.show-all .news-item-fold {
-    display: block;
+    display: block !important;
 }
 
 .news-view-more-wrap {
