@@ -156,7 +156,6 @@ redirect_from:
         <div class='paper-box-text'>
             <h3><a href="https://arxiv.org/abs/2510.00507">Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</a></h3>
             <p><strong>Yurun Chen</strong>,  Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
-             <p class="conference-info">The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026 (CVPR 2026)</p>
             <p class="paper-description">We propose Graph2Eval, a knowledge
 graph–based framework that automatically generates both multimodal document
 comprehension tasks and web interaction tasks, enabling comprehensive eval-
@@ -180,7 +179,6 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
         <div class='paper-box-text'>
             <h3><a href="#">EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</a></h3>
             <p>Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
-            <p class="conference-info">The 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026)</p>
             <p class="paper-description">We propose EcoAgent, an Edge-Cloud Collaborative multi-agent framework for mobile automation that features a closed-loop collaboration among cloud-based Planning Agent and edge-based Execution and Observation Agents. Experiments on AndroidWorld show that EcoAgent achieves task success rates comparable to cloud-based mobile agents while significantly reducing MLLM token consumption, enabling efficient and practical mobile automation.</p>
             <div class="paper-buttons">
                 <a href="https://arxiv.org/abs/2505.05440" class="btn btn-primary" target="_blank">View Paper</a>
@@ -200,7 +198,6 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
         <div class='paper-box-text'>
             <h3><a href="https://arxiv.org/abs/2502.13053">Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</a></h3>
             <p><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
-            <p class="conference-info">The 33rd ACM International Conference on Multimedia (ACM MM 2025)</p>
 
             <p class="paper-description">This work introduces Active Environment Injection Attacks (AEIA), where attackers disguise malicious inputs as environmental elements to manipulate AI agents' decisions. By analyzing Android OS interactions, the study reveals two key vulnerabilities and proposes the AEIA-MN attack, which achieves up to 93% success against advanced MLLM-based agents.</p>
             <div class="paper-buttons">
@@ -221,8 +218,6 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
         <div class='paper-box-text'>
             <h3><a href="https://arxiv.org/abs/2508.04482">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
             <p>Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong> etc.</p>
-            <p class="conference-info">The 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)</p>
-
             <p class="paper-description">This survey explores OS Agents—(M)LLM-based agents that operate within OS environments (e.g., GUI, CLI) on computers, phones, and browsers to automate tasks. It reviews their core components, construction methods, evaluation benchmarks, and outlines key challenges and future directions.</p>
             <div class="paper-buttons">
                 <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf" class="btn btn-primary" target="_blank">View Paper</a>
