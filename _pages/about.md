@@ -17,7 +17,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # 🧐 Who I Am 
-👋 Hi there! I'm a Ph.D. student at Zhejiang University, working under the guidance of [Shengyu Zhang](https://shengyuzhang.github.io/) and [Keting Yin](https://person.zju.edu.cn/ykt). I also collaborate closely with Prof. [Juncheng Li](https://person.zju.edu.cn/juncheng#0) (Zhejiang University) and Prof. [Zhuosheng Zhang](https://infosec.sjtu.edu.cn/DirectoryDetail.aspx?id=179) (Shanghai Jiao Tong University).
+👋 Hi there! I'm a Ph.D. student at Zhejiang University, working under the guidance of [Shengyu Zhang](https://shengyuzhang.github.io/) and [Keting Yin](https://person.zju.edu.cn/ykt).
 
 🔬 My research focuses on **LLM/Agent Security**, specifically:
 - **Adversarial Attacks**, **Knowledge Poisoning** and **Test-Time Attack** targeting AI agents
