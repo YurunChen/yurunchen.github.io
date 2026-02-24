@@ -42,6 +42,10 @@
       {% endif %}
       {% if author.twitter %}
         <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter </a></li>
+        <li class="twitter-follow-wrapper" style="margin-top: 0.25em;">
+          <iframe id="twitter-follow-button" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 186px; height: 20px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.html?screen_name={{ author.twitter }}&show_screen_name=true&show_count=false&size=m"></iframe>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </li>
       {% endif %}
       {% if author.facebook %}
         <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
