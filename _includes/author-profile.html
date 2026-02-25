@@ -120,8 +120,26 @@
       {% endif %}
       {% if author.twitter %}
         <li class="twitter-follow-wrapper">
-          <iframe id="twitter-follow-button" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 186px; height: 20px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=YRChen_AIsafety&show_screen_name=true&show_count=false&size=m"></iframe>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <iframe id="twitter-follow-button" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 186px; height: 20px;" title="Twitter Follow Button" data-src="https://platform.twitter.com/widgets/follow_button.html?screen_name=YRChen_AIsafety&show_screen_name=true&show_count=false&size=m"></iframe>
+          <script>
+            (function() {
+              var iframe = document.getElementById('twitter-follow-button');
+              if (!iframe || !iframe.dataset.src) return;
+              function loadTwitter() {
+                iframe.src = iframe.dataset.src;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://platform.twitter.com/widgets.js';
+                s.charset = 'utf-8';
+                document.body.appendChild(s);
+              }
+              if (document.readyState === 'complete') {
+                setTimeout(loadTwitter, 100);
+              } else {
+                window.addEventListener('load', function() { setTimeout(loadTwitter, 100); });
+              }
+            })();
+          </script>
         </li>
       {% endif %}
     </ul>
