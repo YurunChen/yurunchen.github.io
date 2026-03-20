@@ -20,8 +20,9 @@ redirect_from:
 👋 Hi there! I'm a Ph.D. student at Zhejiang University, working under the guidance of [Shengyu Zhang](https://shengyuzhang.github.io/) and [Keting Yin](https://person.zju.edu.cn/ykt).
 
 🔬 My research focuses on **LLM/Agent Security**, specifically:
-- **Adversarial Attacks**, **Knowledge Poisoning** and **Test-Time Attack** targeting AI agents
-- **Robust Agent** and **Safety Guardrails** against emerging AI threats
+- **Adversarial Attacks**, **Knowledge Poisoning** and **Test-Time Attack** targeting agents
+- **Robust Agent** and **Guardrails** against emerging threats
+
 
 💡 I'm passionate about making AI systems more secure and trustworthy as they become increasingly integrated into our daily lives.
 
@@ -309,6 +310,25 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
     </div>
 </div>
 
+<div class="publication-item">
+    <div class='paper-box'>
+        <div class='paper-box-image'>
+            <div>
+                <div class="badge">arXiv</div>
+                <img src='images/Methods7_01.png' alt="sym" width="100%">
+            </div>
+        </div>
+        <div class='paper-box-text'>
+            <h3><a href="https://arxiv.org/abs/2508.04010">SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</a></h3>
+            <p><strong>Yurun Chen</strong>,  Zeyi Liao, Ping Yin, Taotao Xie, Keting Yin, Shengyu Zhang</p>
+            <p class="paper-description">We introduce SafePred, a predictive guardrail for CUAs that goes beyond reactive safeguards to anticipate both short- and long-term risks. We predict future risks and guide decisions through step-level interventions and task-level re-planning, ensuring safer agent behavior. Our experiments show we can reduce high-risk actions by over 97% while improving task performance by up to 21%.</p>
+            <div class="paper-buttons">
+                <a href="https://arxiv.org/abs/2602.01725" class="btn btn-primary" target="_blank">View Paper</a>
+                <a href="https://github.com/YurunChen/SafePred" class="btn btn-primary" target="_blank">View Code</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 # 🎖 Honors and Awards
@@ -324,7 +344,6 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
 
 # 🤝 Collaborators
 - **[Juncheng Li](https://person.zju.edu.cn/juncheng#0)** - Zhejiang University
-- **[Zhuosheng Zhang](https://infosec.sjtu.edu.cn/DirectoryDetail.aspx?id=179)** - Shanghai Jiao Tong University
 - Xavier Hu - Zhejiang University
 - Biao Yi - Zhejiang University
 - **[Yuhan Liu](https://yuhan0802.github.io/)** - Xiamen University
