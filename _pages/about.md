@@ -315,7 +315,7 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
         <div class='paper-box-image'>
             <div>
                 <div class="badge">arXiv</div>
-                <img src='images/Methods7_01.png' alt="sym" width="100%">
+                <img src='images/Method9_01.png' alt="sym" width="100%">
             </div>
         </div>
         <div class='paper-box-text'>
