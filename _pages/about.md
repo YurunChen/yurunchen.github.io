@@ -24,9 +24,9 @@ redirect_from:
 
 <p>Hi! I'm <strong>Yurun Chen (陈雨润)</strong>, a <strong>Ph.D. student</strong> at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> and <a href="https://person.zju.edu.cn/ykt">Keting Yin</a>.</p>
 
-<p>I study <strong>computer-use agent (CUA) security</strong> and <strong>multi-agent systems</strong> — how adversaries exploit GUI, web, and OS environments, and how to build <strong>predictive guardrails</strong> and secure multi-agent frameworks for agents that operate real computing devices.</p>
+<p>I work on the safety of Computer-Using Agents (CUAs). My research centers on two complementary questions: how to equip CUAs with effective guardrails for robust task execution under real-world noise and uncertainty, and how to systematically develop red-teaming strategies that uncover safety vulnerabilities in realistic deployment settings.</p>
 
-<p><strong>Open to collaborations</strong> on CUA red-teaming, multi-agent security, guardrails, and agent evaluation. Reach out via <a href="mailto:yurunchen.research@gmail.com">email</a>.</p>
+<p><strong>Open to collaborations</strong> on CUA red-teaming, CUA safety, guardrails, and agent evaluation. Reach out via <a href="mailto:yurunchen.research@gmail.com">email</a>.</p>
 
 <p class="page-stat">Google Scholar · <strong><span id="total_cit">—</span></strong> citations</p>
 
