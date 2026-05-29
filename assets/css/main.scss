@@ -258,8 +258,8 @@ body {
 
         > li {
             margin: 0;
-            padding: 0.8rem 0;
-            border-bottom: 1px solid $site-border-light;
+            padding: 0.45rem 0;
+            border-bottom: none;
             line-height: 1.65;
             color: $site-text-secondary;
             font-size: 0.875rem;
@@ -267,10 +267,6 @@ body {
 
             &:hover {
                 color: $site-text;
-            }
-
-            &:last-child {
-                border-bottom: none;
             }
         }
     }
@@ -337,7 +333,7 @@ body {
     padding: 1.35rem 0;
     margin: 0;
     border: none;
-    border-bottom: 1px solid $site-border-light;
+    border-bottom: none;
     border-radius: 0;
     background: transparent;
     box-shadow: none;
@@ -556,10 +552,6 @@ h1:before, .anchor:before {
     .paper-box {
         margin: 0;
     }
-
-    &:last-child .paper-box {
-        border-bottom: none;
-    }
 }
 
 // Legacy journal block — keep minimal if referenced elsewhere
@@ -568,7 +560,7 @@ h1:before, .anchor:before {
     margin: 0;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: none;
     border-radius: 0;
 
     &:hover {

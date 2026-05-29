@@ -168,6 +168,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2510.00507" class="paper-link" target="_blank">Paper</a>
                 <a href="https://github.com/YurunChen/Graph2Eval" class="paper-link" target="_blank">Code</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:LkGwnXOMwfcC"></span>
             </div>
         </div>
     </div>
@@ -185,6 +186,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <p class="paper-abstract">An edge–cloud collaborative multi-agent framework for mobile automation with comparable success rates and significantly lower MLLM token cost.</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2505.05440" class="paper-link" target="_blank">Paper</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:Tyk-4Ss8FVUC"></span>
             </div>
         </div>
     </div>
@@ -241,6 +243,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <p class="paper-venue-line"><em>IEEE Transactions on Information Forensics and Security</em>, 2025</p>
             <div class="paper-links">
                 <a href="https://ieeexplore.ieee.org/document/11187397" class="paper-link" target="_blank">Paper</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:Se3iqnhoufwC"></span>
             </div>
         </div>
     </div>
@@ -301,6 +304,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2602.01725" class="paper-link" target="_blank">Paper</a>
                 <a href="https://github.com/YurunChen/SafePred" class="paper-link" target="_blank">Code</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:UebtZRa9Y70C"></span>
             </div>
         </div>
     </div>
@@ -318,6 +322,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <p class="paper-abstract">A judge agent with dynamic memory and adaptive UI perception for more accurate process rewards on GUI tasks.</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2509.23263" class="paper-link" target="_blank">Paper</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:roLk4NBRz8UC"></span>
             </div>
         </div>
     </div>
@@ -336,6 +341,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2508.04010" class="paper-link" target="_blank">Paper</a>
                 <a href="https://github.com/YurunChen/HarmonyGuard" class="paper-link" target="_blank">Code</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:ufrVoPGSRksC"></span>
             </div>
         </div>
     </div>
@@ -348,16 +354,6 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <ul class="site-list">
 <li><strong>ACL 2025 Oral</strong> — OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use. Vienna, Austria. <a href="https://aclanthology.org/2025.acl-long.369/">Paper</a> · <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey">Project</a></li>
-</ul>
-
-<span class='anchor' id='-education'></span>
-
-# Education
-
-<ul class="site-list">
-<li><strong>Ph.D.</strong> in Computer Science, Zhejiang University, 2025 – Present. Advisors: <a href="https://shengyuzhang.github.io/">Shengyu Zhang</a>, <a href="https://person.zju.edu.cn/ykt">Keting Yin</a></li>
-<li><strong>M.S.</strong> in Computer Science, Beijing University of Technology, 2022 – 2025</li>
-<li><strong>B.S.</strong>, Jiangsu University, 2018 – 2022</li>
 </ul>
 
 <span class='anchor' id='-honors-and-awards'></span>
