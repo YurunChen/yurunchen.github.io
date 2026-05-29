@@ -17,17 +17,47 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # 🧐 Who I Am 
-👋 Hi there! I'm a Ph.D. student at Zhejiang University, working under the guidance of [Shengyu Zhang](https://shengyuzhang.github.io/) and [Keting Yin](https://person.zju.edu.cn/ykt).
+👋 Hi! I'm a **Ph.D. student** at [Zhejiang University](https://www.zju.edu.cn/english/), advised by [Shengyu Zhang](https://shengyuzhang.github.io/) and [Keting Yin](https://person.zju.edu.cn/ykt).
 
-🔬 My research focuses on **LLM/Agent Security**, specifically:
-- **Adversarial Attacks**, **Knowledge Poisoning** and **Test-Time Attack** targeting agents
-- **Robust Agent** and **Guardrails** against emerging threats
+🔬 I study **security of LLM-based agents** — how adversaries exploit GUI, web, and OS environments, and how to build **predictive guardrails** that anticipate risk before action. My work spans adversarial attacks, agent evaluation, and safety frameworks for computer-using agents.
 
 
-💡 I'm passionate about making AI systems more secure and trustworthy as they become increasingly integrated into our daily lives.
+📊 Google Scholar citations: **<span id="total_cit">—</span>**
 
-🤝 If you're interested in my work or have ideas for collaboration, feel free to reach out via [email](mailto:yurunchen.research@gmail.com).
+🤝 **Open to collaborations** on agent red-teaming, guardrails, and multimodal agent evaluation. Reach out via [email](mailto:yurunchen.research@gmail.com) — especially if you have concrete ideas or benchmark needs.
 
+
+<span class='anchor' id='-research-highlights'></span>
+
+# 🔬 Research Highlights
+
+<div class="research-highlights">
+
+<div class="research-highlight-card">
+<h4>Agent Attacks</h4>
+<p><strong>AEIA</strong> (ACM MM 2025) — Active Environment Injection Attacks disguise malicious inputs as UI elements, achieving up to <strong>93%</strong> success against MLLM-based agents.</p>
+<a href="https://arxiv.org/abs/2502.13053">Paper</a>
+</div>
+
+<div class="research-highlight-card">
+<h4>Predictive Guardrails</h4>
+<p><strong>SafePred</strong> — A world-model-based guardrail for computer-using agents that anticipates short- and long-term risks, reducing high-risk actions by <strong>97%+</strong> while improving task performance.</p>
+<a href="https://arxiv.org/abs/2602.01725">Paper</a> · <a href="https://github.com/YurunChen/SafePred">Code</a>
+</div>
+
+<div class="research-highlight-card">
+<h4>Agent Evaluation</h4>
+<p><strong>Graph2Eval</strong> (CVPR 2026) — Knowledge-graph-based automatic generation of multimodal document and web interaction tasks for comprehensive agent benchmarking.</p>
+<a href="https://arxiv.org/abs/2510.00507">Paper</a> · <a href="https://github.com/YurunChen/Graph2Eval">Code</a>
+</div>
+
+<div class="research-highlight-card">
+<h4>Survey &amp; Roadmap</h4>
+<p><strong>OS Agents</strong> (ACL 2025 <strong>Oral</strong>) — A comprehensive survey on MLLM-based agents for computers, phones, and browsers, with benchmarks and open challenges.</p>
+<a href="https://aclanthology.org/2025.acl-long.369/">Paper</a> · <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey">Project</a>
+</div>
+
+</div>
 
 <span class='anchor' id='-news'></span>
 
@@ -71,7 +101,7 @@ redirect_from:
 
 <div class="news-item">
 <span class="news-time">[07/2025]</span>
-🎉 Paper <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em> accepted by ACM MM 2025!
+🎉 Paper <em><a href="https://arxiv.org/abs/2502.13053" target="_blank">"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</a></em> accepted by ACM MM 2025!
 </div>
 
 <div class="news-item">
@@ -86,12 +116,12 @@ redirect_from:
 
 <div class="news-item">
 <span class="news-time">[02/2025]</span>
-🎉 Published paper in arXiv: <em>"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</em>!
+🎉 Published paper on arXiv: <em><a href="https://arxiv.org/abs/2502.13053" target="_blank">"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</a></em>!
 </div>
 
 <div class="news-item">
 <span class="news-time">[12/2024]</span>
-🎉 Published paper in PrePrint: <em>"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</em>!
+🎉 Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blank">"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</a></em>!
 </div>
 </div>
 
@@ -144,6 +174,8 @@ redirect_from:
 })();
 </script>
 
+<span class='anchor' id='-publications'></span>
+
 # 📝 Publications 
 
 <div class="publication-item">
@@ -178,7 +210,7 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
             </div>
         </div>
         <div class='paper-box-text'>
-            <h3><a href="#">EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</a></h3>
+            <h3><a href="https://arxiv.org/abs/2505.05440">EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</a></h3>
             <p>Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
             <p class="paper-description">We propose EcoAgent, an Edge-Cloud Collaborative multi-agent framework for mobile automation that features a closed-loop collaboration among cloud-based Planning Agent and edge-based Execution and Observation Agents. Experiments on AndroidWorld show that EcoAgent achieves task success rates comparable to cloud-based mobile agents while significantly reducing MLLM token consumption, enabling efficient and practical mobile automation.</p>
             <div class="paper-buttons">
@@ -203,6 +235,7 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
             <p class="paper-description">This work introduces Active Environment Injection Attacks (AEIA), where attackers disguise malicious inputs as environmental elements to manipulate AI agents' decisions. By analyzing Android OS interactions, the study reveals two key vulnerabilities and proposes the AEIA-MN attack, which achieves up to 93% success against advanced MLLM-based agents.</p>
             <div class="paper-buttons">
                 <a href="https://arxiv.org/abs/2502.13053" class="btn btn-primary" target="_blank">View Paper</a>
+                <a href="https://github.com/YurunChen/AEIA" class="btn btn-primary" target="_blank">View Code</a>
             </div>
         </div>
     </div>
@@ -212,16 +245,16 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
     <div class='paper-box'>
         <div class='paper-box-image'>
             <div>
-                <div class="badge">ACL 2025</div>
+                <div class="badge">ACL 2025 Oral</div>
                 <img src='images/1_teaser_os_agent_00.png' alt="sym" width="100%">
             </div>
         </div>
         <div class='paper-box-text'>
             <h3><a href="https://arxiv.org/abs/2508.04482">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
             <p>Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong> etc.</p>
-            <p class="paper-description">This survey explores OS Agents—(M)LLM-based agents that operate within OS environments (e.g., GUI, CLI) on computers, phones, and browsers to automate tasks. It reviews their core components, construction methods, evaluation benchmarks, and outlines key challenges and future directions.</p>
+            <p class="paper-description">This survey explores OS Agents—(M)LLM-based agents that operate within OS environments (e.g., GUI, CLI) on computers, phones, and browsers to automate tasks. It reviews their core components, construction methods, evaluation benchmarks, and outlines key challenges and future directions. <span class='show_paper_citations' data='DGRecXEAAAAJ:9yKSN-GCB0IC'></span></p>
             <div class="paper-buttons">
-                <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey/blob/main/paper.pdf" class="btn btn-primary" target="_blank">View Paper</a>
+                <a href="https://aclanthology.org/2025.acl-long.369/" class="btn btn-primary" target="_blank">View Paper</a>
                 <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="btn btn-primary" target="_blank">View Project</a>
             </div>
         </div>
@@ -249,8 +282,8 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
     <div class="journal-paper-content">
         <p class="authors">Xiaohu Shan; Haiyang Yu; <strong>Yurun Chen</strong>; Yuwen Chen; Zhen Yang</p>
 
-        <p class="journal-info"><em>IEEE Transactions on Mobile Computing</em>, 2025</p>
-        <a href="https://ieeexplore.ieee.org/document/10568383" class="paper-link" target="_blank">View Paper</a>
+        <p class="journal-info"><em>IEEE Transactions on Mobile Computing</em>, 2025 <span class='show_paper_citations' data='DGRecXEAAAAJ:qjMakFHDy7sC'></span></p>
+        <a href="https://ieeexplore.ieee.org/document/10886974" class="paper-link" target="_blank">View Paper</a>
     </div>
 </div>
 
@@ -262,7 +295,7 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
     <div class="journal-paper-content">
         <p class="authors">Haiyang Yu, <strong>Yurun Chen</strong>, Zhen Yang, Yuwen Chen, Shui Yu</p>
 
-        <p class="journal-info"><em>IEEE Transactions on Services Computing</em>, 2024</p>
+        <p class="journal-info"><em>IEEE Transactions on Services Computing</em>, 2024 <span class='show_paper_citations' data='DGRecXEAAAAJ:u-x6o8ySG0sC'></span></p>
         <a href="https://ieeexplore.ieee.org/document/10568383" class="paper-link" target="_blank">View Paper</a>
     </div>
 </div>
@@ -270,6 +303,27 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
 <span class='anchor' id='-preprints'></span>
 
 # 📄 Preprints
+
+<div class="publication-item">
+    <div class='paper-box'>
+        <div class='paper-box-image'>
+            <div>
+                <div class="badge">arXiv · Highlight</div>
+                <img src='images/Method9_01.png' alt="sym" width="100%">
+            </div>
+        </div>
+        <div class='paper-box-text'>
+            <h3><a href="https://arxiv.org/abs/2602.01725">SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</a></h3>
+            <p><strong>Yurun Chen</strong>, Zeyi Liao, Ping Yin, Taotao Xie, Keting Yin, Shengyu Zhang</p>
+            <p class="paper-description">We introduce SafePred, a predictive guardrail for CUAs that goes beyond reactive safeguards to anticipate both short- and long-term risks. We predict future risks and guide decisions through step-level interventions and task-level re-planning, ensuring safer agent behavior. Our experiments show we can reduce high-risk actions by over 97% while improving task performance by up to 21%.</p>
+            <div class="paper-buttons">
+                <a href="https://arxiv.org/abs/2602.01725" class="btn btn-primary" target="_blank">View Paper</a>
+                <a href="https://github.com/YurunChen/SafePred" class="btn btn-primary" target="_blank">View Code</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="publication-item">
     <div class='paper-box'>
         <div class='paper-box-image'>
@@ -310,26 +364,23 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
     </div>
 </div>
 
-<div class="publication-item">
-    <div class='paper-box'>
-        <div class='paper-box-image'>
-            <div>
-                <div class="badge">arXiv</div>
-                <img src='images/Method9_01.png' alt="sym" width="100%">
-            </div>
-        </div>
-        <div class='paper-box-text'>
-            <h3><a href="https://arxiv.org/abs/2508.04010">SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</a></h3>
-            <p><strong>Yurun Chen</strong>,  Zeyi Liao, Ping Yin, Taotao Xie, Keting Yin, Shengyu Zhang</p>
-            <p class="paper-description">We introduce SafePred, a predictive guardrail for CUAs that goes beyond reactive safeguards to anticipate both short- and long-term risks. We predict future risks and guide decisions through step-level interventions and task-level re-planning, ensuring safer agent behavior. Our experiments show we can reduce high-risk actions by over 97% while improving task performance by up to 21%.</p>
-            <div class="paper-buttons">
-                <a href="https://arxiv.org/abs/2602.01725" class="btn btn-primary" target="_blank">View Paper</a>
-                <a href="https://github.com/YurunChen/SafePred" class="btn btn-primary" target="_blank">View Code</a>
-            </div>
-        </div>
-    </div>
-</div>
 
+<span class='anchor' id='-talks'></span>
+
+# 🎤 Talks
+- *ACL 2025 (Oral)* — **OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use**. Vienna, Austria. [[Paper](https://aclanthology.org/2025.acl-long.369/)] [[Project](https://github.com/OS-Agent-Survey/OS-Agent-Survey)]
+
+
+<span class='anchor' id='-education'></span>
+
+# 🎓 Education
+- **Ph.D.** in Computer Science, Zhejiang University, 2025 – Present  
+  Advisors: [Shengyu Zhang](https://shengyuzhang.github.io/), [Keting Yin](https://person.zju.edu.cn/ykt)
+- **M.S.** in Computer Science, Beijing University of Technology, 2022 – 2025
+- **B.S.**, Jiangsu University, 2018 – 2022
+
+
+<span class='anchor' id='-honors-and-awards'></span>
 
 # 🎖 Honors and Awards
 - *2025.06* Received the title of Outstanding Graduate of Beijing and the title of Top 100 Graduates of BJUT.
@@ -340,16 +391,19 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
 
 
 
-<span class='anchor' id='-collaborators'></span>
+<span class='anchor' id='-people'></span>
 
-# 🤝 Collaborators
-- **[Juncheng Li](https://person.zju.edu.cn/juncheng#0)** - Zhejiang University
-- Xavier Hu - Zhejiang University
-- Biao Yi - Zhejiang University
-- **[Yuhan Liu](https://yuhan0802.github.io/)** - Xiamen University
+# 🤝 People & Network
+- **[Shengyu Zhang](https://shengyuzhang.github.io/)** — Zhejiang University
+- **[Keting Yin](https://person.zju.edu.cn/ykt)** — Zhejiang University
+- **[Juncheng Li](https://person.zju.edu.cn/juncheng#0)** — Zhejiang University
+- Xavier Hu — Zhejiang University
+- Biao Yi — Zhejiang University
+- **[Yuhan Liu](https://yuhan0802.github.io/)** — Xiamen University
 
 
-<span class='anchor' id='-reviewer-service'></span>
+<span class='anchor' id='-academic-service'></span>
 
-# 🎯 Reviewer Service
-- **Conference Reviewer**: ACL'25, AAAI'26.
+# 🎯 Academic Service
+- **Conference Reviewer**: ACL 2025, AAAI 2026
+- **Open Source**: [Graph2Eval](https://github.com/YurunChen/Graph2Eval), [HarmonyGuard](https://github.com/YurunChen/HarmonyGuard), [SafePred](https://github.com/YurunChen/SafePred), [OS-Agent-Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey)

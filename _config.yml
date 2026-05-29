@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yurun Chen"
-description              : "Nice to meet you! "
+description              : "Yurun Chen — Ph.D. student at Zhejiang University researching LLM agent security, adversarial attacks, and guardrails. CVPR / ACL / AAAI / ACM MM."
 repository               : "YurunChen/yurunchen.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yurun Chen"
   avatar           : "images/yurun_chen.jpg"
-  bio              : 
-  location         : 
+  bio              : "Ph.D. student at ZJU. I study security of LLM-based agents — attacks, evaluation, and predictive guardrails."
+  location         : "Hangzhou, China"
   employer         : "Zhejiang University"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=DGRecXEAAAAJ&hl=zh-CN"
@@ -45,7 +45,7 @@ author:
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : yurun-chen-4a7a43294/
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
+  dblp             : "https://dblp.org/pid/400/5097.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
   soundcloud       :

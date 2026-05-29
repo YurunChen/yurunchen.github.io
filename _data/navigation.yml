@@ -3,6 +3,9 @@ main:
   - title: "Who I Am"
     url: "/#about-me"
 
+  - title: "Research"
+    url: "/#-research-highlights"
+
   - title: "News"
     url: "/#-news"
 
@@ -12,14 +15,17 @@ main:
   - title: "Preprints"
     url: "/#-preprints"
 
+  - title: "Talks"
+    url: "/#-talks"
+
+  - title: "Education"
+    url: "/#-education"
+
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
 
-  # - title: "Educations"
-  #   url: "/#-educations"
+  - title: "People"
+    url: "/#-people"
 
-  - title: "Collaborators"
-    url: "/#-collaborators"
-
-  - title: "Reviewer Service"
-    url: "/#-reviewer-service"
+  - title: "Academic Service"
+    url: "/#-academic-service"
