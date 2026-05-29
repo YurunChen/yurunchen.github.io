@@ -22,13 +22,13 @@ redirect_from:
 
 <div class="page-intro">
 
-<p>Hi! I'm a <strong>Ph.D. student</strong> at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> and <a href="https://person.zju.edu.cn/ykt">Keting Yin</a>.</p>
+<p>Hi! I'm <strong>Yurun Chen (陈雨润)</strong>, a <strong>Ph.D. student</strong> at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> and <a href="https://person.zju.edu.cn/ykt">Keting Yin</a>.</p>
 
 <p>I study <strong>computer-use agent (CUA) security</strong> and <strong>multi-agent systems</strong> — how adversaries exploit GUI, web, and OS environments, and how to build <strong>predictive guardrails</strong> and secure multi-agent frameworks for agents that operate real computing devices.</p>
 
-<p class="page-stat">Google Scholar · <strong><span id="total_cit">—</span></strong> citations</p>
-
 <p><strong>Open to collaborations</strong> on CUA red-teaming, multi-agent security, guardrails, and agent evaluation. Reach out via <a href="mailto:yurunchen.research@gmail.com">email</a>.</p>
+
+<p class="page-stat">Google Scholar · <strong><span id="total_cit">—</span></strong> citations</p>
 
 </div>
 

@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yurun Chen"
-description              : "Yurun Chen — Ph.D. student at Zhejiang University researching computer-use agent (CUA) security, multi-agent systems, and guardrails. CVPR / ACL / AAAI / ACM MM."
+title                    : "Yurun Chen (陈雨润)"
+description              : "Yurun Chen (陈雨润) — Ph.D. student at Zhejiang University researching computer-use agent (CUA) security, multi-agent systems, and guardrails. CVPR / ACL / AAAI / ACM MM."
 repository               : "YurunChen/yurunchen.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -21,7 +21,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Yurun Chen"
+  name             : "Yurun Chen (陈雨润)"
   avatar           : "images/photo.jpg"
   bio              : "Ph.D. student at ZJU. I study computer-use agent (CUA) security and multi-agent systems."
   location         : "Hangzhou, China"
