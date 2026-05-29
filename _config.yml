@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yurun Chen"
-  avatar           : "images/yurun_chen.jpg"
+  avatar           : "images/photo.jpg"
   bio              : "Ph.D. student at ZJU. I study computer-use agent (CUA) security and multi-agent systems."
   location         : "Hangzhou, China"
   employer         : "Zhejiang University"
