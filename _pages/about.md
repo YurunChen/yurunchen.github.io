@@ -30,38 +30,6 @@ redirect_from:
 
 </div>
 
-<span class='anchor' id='-research-highlights'></span>
-
-# Research Highlights
-
-<div class="research-highlights">
-
-<div class="research-highlight-card">
-<h4>Agent Attacks</h4>
-<p><strong>AEIA</strong> (ACM MM 2025) — Active Environment Injection Attacks disguise malicious inputs as UI elements, achieving up to <strong>93%</strong> success against CUAs.</p>
-<a href="https://arxiv.org/abs/2502.13053">Paper</a>
-</div>
-
-<div class="research-highlight-card">
-<h4>Predictive Guardrails</h4>
-<p><strong>SafePred</strong> — A world-model-based guardrail for CUAs that anticipates short- and long-term risks, reducing high-risk actions by <strong>97%+</strong> while improving task performance.</p>
-<a href="https://arxiv.org/abs/2602.01725">Paper</a> · <a href="https://github.com/YurunChen/SafePred">Code</a>
-</div>
-
-<div class="research-highlight-card">
-<h4>Agent Evaluation</h4>
-<p><strong>Graph2Eval</strong> (CVPR 2026) — Knowledge-graph-based automatic generation of multimodal document and web interaction tasks for comprehensive agent benchmarking.</p>
-<a href="https://arxiv.org/abs/2510.00507">Paper</a> · <a href="https://github.com/YurunChen/Graph2Eval">Code</a>
-</div>
-
-<div class="research-highlight-card">
-<h4>Survey &amp; Roadmap</h4>
-<p><strong>OS Agents</strong> (ACL 2025 <strong>Oral</strong>) — A comprehensive survey on computer-use agents for computers, phones, and browsers, with benchmarks and open challenges.</p>
-<a href="https://aclanthology.org/2025.acl-long.369/">Paper</a> · <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey">Project</a>
-</div>
-
-</div>
-
 <span class='anchor' id='-news'></span>
 
 # News
@@ -194,8 +162,8 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
             <p class="paper-abstract">A knowledge-graph framework that automatically generates multimodal document and web interaction tasks for comprehensive agent evaluation.</p>
             <div class="paper-links">
-                <a href="https://arxiv.org/abs/2510.00507" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/YurunChen/Graph2Eval" class="paper-link" target="_blank">Code</a>
+                <a href="https://arxiv.org/abs/2510.00507" class="paper-link" target="_blank">[Paper]</a>
+                <a href="https://github.com/YurunChen/Graph2Eval" class="paper-link" target="_blank">[Code]</a>
             </div>
         </div>
     </div>
@@ -212,7 +180,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <p class="paper-authors">Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
             <p class="paper-abstract">An edge–cloud collaborative multi-agent framework for mobile automation with comparable success rates and significantly lower MLLM token cost.</p>
             <div class="paper-links">
-                <a href="https://arxiv.org/abs/2505.05440" class="paper-link" target="_blank">Paper</a>
+                <a href="https://arxiv.org/abs/2505.05440" class="paper-link" target="_blank">[Paper]</a>
             </div>
         </div>
     </div>
@@ -226,14 +194,14 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
         <div class="paper-box-text">
             <div class="paper-meta">
                 <span class="badge">ACM MM 2025</span>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:W7OEmFMy1HYC"></span>
             </div>
             <h3><a href="https://arxiv.org/abs/2502.13053">Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</a></h3>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
             <p class="paper-abstract">Introduces Active Environment Injection Attacks (AEIA) that disguise malicious inputs as UI elements, achieving up to 93% success against advanced agents.</p>
             <div class="paper-links">
-                <a href="https://arxiv.org/abs/2502.13053" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/YurunChen/AEIA" class="paper-link" target="_blank">Code</a>
+                <a href="https://arxiv.org/abs/2502.13053" class="paper-link" target="_blank">[Paper]</a>
+                <a href="https://github.com/YurunChen/AEIA" class="paper-link" target="_blank">[Code]</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:W7OEmFMy1HYC"></span>
             </div>
         </div>
     </div>
@@ -247,14 +215,14 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
         <div class="paper-box-text">
             <div class="paper-meta">
                 <span class="badge">ACL 2025 Oral</span>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:eQOLeE2rZwMC"></span>
             </div>
             <h3><a href="https://arxiv.org/abs/2508.04482">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
             <p class="paper-authors">Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong>, et al.</p>
             <p class="paper-abstract">A survey on agents operating in OS environments across computers, phones, and browsers — components, benchmarks, and open challenges.</p>
             <div class="paper-links">
-                <a href="https://aclanthology.org/2025.acl-long.369/" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="paper-link" target="_blank">Project</a>
+                <a href="https://aclanthology.org/2025.acl-long.369/" class="paper-link" target="_blank">[Paper]</a>
+                <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="paper-link" target="_blank">[Project]</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:eQOLeE2rZwMC"></span>
             </div>
         </div>
     </div>
@@ -268,7 +236,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <p class="paper-authors">Haiyang Yu, <strong>Yurun Chen</strong>, Shen Su∗, Jian Su∗, Yuwen Chen, Zhen Yang</p>
             <p class="paper-venue-line"><em>IEEE Transactions on Information Forensics and Security</em>, 2025</p>
             <div class="paper-links">
-                <a href="https://ieeexplore.ieee.org/document/11187397" class="paper-link" target="_blank">Paper</a>
+                <a href="https://ieeexplore.ieee.org/document/11187397" class="paper-link" target="_blank">[Paper]</a>
             </div>
         </div>
     </div>
@@ -279,13 +247,13 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
         <div class="paper-box-text">
             <div class="paper-meta">
                 <span class="badge">TMC 2025</span>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:qjMakFHDy7sC"></span>
             </div>
             <h3><a href="https://ieeexplore.ieee.org/document/10886974">S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT</a></h3>
             <p class="paper-authors">Xiaohu Shan, Haiyang Yu, <strong>Yurun Chen</strong>, Yuwen Chen, Zhen Yang</p>
             <p class="paper-venue-line"><em>IEEE Transactions on Mobile Computing</em>, 2025</p>
             <div class="paper-links">
-                <a href="https://ieeexplore.ieee.org/document/10886974" class="paper-link" target="_blank">Paper</a>
+                <a href="https://ieeexplore.ieee.org/document/10886974" class="paper-link" target="_blank">[Paper]</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:qjMakFHDy7sC"></span>
             </div>
         </div>
     </div>
@@ -296,13 +264,13 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
         <div class="paper-box-text">
             <div class="paper-meta">
                 <span class="badge">TSC 2024</span>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:u-x6o8ySG0sC"></span>
             </div>
             <h3><a href="https://ieeexplore.ieee.org/document/10568383">EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage</a></h3>
             <p class="paper-authors">Haiyang Yu, <strong>Yurun Chen</strong>, Zhen Yang, Yuwen Chen, Shui Yu</p>
             <p class="paper-venue-line"><em>IEEE Transactions on Services Computing</em>, 2024</p>
             <div class="paper-links">
-                <a href="https://ieeexplore.ieee.org/document/10568383" class="paper-link" target="_blank">Paper</a>
+                <a href="https://ieeexplore.ieee.org/document/10568383" class="paper-link" target="_blank">[Paper]</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:u-x6o8ySG0sC"></span>
             </div>
         </div>
     </div>
@@ -327,8 +295,8 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <p class="paper-authors"><strong>Yurun Chen</strong>, Zeyi Liao, Ping Yin, Taotao Xie, Keting Yin, Shengyu Zhang</p>
             <p class="paper-abstract">A predictive guardrail for CUAs that anticipates short- and long-term risks, reducing high-risk actions by 97%+ while improving task performance.</p>
             <div class="paper-links">
-                <a href="https://arxiv.org/abs/2602.01725" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/YurunChen/SafePred" class="paper-link" target="_blank">Code</a>
+                <a href="https://arxiv.org/abs/2602.01725" class="paper-link" target="_blank">[Paper]</a>
+                <a href="https://github.com/YurunChen/SafePred" class="paper-link" target="_blank">[Code]</a>
             </div>
         </div>
     </div>
@@ -345,7 +313,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <p class="paper-authors">Tao Xiong, Xavier Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
             <p class="paper-abstract">A judge agent with dynamic memory and adaptive UI perception for more accurate process rewards on GUI tasks.</p>
             <div class="paper-links">
-                <a href="https://arxiv.org/abs/2509.23263" class="paper-link" target="_blank">Paper</a>
+                <a href="https://arxiv.org/abs/2509.23263" class="paper-link" target="_blank">[Paper]</a>
             </div>
         </div>
     </div>
@@ -362,8 +330,8 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Keting Yin, Juncheng Li, Zhuosheng Zhang, Shengyu Zhang</p>
             <p class="paper-abstract">A multi-agent framework that jointly improves utility and safety in web agents via policy enhancement and dual-objective optimization.</p>
             <div class="paper-links">
-                <a href="https://arxiv.org/abs/2508.04010" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/YurunChen/HarmonyGuard" class="paper-link" target="_blank">Code</a>
+                <a href="https://arxiv.org/abs/2508.04010" class="paper-link" target="_blank">[Paper]</a>
+                <a href="https://github.com/YurunChen/HarmonyGuard" class="paper-link" target="_blank">[Code]</a>
             </div>
         </div>
     </div>

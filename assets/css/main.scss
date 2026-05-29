@@ -49,6 +49,11 @@ $site-text-muted: #8a8a8a;
 $site-border: #e8e8e8;
 $site-link: #4a4a4a;
 
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 // ---------------------------------------------------------------------------
 // Global layout overrides
 // ---------------------------------------------------------------------------
@@ -104,7 +109,7 @@ $site-link: #4a4a4a;
 
 .page__content {
     color: $site-text-secondary;
-    font-size: 0.92rem;
+    font-size: 1rem;
     line-height: 1.65;
 
     h1 {
@@ -170,11 +175,17 @@ $site-link: #4a4a4a;
     }
 }
 
+.publications-list {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.55;
+}
+
 .paper-box {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1.35rem 0;
+    gap: 0.85rem;
+    padding: 1.1rem 0;
     margin: 0;
     border: none;
     border-bottom: 1px solid $site-border;
@@ -213,10 +224,10 @@ $site-link: #4a4a4a;
         min-width: 0;
 
         h3 {
-            margin: 0 0 0.45em;
-            font-size: 1.02rem;
+            margin: 0 0 0.35em;
+            font-size: 0.92rem;
             font-weight: 600;
-            line-height: 1.45;
+            line-height: 1.4;
             color: $site-text;
             letter-spacing: -0.01em;
 
@@ -234,13 +245,13 @@ $site-link: #4a4a4a;
     }
 
     @include breakpoint($medium) {
-        grid-template-columns: 148px minmax(0, 1fr);
-        gap: 1.35rem;
+        grid-template-columns: 132px minmax(0, 1fr);
+        gap: 1.1rem;
         align-items: start;
-        padding: 1.5rem 0;
+        padding: 1.15rem 0;
 
         .paper-box-image img {
-            max-width: 148px;
+            max-width: 132px;
         }
     }
 }
@@ -257,10 +268,10 @@ $site-link: #4a4a4a;
     position: static;
     display: inline-block;
     padding: 0;
-    margin: 0 0 0.15em;
+    margin: 0;
     color: #6b6b6b;
     background: none;
-    font-size: 0.68rem;
+    font-size: 0.62rem;
     font-weight: 500;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -270,10 +281,10 @@ $site-link: #4a4a4a;
 }
 
 .paper-authors,
-.paper-box-text > p:not(.paper-abstract) {
-    margin: 0 0 0.55em;
-    font-size: 0.84rem;
-    line-height: 1.55;
+.paper-box-text > p:not(.paper-abstract):not(.paper-venue-line) {
+    margin: 0 0 0.4em;
+    font-size: 0.8rem;
+    line-height: 1.5;
     color: $site-text-secondary;
     font-weight: 400;
 
@@ -285,17 +296,17 @@ $site-link: #4a4a4a;
 
 .paper-abstract,
 .paper-description {
-    margin: 0 0 0.75em;
-    font-size: 0.8rem;
-    line-height: 1.65;
+    margin: 0 0 0.55em;
+    font-size: 0.76rem;
+    line-height: 1.55;
     color: $site-text-muted;
     font-style: normal;
     font-weight: 400;
 }
 
 .show_paper_citations {
-    color: #9a9a9a;
-    font-size: 0.78rem;
+    color: $site-text-muted;
+    font-size: 0.72rem;
     font-weight: 400;
 }
 
@@ -304,7 +315,24 @@ $site-link: #4a4a4a;
     margin-top: 0.35em;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem 0.9rem;
+    align-items: baseline;
+    gap: 0.35rem 0.75rem;
+
+    .show_paper_citations {
+        &:empty {
+            display: none;
+        }
+
+        &::before {
+            content: '·';
+            margin: 0 0.75rem;
+            color: $site-border;
+        }
+
+        &:empty::before {
+            display: none;
+        }
+    }
 
     .paper-link,
     .btn {
@@ -314,7 +342,7 @@ $site-link: #4a4a4a;
         border-radius: 0;
         background: none;
         color: $site-link;
-        font-size: 0.78rem;
+        font-size: 0.72rem;
         font-weight: 500;
         letter-spacing: 0.02em;
         text-decoration: none;
@@ -341,8 +369,8 @@ $site-link: #4a4a4a;
 }
 
 .paper-venue-line {
-    margin: 0 0 0.55em;
-    font-size: 0.78rem;
+    margin: 0 0 0.4em;
+    font-size: 0.72rem;
     color: #9a9a9a;
 
     em {
@@ -408,18 +436,18 @@ h1:before, .anchor:before {
         .paper-title {
             display: block;
             margin-top: 0.35em;
-            font-size: 1.02rem;
+            font-size: 0.92rem;
             font-weight: 600;
             color: $site-text;
-            line-height: 1.45;
+            line-height: 1.4;
         }
     }
 
     .journal-paper-content {
         .authors {
-            margin: 0 0 0.55em;
+            margin: 0 0 0.4em;
             color: $site-text-secondary;
-            font-size: 0.84rem;
+            font-size: 0.8rem;
 
             strong {
                 color: $site-text;
@@ -429,7 +457,7 @@ h1:before, .anchor:before {
         .journal-info {
             margin: 0 0 0.75em;
             color: #9a9a9a;
-            font-size: 0.78rem;
+            font-size: 0.72rem;
 
             em {
                 color: #7a7a7a;
@@ -443,7 +471,7 @@ h1:before, .anchor:before {
             padding: 0;
             background: none;
             color: $site-link;
-            font-size: 0.78rem;
+            font-size: 0.72rem;
             font-weight: 500;
             border-radius: 0;
 
@@ -538,57 +566,6 @@ h1:before, .anchor:before {
 }
 
 // Research highlights
-.research-highlights {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin: 0.25rem 0 1rem;
-}
-
-.research-highlight-card {
-    border: none;
-    border-bottom: 1px solid $site-border;
-    border-radius: 0;
-    padding: 0.85rem 0;
-    background: transparent;
-
-    h4 {
-        margin: 0 0 0.35em;
-        color: $site-text;
-        font-size: 0.82rem;
-        font-weight: 600;
-        letter-spacing: 0.02em;
-    }
-
-    p {
-        margin: 0 0 0.45em;
-        font-size: 0.84rem;
-        line-height: 1.55;
-        color: $site-text-secondary;
-    }
-
-    a {
-        color: $site-link;
-        font-weight: 500;
-        font-size: 0.78rem;
-        text-decoration: none;
-
-        &:hover {
-            color: $site-text;
-            text-decoration: underline;
-            text-underline-offset: 2px;
-        }
-    }
-
-    &:last-child {
-        border-bottom: none;
-    }
-}
-
-.publications-list {
-    margin-bottom: 0.5rem;
-}
-
 // Legacy / unused blocks kept minimal
 .news-section {
     margin: 1em 0;
