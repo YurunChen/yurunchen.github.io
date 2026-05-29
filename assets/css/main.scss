@@ -40,175 +40,315 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+// ---------------------------------------------------------------------------
+// Site design tokens
+// ---------------------------------------------------------------------------
+$site-text: #1f1f1f;
+$site-text-secondary: #5c5c5c;
+$site-text-muted: #8a8a8a;
+$site-border: #e8e8e8;
+$site-link: #4a4a4a;
+
+// ---------------------------------------------------------------------------
+// Global layout overrides
+// ---------------------------------------------------------------------------
+.masthead {
+    border-bottom: 1px solid $site-border;
+    background: #fff;
+}
+
+.greedy-nav {
+    a {
+        color: $site-text-secondary;
+        font-size: 0.82rem;
+        font-weight: 500;
+
+        &:hover {
+            color: $site-text;
+        }
+    }
+}
+
+.sidebar {
+    .author__name {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: $site-text;
+        letter-spacing: -0.01em;
+    }
+
+    .author__bio {
+        font-size: 0.84rem;
+        line-height: 1.55;
+        color: $site-text-secondary;
+    }
+
+    .author__urls {
+        font-size: 0.82rem;
+
+        a {
+            color: $site-link;
+
+            &:hover {
+                color: $site-text;
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+        }
+
+        i {
+            color: #9a9a9a;
+        }
+    }
+}
+
+.page__content {
+    color: $site-text-secondary;
+    font-size: 0.92rem;
+    line-height: 1.65;
+
+    h1 {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: $site-text;
+        letter-spacing: -0.01em;
+        margin: 2.25rem 0 0.85rem;
+        padding-bottom: 0.45rem;
+        border-bottom: 1px solid $site-border;
+        line-height: 1.4;
+    }
+
+    > p,
+    .page-intro p {
+        margin: 0 0 0.75em;
+        color: $site-text-secondary;
+        line-height: 1.65;
+    }
+
+    a {
+        color: $site-link;
+        text-decoration: none;
+
+        &:hover {
+            color: $site-text;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+    }
+
+    strong {
+        color: $site-text;
+        font-weight: 600;
+    }
+
+    ul.site-list {
+        list-style: none;
+        margin: 0 0 1rem;
+        padding: 0;
+
+        > li {
+            margin: 0;
+            padding: 0.7rem 0;
+            border-bottom: 1px solid $site-border;
+            line-height: 1.55;
+            color: $site-text-secondary;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.page-intro {
+    margin-bottom: 0.25rem;
+
+    .page-stat {
+        margin: 0.25em 0 0.75em;
+        font-size: 0.84rem;
+        color: $site-text-muted;
+    }
+}
+
 .paper-box {
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: 1px solid #e1e8ed;
-    border-radius: 6px;
-    padding: 1.5em;
-    margin: 1.5em 0;
-    background: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.35rem 0;
+    margin: 0;
+    border: none;
+    border-bottom: 1px solid $site-border;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
 
     &:hover {
-        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
-        border-color: #3498db;
+        box-shadow: none;
+        border-bottom-color: #d4d4d4;
     }
 
     .paper-box-image {
-        justify-content: center;
-        display: flex;
+        display: block;
         width: 100%;
-        order: 2;
-        position: relative;
-        margin-bottom: 1em;
-        
+        margin: 0;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
         img {
+            width: 100%;
             max-width: 100%;
             height: auto;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ececec;
+            border-radius: 2px;
+            box-shadow: none;
             object-fit: cover;
-            border-radius: 4px;
-            transition: transform 0.3s ease;
-            
-            &:hover {
-                transform: scale(1.02);
-            }
         }
     }
-    
+
     .paper-box-text {
-        max-width: 100%;
-        order: 1;
-        
+        min-width: 0;
+
         h3 {
-            margin-top: 0;
-            margin-bottom: 0.8em;
-            font-size: 1.3em;
-            font-weight: 700;
-            color: #1a252f;
-            line-height: 1.4;
-            
+            margin: 0 0 0.45em;
+            font-size: 1.02rem;
+            font-weight: 600;
+            line-height: 1.45;
+            color: $site-text;
+            letter-spacing: -0.01em;
+
             a {
                 color: inherit;
                 text-decoration: none;
-                transition: color 0.2s ease;
-                
+
                 &:hover {
-                    color: #3498db;
+                    color: #444;
                     text-decoration: underline;
-                }
-            }
-        }
-        
-        p {
-            margin: 0.5em 0;
-            line-height: 1.6;
-            color: #34495e;
-            font-size: 1em;
-            font-weight: 500;
-        }
-        
-        .paper-description {
-            margin: 1em 0;
-            line-height: 1.7;
-            color: #7f8c8d;
-            font-size: 0.85em;
-            font-style: italic;
-            font-weight: 400;
-        }
-        
-        .paper-buttons {
-            margin-top: 1.5em;
-            display: flex;
-            gap: 0.8em;
-            flex-wrap: wrap;
-            
-            .btn {
-                display: inline-block;
-                padding: 0.5em 1.2em;
-                border-radius: 4px;
-                text-decoration: none;
-                font-size: 0.85em;
-                font-weight: 500;
-                transition: all 0.3s ease;
-                border: 1px solid transparent;
-                
-                &.btn-primary {
-                    background-color: #3498db;
-                    color: white;
-                    
-                    &:hover {
-                        background-color: #2980b9;
-                        transform: translateY(-1px);
-                        box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
-                    }
-                }
-                
-                &.btn-secondary {
-                    background-color: transparent;
-                    color: #3498db;
-                    border-color: #3498db;
-                    
-                    &:hover {
-                        background-color: #3498db;
-                        color: white;
-                        transform: translateY(-1px);
-                        box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
-                    }
+                    text-underline-offset: 2px;
                 }
             }
         }
     }
-    
+
     @include breakpoint($medium) {
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 2em;
-        
-        .paper-box-image {
-            justify-content: flex-start;
-            min-width: 200px;
-            max-width: 35%;
-            order: 1;
-            margin-bottom: 0;
-            margin-right: 2em;
-            
-            img {
-                max-width: 280px;
-            }
+        grid-template-columns: 148px minmax(0, 1fr);
+        gap: 1.35rem;
+        align-items: start;
+        padding: 1.5rem 0;
+
+        .paper-box-image img {
+            max-width: 148px;
         }
-        
-        .paper-box-text {
-            justify-content: flex-start;
-            max-width: 65%;
-            order: 2;
-            flex: 1;
-            
-            .paper-buttons {
-                .btn {
-                    padding: 0.6em 1.4em;
-                    font-size: 0.9em;
-                }
-            }
-            
-            h3 {
-                font-size: 1.4em;
-            }
-            
-            p {
-                font-size: 1.05em;
-            }
-            
-            .paper-description {
-                font-size: 0.9em;
-            }
+    }
+}
+
+.paper-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.75rem;
+    margin-bottom: 0.35em;
+}
+
+.badge {
+    position: static;
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 0.15em;
+    color: #6b6b6b;
+    background: none;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: none;
+    z-index: auto;
+}
+
+.paper-authors,
+.paper-box-text > p:not(.paper-abstract) {
+    margin: 0 0 0.55em;
+    font-size: 0.84rem;
+    line-height: 1.55;
+    color: $site-text-secondary;
+    font-weight: 400;
+
+    strong {
+        color: #1f1f1f;
+        font-weight: 600;
+    }
+}
+
+.paper-abstract,
+.paper-description {
+    margin: 0 0 0.75em;
+    font-size: 0.8rem;
+    line-height: 1.65;
+    color: $site-text-muted;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.show_paper_citations {
+    color: #9a9a9a;
+    font-size: 0.78rem;
+    font-weight: 400;
+}
+
+.paper-links,
+.paper-buttons {
+    margin-top: 0.35em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.9rem;
+
+    .paper-link,
+    .btn {
+        display: inline;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: none;
+        color: $site-link;
+        font-size: 0.78rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        box-shadow: none;
+        transform: none;
+
+        &:hover {
+            background: none;
+            color: $site-text;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            box-shadow: none;
+            transform: none;
         }
+    }
+}
+
+.paper-box--text-only {
+    grid-template-columns: 1fr;
+
+    .paper-box-image {
+        display: none;
+    }
+}
+
+.paper-venue-line {
+    margin: 0 0 0.55em;
+    font-size: 0.78rem;
+    color: #9a9a9a;
+
+    em {
+        color: #7a7a7a;
+        font-style: normal;
+        font-weight: 400;
     }
 }
 
@@ -224,299 +364,242 @@ h1:before, .anchor:before {
 
 // Publications styling
 .publication-item {
-    margin-bottom: 1.5em;
-    
-    // Paper-box styling
+    margin-bottom: 0;
+
     .paper-box {
         margin: 0;
     }
-    
-    // List item styling (for non-paper-box publications)
-    .publication-content {
-        position: relative;
-        padding: 1em;
-        background: #f8f9fa;
-        border-left: 4px solid #3498db;
-        border-radius: 0 8px 8px 0;
-        transition: all 0.3s ease;
-        
-        &:hover {
-            background: #e3f2fd;
-            transform: translateX(5px);
-        }
 
-        strong {
-            color: #3498db;
-        }
-        
-        .journal-tag {
-            position: absolute;
-            top: 0.8em;
-            left: 0.8em;
-            padding: 0.3em 0.8em;
-            color: white;
-            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-            font-size: 0.75em;
-            font-weight: 600;
-            border-radius: 4px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            z-index: 10;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        }
+    &:last-child .paper-box {
+        border-bottom: none;
     }
 }
 
-// Journal paper styling
+// Legacy journal block — keep minimal if referenced elsewhere
 .journal-paper {
-    margin-bottom: 1.5em;
-    background: #f8f9fa;
-    border-left: 4px solid #3498db;
-    border-radius: 0 6px 6px 0;
-    padding: 1.2em;
-    transition: all 0.3s ease;
-    
+    padding: 1.35rem 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    border-radius: 0;
+
     &:hover {
-        background: #e3f2fd;
-        transform: translateX(5px);
+        background: transparent;
+        transform: none;
     }
-    
+
     .journal-paper-header {
-        margin-bottom: 0.8em;
-        
+        margin-bottom: 0.45em;
+
         .journal-name {
             display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 0.2em 0.6em;
-            border-radius: 3px;
-            font-size: 0.75em;
-            font-weight: 600;
+            padding: 0;
+            margin-right: 0;
+            background: none;
+            color: #6b6b6b;
+            font-size: 0.68rem;
+            font-weight: 500;
+            letter-spacing: 0.06em;
             text-transform: uppercase;
-            margin-right: 1em;
+            border-radius: 0;
         }
-        
+
         .paper-title {
-            font-size: 1em;
+            display: block;
+            margin-top: 0.35em;
+            font-size: 1.02rem;
             font-weight: 600;
-            color: #2c3e50;
-            line-height: 1.4;
+            color: $site-text;
+            line-height: 1.45;
         }
     }
-    
+
     .journal-paper-content {
         .authors {
-            margin: 0 0 0.3em 0;
-            color: #555;
-            font-size: 0.9em;
-            line-height: 1.4;
-            
+            margin: 0 0 0.55em;
+            color: $site-text-secondary;
+            font-size: 0.84rem;
+
             strong {
-                color: #3498db;
+                color: $site-text;
             }
         }
-        
+
         .journal-info {
-            margin: 0 0 0.8em 0;
-            color: #7f8c8d;
-            font-size: 0.85em;
-            
+            margin: 0 0 0.75em;
+            color: #9a9a9a;
+            font-size: 0.78rem;
+
             em {
-                color: #3498db;
-                font-weight: 600;
+                color: #7a7a7a;
+                font-style: normal;
+                font-weight: 400;
             }
         }
-        
+
         .paper-link {
-            display: inline-block;
-            padding: 0.4em 1em;
-            background: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 3px;
-            font-size: 0.8em;
+            display: inline;
+            padding: 0;
+            background: none;
+            color: $site-link;
+            font-size: 0.78rem;
             font-weight: 500;
-            transition: all 0.2s ease;
-            
+            border-radius: 0;
+
             &:hover {
-                background: #2980b9;
+                background: none;
+                color: $site-text;
+                text-decoration: underline;
+                text-underline-offset: 2px;
             }
         }
     }
 }
 
-// News section styling with underline
+// News
+.news-list-wrapper {
+    margin-bottom: 0.25rem;
+}
+
+.news-item {
+    margin: 0;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid $site-border;
+    line-height: 1.55;
+    font-size: 0.84rem;
+    color: $site-text-secondary;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    a {
+        color: $site-link;
+        font-weight: 500;
+
+        &:hover {
+            color: $site-text;
+        }
+    }
+
+    em {
+        color: $site-text;
+        font-style: normal;
+        font-weight: 500;
+    }
+}
+
+.news-time {
+    display: inline-block;
+    min-width: 4.5rem;
+    margin-right: 0.35rem;
+    color: $site-text-muted;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-shadow: none;
+}
+
+.news-view-more-wrap {
+    margin: 0.5rem 0 1.25rem;
+    text-align: left;
+}
+
+.news-view-more-btn {
+    display: inline;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: $site-link;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    font-family: $sans-serif;
+    outline: none;
+    box-shadow: none;
+    transform: none;
+
+    &:hover {
+        color: $site-text;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        background: none;
+        box-shadow: none;
+        transform: none;
+    }
+
+    &:focus-visible {
+        outline: 1px solid #bbb;
+        outline-offset: 2px;
+    }
+}
+
+// Research highlights
+.research-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0.25rem 0 1rem;
+}
+
+.research-highlight-card {
+    border: none;
+    border-bottom: 1px solid $site-border;
+    border-radius: 0;
+    padding: 0.85rem 0;
+    background: transparent;
+
+    h4 {
+        margin: 0 0 0.35em;
+        color: $site-text;
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+    }
+
+    p {
+        margin: 0 0 0.45em;
+        font-size: 0.84rem;
+        line-height: 1.55;
+        color: $site-text-secondary;
+    }
+
+    a {
+        color: $site-link;
+        font-weight: 500;
+        font-size: 0.78rem;
+        text-decoration: none;
+
+        &:hover {
+            color: $site-text;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.publications-list {
+    margin-bottom: 0.5rem;
+}
+
+// Legacy / unused blocks kept minimal
 .news-section {
     margin: 1em 0;
 }
 
-.news-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.news-section ul li {
-    margin-bottom: 0.8em;
-    padding: 0.5em 0;
-    border-bottom: 1px solid #e1e8ed;
-    transition: all 0.3s ease;
-    list-style: none;
-    position: relative;
-    display: block;
-    line-height: 1.4;
-}
-
-.news-section ul li:hover {
-    border-bottom-color: #3498db;
-}
-
-.news-section ul li:last-child {
-    border-bottom: none;
-}
-
-.news-section ul li em {
-    color: #3498db;
-    font-weight: 600;
-}
-
-.badge {
-    padding: 0.3em 0.8em;
-    position: absolute;
-    top: 0.8em;
-    left: 0.8em;
-    color: white;
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-    font-size: 0.7em;
-    font-weight: 600;
-    border-radius: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    z-index: 10;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-// News time styling
-.news-time {
-    color: #e74c3c;
-    font-weight: 700;
-    font-size: 1.1em;
-    text-shadow: 0 1px 2px rgba(231, 76, 60, 0.1);
-    transition: all 0.3s ease;
-}
-
-.news-time:hover {
-    color: #c0392b;
-}
-
-// News item styling with underline
-.news-item {
-    margin-bottom: 1em;
-    padding-bottom: 0.8em;
-    border-bottom: 1px solid #e1e8ed;
-    transition: all 0.3s ease;
-}
-
-.news-item:hover {
-    border-bottom-color: #3498db;
-}
-
-.news-item:last-child {
-    border-bottom: none;
-}
-
-.news-item em {
-    color: #3498db;
-    font-weight: 600;
-}
-
-// News list: visibility of extra items is controlled by JS (see NEWS_SHOW_COUNT in about.md)
-
-.news-view-more-wrap {
-    margin: 1em 0 1.5em 0;
-    text-align: center;
-}
-
-.news-view-more-btn {
-    display: inline-block;
-    padding: 0.55em 1.5em;
-    border-radius: 6px;
-    font-size: 0.9em;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
-    background-color: #f8f9fa;
-    color: #3498db;
-    border: 1.5px solid #3498db;
-    cursor: pointer;
-    font-family: $sans-serif;
-    outline: none;
-}
-
-.news-view-more-btn:hover {
-    background-color: #3498db;
-    color: white;
-    border-color: #2980b9;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.35);
-}
-
-.news-view-more-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 6px rgba(52, 152, 219, 0.25);
-}
-
-.news-view-more-btn:focus-visible {
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.35);
-}
-
-// Research highlight cards
-.research-highlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1em;
-    margin: 1.5em 0 2em 0;
-}
-
-.research-highlight-card {
-    border: 1px solid #e1e8ed;
-    border-radius: 6px;
-    padding: 1.2em;
-    background: #fafbfc;
-    transition: all 0.3s ease;
-
-    h4 {
-        margin-top: 0;
-        margin-bottom: 0.6em;
-        color: #2c3e50;
-        font-size: 1.05em;
-    }
-
-    p {
-        margin-bottom: 0.8em;
-        font-size: 0.92em;
-        line-height: 1.5;
-    }
-
-    a {
-        color: #3498db;
-        font-weight: 600;
-        font-size: 0.9em;
-    }
-
-    &:hover {
-        border-color: #3498db;
-        box-shadow: 0 2px 8px rgba(52, 152, 219, 0.12);
-    }
-}
-
-// Conference info styling
 .conference-info {
-    color: #3498db;
-    font-size: 0.8em;
-    font-weight: 600;
+    color: $site-text-muted;
+    font-size: 0.8rem;
+    font-weight: 500;
     margin: 0.5em 0;
     font-style: normal;
     font-family: $sans-serif;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.02em;
 }

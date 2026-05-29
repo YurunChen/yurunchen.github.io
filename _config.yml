@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yurun Chen"
-description              : "Yurun Chen — Ph.D. student at Zhejiang University researching LLM agent security, adversarial attacks, and guardrails. CVPR / ACL / AAAI / ACM MM."
+description              : "Yurun Chen — Ph.D. student at Zhejiang University researching computer-use agent (CUA) security, multi-agent systems, and guardrails. CVPR / ACL / AAAI / ACM MM."
 repository               : "YurunChen/yurunchen.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yurun Chen"
   avatar           : "images/yurun_chen.jpg"
-  bio              : "Ph.D. student at ZJU. I study security of LLM-based agents — attacks, evaluation, and predictive guardrails."
+  bio              : "Ph.D. student at ZJU. I study computer-use agent (CUA) security and multi-agent systems."
   location         : "Hangzhou, China"
   employer         : "Zhejiang University"
   pubmed           : 
