@@ -232,7 +232,7 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
             <h3><a href="https://arxiv.org/abs/2502.13053">Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</a></h3>
             <p><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
 
-            <p class="paper-description">This work introduces Active Environment Injection Attacks (AEIA), where attackers disguise malicious inputs as environmental elements to manipulate AI agents' decisions. By analyzing Android OS interactions, the study reveals two key vulnerabilities and proposes the AEIA-MN attack, which achieves up to 93% success against advanced MLLM-based agents.</p>
+            <p class="paper-description">This work introduces Active Environment Injection Attacks (AEIA), where attackers disguise malicious inputs as environmental elements to manipulate AI agents' decisions. By analyzing Android OS interactions, the study reveals two key vulnerabilities and proposes the AEIA-MN attack, which achieves up to 93% success against advanced MLLM-based agents. <span class='show_paper_citations' data='DGRecXEAAAAJ:W7OEmFMy1HYC'></span></p>
             <div class="paper-buttons">
                 <a href="https://arxiv.org/abs/2502.13053" class="btn btn-primary" target="_blank">View Paper</a>
                 <a href="https://github.com/YurunChen/AEIA" class="btn btn-primary" target="_blank">View Code</a>
@@ -252,7 +252,7 @@ uation of agents’ reasoning, collaboration, and interactive capabilities.</p>
         <div class='paper-box-text'>
             <h3><a href="https://arxiv.org/abs/2508.04482">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
             <p>Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong> etc.</p>
-            <p class="paper-description">This survey explores OS Agents—(M)LLM-based agents that operate within OS environments (e.g., GUI, CLI) on computers, phones, and browsers to automate tasks. It reviews their core components, construction methods, evaluation benchmarks, and outlines key challenges and future directions. <span class='show_paper_citations' data='DGRecXEAAAAJ:9yKSN-GCB0IC'></span></p>
+            <p class="paper-description">This survey explores OS Agents—(M)LLM-based agents that operate within OS environments (e.g., GUI, CLI) on computers, phones, and browsers to automate tasks. It reviews their core components, construction methods, evaluation benchmarks, and outlines key challenges and future directions. <span class='show_paper_citations' data='DGRecXEAAAAJ:eQOLeE2rZwMC'></span></p>
             <div class="paper-buttons">
                 <a href="https://aclanthology.org/2025.acl-long.369/" class="btn btn-primary" target="_blank">View Paper</a>
                 <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="btn btn-primary" target="_blank">View Project</a>

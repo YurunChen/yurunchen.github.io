@@ -9,7 +9,7 @@
 title                    : "Yurun Chen"
 description              : "Yurun Chen — Ph.D. student at Zhejiang University researching LLM agent security, adversarial attacks, and guardrails. CVPR / ACL / AAAI / ACM MM."
 repository               : "YurunChen/yurunchen.github.io"
-google_scholar_stats_use_cdn : true
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
