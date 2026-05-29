@@ -26,8 +26,6 @@ redirect_from:
 
 <p>I study <strong>computer-use agent (CUA) security</strong> and <strong>multi-agent systems</strong> — how adversaries exploit GUI, web, and OS environments, and how to build <strong>predictive guardrails</strong> and secure multi-agent frameworks for agents that operate real computing devices.</p>
 
-<p class="page-representative">Representative work: <a href="https://aclanthology.org/2025.acl-long.369/">OS Agents</a> (ACL 2025 Oral), <a href="https://arxiv.org/abs/2502.13053">AEIA</a> (ACM MM 2025), <a href="https://arxiv.org/abs/2602.01725">SafePred</a>.</p>
-
 <p><strong>Open to collaborations</strong> on CUA red-teaming, multi-agent security, guardrails, and agent evaluation. Reach out via <a href="mailto:yurunchen.research@gmail.com">email</a>.</p>
 
 <p class="page-stat">Google Scholar · <strong><span id="total_cit">—</span></strong> citations</p>
