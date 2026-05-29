@@ -26,6 +26,8 @@ redirect_from:
 
 <p>I study <strong>computer-use agent (CUA) security</strong> and <strong>multi-agent systems</strong> — how adversaries exploit GUI, web, and OS environments, and how to build <strong>predictive guardrails</strong> and secure multi-agent frameworks for agents that operate real computing devices.</p>
 
+<p class="page-representative">Representative work: <a href="https://aclanthology.org/2025.acl-long.369/">OS Agents</a> (ACL 2025 Oral), <a href="https://arxiv.org/abs/2502.13053">AEIA</a> (ACM MM 2025), <a href="https://arxiv.org/abs/2602.01725">SafePred</a>.</p>
+
 <p><strong>Open to collaborations</strong> on CUA red-teaming, multi-agent security, guardrails, and agent evaluation. Reach out via <a href="mailto:yurunchen.research@gmail.com">email</a>.</p>
 
 <p class="page-stat">Google Scholar · <strong><span id="total_cit">—</span></strong> citations</p>
@@ -158,6 +160,25 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-image">
+            <img src="images/Method9_01.png" alt="SafePred" width="100%">
+        </div>
+        <div class="paper-box-text">
+            <div class="paper-meta"><span class="badge">arXiv</span></div>
+            <h3><a href="https://arxiv.org/abs/2602.01725">SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</a></h3>
+            <p class="paper-authors"><strong>Yurun Chen</strong>, Zeyi Liao, Ping Yin, Taotao Xie, Keting Yin, Shengyu Zhang</p>
+            <p class="paper-abstract">A predictive guardrail for CUAs that anticipates short- and long-term risks, reducing high-risk actions by 97%+ while improving task performance.</p>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2602.01725" class="paper-link" target="_blank">Paper</a>
+                <a href="https://github.com/YurunChen/SafePred" class="paper-link" target="_blank">Code</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:UebtZRa9Y70C"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="paper-box">
+        <div class="paper-box-image">
             <img src="images/Methods4_00.png" alt="Graph2Eval" width="100%">
         </div>
         <div class="paper-box-text">
@@ -235,6 +256,43 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 </div>
 
 <div class="publication-item">
+    <div class="paper-box">
+        <div class="paper-box-image">
+            <img src="images/HarmonyGuard_00.png" alt="HarmonyGuard" width="100%">
+        </div>
+        <div class="paper-box-text">
+            <div class="paper-meta"><span class="badge">arXiv</span></div>
+            <h3><a href="https://arxiv.org/abs/2508.04010">HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization</a></h3>
+            <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Keting Yin, Juncheng Li, Zhuosheng Zhang, Shengyu Zhang</p>
+            <p class="paper-abstract">A multi-agent framework that jointly improves utility and safety in web agents via policy enhancement and dual-objective optimization.</p>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2508.04010" class="paper-link" target="_blank">Paper</a>
+                <a href="https://github.com/YurunChen/HarmonyGuard" class="paper-link" target="_blank">Code</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:ufrVoPGSRksC"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="paper-box">
+        <div class="paper-box-image">
+            <img src="images/GUI-PRA.png" alt="GUI-PRA" width="100%">
+        </div>
+        <div class="paper-box-text">
+            <div class="paper-meta"><span class="badge">arXiv</span></div>
+            <h3><a href="https://arxiv.org/abs/2509.23263">GUI-PRA: Process Reward Agent for GUI Tasks</a></h3>
+            <p class="paper-authors">Tao Xiong, Xavier Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
+            <p class="paper-abstract">A judge agent with dynamic memory and adaptive UI perception for more accurate process rewards on GUI tasks.</p>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2509.23263" class="paper-link" target="_blank">Paper</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:roLk4NBRz8UC"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
     <div class="paper-box paper-box--text-only">
         <div class="paper-box-text">
             <div class="paper-meta"><span class="badge">TIFS 2025</span></div>
@@ -285,82 +343,13 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 </div>
 
-<span class='anchor' id='-preprints'></span>
+<span class='anchor' id='-service-and-awards'></span>
 
-# Preprints
-
-<div class="publications-list">
-
-<div class="publication-item">
-    <div class="paper-box">
-        <div class="paper-box-image">
-            <img src="images/Method9_01.png" alt="SafePred" width="100%">
-        </div>
-        <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv · Highlight</span></div>
-            <h3><a href="https://arxiv.org/abs/2602.01725">SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</a></h3>
-            <p class="paper-authors"><strong>Yurun Chen</strong>, Zeyi Liao, Ping Yin, Taotao Xie, Keting Yin, Shengyu Zhang</p>
-            <p class="paper-abstract">A predictive guardrail for CUAs that anticipates short- and long-term risks, reducing high-risk actions by 97%+ while improving task performance.</p>
-            <div class="paper-links">
-                <a href="https://arxiv.org/abs/2602.01725" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/YurunChen/SafePred" class="paper-link" target="_blank">Code</a>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:UebtZRa9Y70C"></span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="publication-item">
-    <div class="paper-box">
-        <div class="paper-box-image">
-            <img src="images/GUI-PRA.png" alt="GUI-PRA" width="100%">
-        </div>
-        <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv</span></div>
-            <h3><a href="https://arxiv.org/abs/2509.23263">GUI-PRA: Process Reward Agent for GUI Tasks</a></h3>
-            <p class="paper-authors">Tao Xiong, Xavier Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
-            <p class="paper-abstract">A judge agent with dynamic memory and adaptive UI perception for more accurate process rewards on GUI tasks.</p>
-            <div class="paper-links">
-                <a href="https://arxiv.org/abs/2509.23263" class="paper-link" target="_blank">Paper</a>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:roLk4NBRz8UC"></span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="publication-item">
-    <div class="paper-box">
-        <div class="paper-box-image">
-            <img src="images/HarmonyGuard_00.png" alt="HarmonyGuard" width="100%">
-        </div>
-        <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv</span></div>
-            <h3><a href="https://arxiv.org/abs/2508.04010">HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization</a></h3>
-            <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Keting Yin, Juncheng Li, Zhuosheng Zhang, Shengyu Zhang</p>
-            <p class="paper-abstract">A multi-agent framework that jointly improves utility and safety in web agents via policy enhancement and dual-objective optimization.</p>
-            <div class="paper-links">
-                <a href="https://arxiv.org/abs/2508.04010" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/YurunChen/HarmonyGuard" class="paper-link" target="_blank">Code</a>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:ufrVoPGSRksC"></span>
-            </div>
-        </div>
-    </div>
-</div>
-
-</div>
-<span class='anchor' id='-talks'></span>
-
-# Talks
+# Service & Awards
 
 <ul class="site-list">
-<li><strong>ACL 2025 Oral</strong> — OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use. Vienna, Austria. <a href="https://aclanthology.org/2025.acl-long.369/">Paper</a> · <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey">Project</a></li>
-</ul>
-
-<span class='anchor' id='-honors-and-awards'></span>
-
-# Honors and Awards
-
-<ul class="site-list">
+<li><strong>Reviewer</strong> — ACL 2025, AAAI 2026</li>
+<li><strong>Open Source</strong> — <a href="https://github.com/YurunChen/Graph2Eval">Graph2Eval</a>, <a href="https://github.com/YurunChen/HarmonyGuard">HarmonyGuard</a>, <a href="https://github.com/YurunChen/SafePred">SafePred</a>, <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey">OS-Agent-Survey</a></li>
 <li><strong>2025.06</strong> — Outstanding Graduate of Beijing; Top 100 Graduates of BJUT</li>
 <li><strong>2024.10</strong> — Xiaomi Scholarship</li>
 <li><strong>2024.09</strong> — National Scholarship</li>
@@ -379,13 +368,4 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <li>Xavier Hu — Zhejiang University</li>
 <li>Biao Yi — Zhejiang University</li>
 <li><a href="https://yuhan0802.github.io/">Yuhan Liu</a> — Xiamen University</li>
-</ul>
-
-<span class='anchor' id='-academic-service'></span>
-
-# Academic Service
-
-<ul class="site-list">
-<li><strong>Reviewer</strong> — ACL 2025, AAAI 2026</li>
-<li><strong>Open Source</strong> — <a href="https://github.com/YurunChen/Graph2Eval">Graph2Eval</a>, <a href="https://github.com/YurunChen/HarmonyGuard">HarmonyGuard</a>, <a href="https://github.com/YurunChen/SafePred">SafePred</a>, <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey">OS-Agent-Survey</a></li>
 </ul>

@@ -9,17 +9,8 @@ main:
   - title: "Publications"
     url: "/#-publications"
 
-  - title: "Preprints"
-    url: "/#-preprints"
-
-  - title: "Talks"
-    url: "/#-talks"
-
-  - title: "Honors and Awards"
-    url: "/#-honors-and-awards"
+  - title: "Service & Awards"
+    url: "/#-service-and-awards"
 
   - title: "People"
     url: "/#-people"
-
-  - title: "Academic Service"
-    url: "/#-academic-service"

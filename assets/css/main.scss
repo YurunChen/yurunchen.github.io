@@ -55,8 +55,8 @@ $site-link-hover: #0f2440;
 $site-accent: #1e3a5f;
 $site-radius-sm: 6px;
 $site-radius-md: 10px;
-$site-shadow-sm: 0 1px 2px rgba(20, 20, 20, 0.04), 0 8px 24px rgba(20, 20, 20, 0.04);
-$site-shadow-img: 0 2px 10px rgba(20, 20, 20, 0.07);
+$site-shadow-sm: none;
+$site-shadow-img: none;
 
 html {
     scroll-behavior: smooth;
@@ -69,14 +69,18 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+#main,
+.masthead,
+.breadcrumbs {
+    animation: none !important;
+}
+
 // ---------------------------------------------------------------------------
 // Masthead
 // ---------------------------------------------------------------------------
 .masthead {
-    border-bottom: 1px solid rgba(20, 20, 20, 0.06);
-    background: rgba(247, 246, 243, 0.88);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid $site-border;
+    background: $site-bg;
 
     &__inner-wrap {
         padding-top: 0.65em;
@@ -90,7 +94,6 @@ body {
         font-size: 0.8rem;
         font-weight: 500;
         letter-spacing: 0.01em;
-        transition: color 0.15s ease;
 
         &:hover {
             color: $site-text;
@@ -117,10 +120,10 @@ body {
 
 .page {
     @include breakpoint($large) {
-        background: $site-surface;
-        border: 1px solid $site-border;
-        border-radius: $site-radius-md;
-        box-shadow: $site-shadow-sm;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
         padding: 2.25rem 2.5rem 2.75rem;
     }
 }
@@ -148,12 +151,6 @@ body {
         aspect-ratio: 3 / 4;
         width: 100%;
         max-width: 175px;
-        transition: transform 0.2s ease;
-
-        &:hover {
-            transform: translateY(-1px);
-            box-shadow: none;
-        }
     }
 
     .author__name {
@@ -182,7 +179,6 @@ body {
             color: $site-text-secondary;
             font-size: 0.8rem;
             font-weight: 500;
-            transition: color 0.15s ease;
 
             &:hover {
                 color: $site-link;
@@ -241,7 +237,6 @@ body {
     a {
         color: $site-link;
         text-decoration: none;
-        transition: color 0.15s ease;
 
         &:hover {
             color: $site-link-hover;
@@ -267,7 +262,6 @@ body {
             line-height: 1.65;
             color: $site-text-secondary;
             font-size: 0.875rem;
-            transition: color 0.15s ease;
 
             &:hover {
                 color: $site-text;
@@ -304,22 +298,24 @@ body {
     }
 
     .page-stat {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
         margin: 1rem 0 1.1rem;
-        padding: 0.45rem 0.85rem;
-        font-size: 0.8rem;
-        color: $site-text-secondary;
-        background: $site-border-light;
-        border: 1px solid $site-border;
-        border-radius: 999px;
+        padding: 0;
+        font-size: 0.84rem;
+        color: $site-text-muted;
+        background: none;
+        border: none;
+        border-radius: 0;
 
         strong {
-            color: $site-accent;
-            font-weight: 700;
+            color: $site-text;
+            font-weight: 600;
             font-variant-numeric: tabular-nums;
         }
+    }
+
+    .page-representative {
+        font-size: 0.875rem;
+        color: $site-text-muted;
     }
 }
 
@@ -341,11 +337,6 @@ body {
     border-radius: 0;
     background: transparent;
     box-shadow: none;
-    transition: background 0.15s ease;
-
-    &:hover {
-        box-shadow: none;
-    }
 
     .paper-box-image {
         display: block;
@@ -358,15 +349,9 @@ body {
             height: auto;
             border: 1px solid $site-border;
             border-radius: $site-radius-sm;
-            box-shadow: $site-shadow-img;
+            box-shadow: none;
             object-fit: cover;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-    }
-
-    &:hover .paper-box-image img {
-        transform: translateY(-1px);
-        box-shadow: 0 4px 16px rgba(20, 20, 20, 0.1);
     }
 
     .paper-box-text {
@@ -397,13 +382,7 @@ body {
         grid-template-columns: 140px minmax(0, 1fr);
         gap: 1.35rem;
         align-items: start;
-        padding: 1.5rem 0.5rem;
-        margin: 0 -0.5rem;
-        border-radius: $site-radius-sm;
-
-        &:hover {
-            background: rgba(247, 246, 243, 0.65);
-        }
+        padding: 1.35rem 0;
 
         .paper-box-image img {
             max-width: 140px;
@@ -493,28 +472,31 @@ body {
 
     .paper-link,
     .btn {
-        display: inline-block;
-        padding: 0.22em 0.65em;
-        border: 1px solid $site-border;
-        border-radius: 4px;
-        background: $site-surface;
-        color: $site-text-secondary;
-        font-size: 0.68rem;
+        display: inline;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: none;
+        color: $site-link;
+        font-size: 0.75rem;
         font-weight: 500;
-        letter-spacing: 0.03em;
+        letter-spacing: 0;
         text-decoration: none;
-        text-transform: uppercase;
+        text-transform: none;
         box-shadow: none;
-        transform: none;
-        transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+        + .paper-link::before {
+            content: '·';
+            margin: 0 0.45rem;
+            color: $site-text-muted;
+        }
 
         &:hover {
-            background: $site-text;
-            border-color: $site-text;
-            color: $site-surface;
-            text-decoration: none;
-            box-shadow: none;
-            transform: none;
+            background: none;
+            border-color: transparent;
+            color: $site-link-hover;
+            text-decoration: underline;
+            text-underline-offset: 3px;
         }
     }
 }
@@ -622,22 +604,20 @@ h1:before, .anchor:before {
         }
 
         .paper-link {
-            display: inline-block;
-            padding: 0.22em 0.65em;
-            border: 1px solid $site-border;
-            border-radius: 4px;
-            background: $site-surface;
-            color: $site-text-secondary;
-            font-size: 0.68rem;
+            display: inline;
+            padding: 0;
+            border: none;
+            background: none;
+            color: $site-link;
+            font-size: 0.75rem;
             font-weight: 500;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
             text-decoration: none;
+            text-transform: none;
 
             &:hover {
-                background: $site-text;
-                border-color: $site-text;
-                color: $site-surface;
+                color: $site-link-hover;
+                text-decoration: underline;
+                text-underline-offset: 3px;
             }
         }
     }
@@ -670,12 +650,6 @@ h1:before, .anchor:before {
         border-radius: 50%;
         background: $site-surface;
         border: 1.5px solid $site-border;
-        transition: border-color 0.15s ease, background 0.15s ease;
-    }
-
-    &:hover::before {
-        border-color: $site-accent;
-        background: rgba(30, 58, 95, 0.12);
     }
 
     a {
@@ -713,30 +687,25 @@ h1:before, .anchor:before {
 }
 
 .news-view-more-btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.35em 0.85em;
-    border: 1px solid $site-border;
-    border-radius: 999px;
-    background: $site-surface;
-    color: $site-text-secondary;
-    font-size: 0.75rem;
+    display: inline;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: $site-link;
+    font-size: 0.8rem;
     font-weight: 500;
-    letter-spacing: 0.02em;
+    letter-spacing: 0;
     cursor: pointer;
     font-family: $sans-serif;
     outline: none;
     box-shadow: none;
-    transform: none;
-    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 
     &:hover {
-        color: $site-surface;
-        background: $site-text;
-        border-color: $site-text;
-        text-decoration: none;
-        box-shadow: none;
-        transform: none;
+        color: $site-link-hover;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        background: none;
     }
 
     &:focus-visible {
