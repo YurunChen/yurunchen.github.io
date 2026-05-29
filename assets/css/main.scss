@@ -58,6 +58,15 @@ $site-radius-md: 10px;
 $site-shadow-sm: none;
 $site-shadow-img: none;
 
+// Type scale (16px base)
+$font-hero: 1.875rem;
+$font-title: 1.0625rem;
+$font-body: 1rem;
+$font-meta: 0.9375rem;
+$font-small: 0.875rem;
+$font-caption: 0.8125rem;
+$font-label: 0.75rem;
+
 html {
     scroll-behavior: smooth;
 }
@@ -91,7 +100,7 @@ body {
 .greedy-nav {
     a {
         color: $site-text-secondary;
-        font-size: 0.8rem;
+        font-size: $font-small;
         font-weight: 500;
         letter-spacing: 0.01em;
 
@@ -154,7 +163,7 @@ body {
     }
 
     .author__name {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
         font-weight: 700;
         color: $site-text;
         letter-spacing: -0.03em;
@@ -162,7 +171,7 @@ body {
     }
 
     .author__bio {
-        font-size: 0.84rem;
+        font-size: $font-meta;
         line-height: 1.6;
         color: $site-text-secondary;
         margin-top: 0.65rem;
@@ -177,7 +186,7 @@ body {
 
         a {
             color: $site-text-secondary;
-            font-size: 0.8rem;
+            font-size: $font-small;
             font-weight: 500;
 
             &:hover {
@@ -198,18 +207,18 @@ body {
 // ---------------------------------------------------------------------------
 .page__content {
     color: $site-text-secondary;
-    font-size: 0.9375rem;
-    line-height: 1.72;
+    font-size: $font-body;
+    line-height: 1.7;
 
     .anchor#about-me + h1 {
         margin-top: 0;
     }
 
     h1 {
-        font-size: 0.7rem;
+        font-size: $font-caption;
         font-weight: 600;
         color: $site-text-muted;
-        letter-spacing: 0.14em;
+        letter-spacing: 0.12em;
         text-transform: uppercase;
         margin: 3.25rem 0 1.15rem;
         padding: 0;
@@ -261,7 +270,7 @@ body {
             border-bottom: none;
             line-height: 1.65;
             color: $site-text-secondary;
-            font-size: 0.875rem;
+            font-size: $font-body;
 
             &:hover {
                 color: $site-text;
@@ -275,7 +284,7 @@ body {
     margin-bottom: 0.5rem;
 
     h1 {
-        font-size: 1.75rem;
+        font-size: $font-hero;
         font-weight: 700;
         color: $site-text;
         letter-spacing: -0.035em;
@@ -300,7 +309,7 @@ body {
     .page-stat {
         margin: 1rem 0 1.1rem;
         padding: 0;
-        font-size: 0.84rem;
+        font-size: $font-meta;
         color: $site-text-muted;
         background: none;
         border: none;
@@ -314,7 +323,7 @@ body {
     }
 
     .page-representative {
-        font-size: 0.875rem;
+        font-size: $font-meta;
         color: $site-text-muted;
     }
 }
@@ -359,7 +368,7 @@ body {
 
         h3 {
             margin: 0 0 0.4em;
-            font-size: 0.97rem;
+            font-size: $font-title;
             font-weight: 600;
             line-height: 1.45;
             color: $site-text;
@@ -405,7 +414,7 @@ body {
     margin: 0;
     color: $site-accent;
     background: rgba(30, 58, 95, 0.07);
-    font-size: 0.62rem;
+    font-size: $font-label;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -417,7 +426,7 @@ body {
 .paper-authors,
 .paper-box-text > p:not(.paper-abstract):not(.paper-venue-line) {
     margin: 0 0 0.45em;
-    font-size: 0.82rem;
+    font-size: $font-meta;
     line-height: 1.55;
     color: $site-text-secondary;
     font-weight: 400;
@@ -431,7 +440,7 @@ body {
 .paper-abstract,
 .paper-description {
     margin: 0 0 0.65em;
-    font-size: 0.8rem;
+    font-size: $font-small;
     line-height: 1.6;
     color: $site-text-muted;
     font-style: normal;
@@ -441,7 +450,7 @@ body {
 
 .show_paper_citations {
     color: $site-text-muted;
-    font-size: 0.72rem;
+    font-size: $font-small;
     font-weight: 500;
     font-variant-numeric: tabular-nums;
 }
@@ -478,7 +487,7 @@ body {
         border-radius: 0;
         background: none;
         color: $site-link;
-        font-size: 0.75rem;
+        font-size: $font-small;
         font-weight: 500;
         letter-spacing: 0;
         text-decoration: none;
@@ -511,7 +520,7 @@ body {
 
 .paper-venue-line {
     margin: 0 0 0.45em;
-    font-size: 0.75rem;
+    font-size: $font-caption;
     color: $site-text-muted;
 
     em {
@@ -563,7 +572,7 @@ h1:before, .anchor:before {
             margin-right: 0;
             background: none;
             color: #6b6b6b;
-            font-size: 0.68rem;
+            font-size: $font-label;
             font-weight: 500;
             letter-spacing: 0.06em;
             text-transform: uppercase;
@@ -573,7 +582,7 @@ h1:before, .anchor:before {
         .paper-title {
             display: block;
             margin-top: 0.35em;
-            font-size: 0.92rem;
+            font-size: $font-title;
             font-weight: 600;
             color: $site-text;
             line-height: 1.4;
@@ -584,7 +593,7 @@ h1:before, .anchor:before {
         .authors {
             margin: 0 0 0.4em;
             color: $site-text-secondary;
-            font-size: 0.8rem;
+            font-size: $font-small;
 
             strong {
                 color: $site-text;
@@ -594,7 +603,7 @@ h1:before, .anchor:before {
         .journal-info {
             margin: 0 0 0.75em;
             color: #9a9a9a;
-            font-size: 0.72rem;
+            font-size: $font-small;
 
             em {
                 color: #7a7a7a;
@@ -609,7 +618,7 @@ h1:before, .anchor:before {
             border: none;
             background: none;
             color: $site-link;
-            font-size: 0.75rem;
+            font-size: $font-small;
             font-weight: 500;
             text-decoration: none;
             text-transform: none;
@@ -637,7 +646,7 @@ h1:before, .anchor:before {
     padding: 0.15rem 0 1rem;
     border-bottom: none;
     line-height: 1.65;
-    font-size: 0.875rem;
+    font-size: $font-body;
     color: $site-text-secondary;
 
     &::before {
@@ -672,7 +681,7 @@ h1:before, .anchor:before {
     display: block;
     margin: 0 0 0.2rem;
     color: $site-text-muted;
-    font-size: 0.68rem;
+    font-size: $font-label;
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -693,7 +702,7 @@ h1:before, .anchor:before {
     border-radius: 0;
     background: none;
     color: $site-link;
-    font-size: 0.8rem;
+    font-size: $font-small;
     font-weight: 500;
     letter-spacing: 0;
     cursor: pointer;
@@ -724,7 +733,7 @@ h1:before, .anchor:before {
     .page__footer-copyright {
         p {
             margin: 0.25em 0;
-            font-size: 0.75rem;
+            font-size: $font-small;
             color: $site-text-muted;
             letter-spacing: 0.01em;
         }
@@ -747,7 +756,7 @@ h1:before, .anchor:before {
 
 .conference-info {
     color: $site-text-muted;
-    font-size: 0.8rem;
+    font-size: $font-small;
     font-weight: 500;
     margin: 0.5em 0;
     font-style: normal;
