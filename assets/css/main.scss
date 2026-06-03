@@ -43,7 +43,7 @@
 // ---------------------------------------------------------------------------
 // Site design tokens — editorial academic
 // ---------------------------------------------------------------------------
-$site-bg: #f7f6f3;
+$site-bg: #ffffff;
 $site-surface: #ffffff;
 $site-text: #141414;
 $site-text-secondary: #525252;
@@ -387,9 +387,8 @@ body {
             display: inline-block;
             max-width: calc(100% - 0.7rem);
             padding: 0.22em 0.55em;
-            background: rgba(255, 255, 255, 0.95);
-            color: $site-accent;
-            border: 1px solid rgba(0, 0, 0, 0.08);
+            background: rgba(20, 20, 20, 0.82);
+            color: #fff;
             border-radius: $site-radius-sm;
             font-size: $font-label;
             font-weight: 600;
@@ -399,6 +398,8 @@ body {
             white-space: normal;
             word-break: break-word;
             pointer-events: none;
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
         }
     }
 
