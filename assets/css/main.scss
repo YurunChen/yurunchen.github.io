@@ -333,20 +333,6 @@ body {
 // ---------------------------------------------------------------------------
 .publications-list {
     margin-bottom: 0.25rem;
-
-    .paper-meta {
-        margin: 0.15em 0 0.35em;
-    }
-
-    .badge {
-        padding: 0;
-        background: none;
-        border-radius: 0;
-        color: $site-accent;
-        font-size: $font-caption;
-        font-weight: 600;
-        letter-spacing: 0.04em;
-    }
 }
 
 .paper-box {
@@ -381,14 +367,36 @@ body {
         }
     }
 
+    &:not(.paper-box--text-only) .paper-box-image {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid $site-border;
+        border-radius: $site-radius-sm;
+        line-height: 0;
+
+        .paper-meta {
+            position: absolute;
+            top: 0.35rem;
+            left: 0.35rem;
+            z-index: 2;
+            margin: 0;
+            max-width: calc(100% - 0.7rem);
+            pointer-events: none;
+        }
+
+        img {
+            border: none;
+            border-radius: 0;
+        }
+    }
+
     .paper-box-text {
         display: flex;
         flex-direction: column;
         min-width: 0;
 
         h3 {
-            order: 1;
-            margin: 0 0 0.15em;
+            margin: 0 0 0.4em;
             font-size: $font-title;
             font-weight: 600;
             line-height: 1.45;
@@ -408,22 +416,11 @@ body {
         }
 
         .paper-meta {
-            order: 2;
             margin: 0 0 0.35em;
-        }
-
-        .paper-authors {
-            order: 3;
-        }
-
-        .paper-abstract,
-        .paper-description {
-            order: 4;
         }
 
         .paper-links,
         .paper-buttons {
-            order: 5;
             margin-top: 0.45em;
         }
     }
@@ -472,6 +469,36 @@ body {
     border-radius: 999px;
     box-shadow: none;
     z-index: auto;
+}
+
+// Thumbnail overlay badge (must follow global .badge)
+.publications-list .paper-box:not(.paper-box--text-only) .paper-box-image .badge {
+    display: inline-block;
+    padding: 0.22em 0.55em;
+    background: rgba(20, 20, 20, 0.78);
+    color: #fff;
+    border-radius: $site-radius-sm;
+    font-size: $font-label;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.25;
+    text-transform: uppercase;
+    white-space: normal;
+    word-break: break-word;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+// Text-only papers: plain venue label above title
+.publications-list .paper-box--text-only .paper-box-text .badge {
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    color: $site-accent;
+    font-size: $font-caption;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .paper-authors,

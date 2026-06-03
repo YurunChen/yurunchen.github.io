@@ -158,10 +158,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-image">
+            <div class="paper-meta"><span class="badge">arXiv</span></div>
             <img src="images/Method9_01.png" alt="SafePred" width="100%">
         </div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv</span></div>
             <h3><a href="https://arxiv.org/abs/2602.01725">SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</a></h3>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Zeyi Liao, Ping Yin, Taotao Xie, Keting Yin, Shengyu Zhang</p>
             <p class="paper-abstract">A predictive guardrail for CUAs that anticipates short- and long-term risks, reducing high-risk actions by 97%+ while improving task performance.</p>
@@ -177,10 +177,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-image">
+            <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
             <img src="images/Methods4_00.png" alt="Graph2Eval" width="100%">
         </div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
             <h3><a href="https://arxiv.org/abs/2510.00507">Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</a></h3>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
             <p class="paper-abstract">A knowledge-graph framework that automatically generates multimodal document and web interaction tasks for comprehensive agent evaluation.</p>
@@ -196,10 +196,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-image">
+            <div class="paper-meta"><span class="badge">AAAI 2026</span></div>
             <img src="images/EcoAgent.png" alt="EcoAgent" width="100%">
         </div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">AAAI 2026</span></div>
             <h3><a href="https://arxiv.org/abs/2505.05440">EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</a></h3>
             <p class="paper-authors">Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
             <p class="paper-abstract">An edge–cloud collaborative multi-agent framework for mobile automation with comparable success rates and significantly lower MLLM token cost.</p>
@@ -214,12 +214,12 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-image">
-            <img src="images/Attack_Methods7_00.png" alt="AEIA" width="100%">
-        </div>
-        <div class="paper-box-text">
             <div class="paper-meta">
                 <span class="badge">ACM MM 2025</span>
             </div>
+            <img src="images/Attack_Methods7_00.png" alt="AEIA" width="100%">
+        </div>
+        <div class="paper-box-text">
             <h3><a href="https://arxiv.org/abs/2502.13053">Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</a></h3>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
             <p class="paper-abstract">Introduces Active Environment Injection Attacks (AEIA) that disguise malicious inputs as UI elements, achieving up to 93% success against advanced agents.</p>
@@ -235,12 +235,12 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-image">
-            <img src="images/1_teaser_os_agent_00.png" alt="OS Agents Survey" width="100%">
-        </div>
-        <div class="paper-box-text">
             <div class="paper-meta">
                 <span class="badge">ACL 2025 Oral</span>
             </div>
+            <img src="images/1_teaser_os_agent_00.png" alt="OS Agents Survey" width="100%">
+        </div>
+        <div class="paper-box-text">
             <h3><a href="https://arxiv.org/abs/2508.04482">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
             <p class="paper-authors">Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong>, et al.</p>
             <p class="paper-abstract">A survey on agents operating in OS environments across computers, phones, and browsers — components, benchmarks, and open challenges.</p>
@@ -256,10 +256,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-image">
+            <div class="paper-meta"><span class="badge">arXiv</span></div>
             <img src="images/HarmonyGuard_00.png" alt="HarmonyGuard" width="100%">
         </div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv</span></div>
             <h3><a href="https://arxiv.org/abs/2508.04010">HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization</a></h3>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Keting Yin, Juncheng Li, Zhuosheng Zhang, Shengyu Zhang</p>
             <p class="paper-abstract">A multi-agent framework that jointly improves utility and safety in web agents via policy enhancement and dual-objective optimization.</p>
@@ -275,10 +275,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-image">
+            <div class="paper-meta"><span class="badge">arXiv</span></div>
             <img src="images/GUI-PRA.png" alt="GUI-PRA" width="100%">
         </div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv</span></div>
             <h3><a href="https://arxiv.org/abs/2509.23263">GUI-PRA: Process Reward Agent for GUI Tasks</a></h3>
             <p class="paper-authors">Tao Xiong, Xavier Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
             <p class="paper-abstract">A judge agent with dynamic memory and adaptive UI perception for more accurate process rewards on GUI tasks.</p>
