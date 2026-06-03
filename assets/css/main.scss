@@ -333,12 +333,26 @@ body {
 // ---------------------------------------------------------------------------
 .publications-list {
     margin-bottom: 0.25rem;
+
+    .paper-meta {
+        margin: 0.15em 0 0.35em;
+    }
+
+    .badge {
+        padding: 0;
+        background: none;
+        border-radius: 0;
+        color: $site-accent;
+        font-size: $font-caption;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+    }
 }
 
 .paper-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
     padding: 1.35rem 0;
     margin: 0;
     border: none;
@@ -351,23 +365,30 @@ body {
         display: block;
         width: 100%;
         margin: 0;
+        flex-shrink: 0;
 
         img {
+            display: block;
             width: 100%;
             max-width: 100%;
+            aspect-ratio: 16 / 10;
             height: auto;
             border: 1px solid $site-border;
             border-radius: $site-radius-sm;
             box-shadow: none;
             object-fit: cover;
+            object-position: top center;
         }
     }
 
     .paper-box-text {
+        display: flex;
+        flex-direction: column;
         min-width: 0;
 
         h3 {
-            margin: 0 0 0.4em;
+            order: 1;
+            margin: 0 0 0.15em;
             font-size: $font-title;
             font-weight: 600;
             line-height: 1.45;
@@ -385,16 +406,47 @@ body {
                 }
             }
         }
+
+        .paper-meta {
+            order: 2;
+            margin: 0 0 0.35em;
+        }
+
+        .paper-authors {
+            order: 3;
+        }
+
+        .paper-abstract,
+        .paper-description {
+            order: 4;
+        }
+
+        .paper-links,
+        .paper-buttons {
+            order: 5;
+            margin-top: 0.45em;
+        }
     }
 
     @include breakpoint($medium) {
-        grid-template-columns: 140px minmax(0, 1fr);
-        gap: 1.35rem;
-        align-items: start;
-        padding: 1.35rem 0;
+        $paper-thumb-width: 176px;
 
-        .paper-box-image img {
-            max-width: 140px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+        .paper-box-image {
+            width: $paper-thumb-width;
+            flex: 0 0 $paper-thumb-width;
+
+            img {
+                width: $paper-thumb-width;
+                max-width: $paper-thumb-width;
+            }
+        }
+
+        .paper-box-text {
+            flex: 1 1 auto;
         }
     }
 }
@@ -404,7 +456,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap: 0.35rem 0.65rem;
-    margin-bottom: 0.45em;
 }
 
 .badge {
@@ -511,8 +562,6 @@ body {
 }
 
 .paper-box--text-only {
-    grid-template-columns: 1fr;
-
     .paper-box-image {
         display: none;
     }
