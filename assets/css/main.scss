@@ -374,19 +374,32 @@ body {
         border-radius: $site-radius-sm;
         line-height: 0;
 
-        .paper-meta {
+        img {
+            border: none;
+            border-radius: 0;
+        }
+
+        .paper-thumb-badge {
             position: absolute;
             top: 0.35rem;
             left: 0.35rem;
             z-index: 2;
-            margin: 0;
+            display: inline-block;
             max-width: calc(100% - 0.7rem);
+            padding: 0.22em 0.55em;
+            background: rgba(20, 20, 20, 0.82);
+            color: #fff;
+            border-radius: $site-radius-sm;
+            font-size: $font-label;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            line-height: 1.25;
+            text-transform: uppercase;
+            white-space: normal;
+            word-break: break-word;
             pointer-events: none;
-        }
-
-        img {
-            border: none;
-            border-radius: 0;
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
         }
     }
 
@@ -469,24 +482,6 @@ body {
     border-radius: 999px;
     box-shadow: none;
     z-index: auto;
-}
-
-// Thumbnail overlay badge (must follow global .badge)
-.publications-list .paper-box:not(.paper-box--text-only) .paper-box-image .badge {
-    display: inline-block;
-    padding: 0.22em 0.55em;
-    background: rgba(20, 20, 20, 0.78);
-    color: #fff;
-    border-radius: $site-radius-sm;
-    font-size: $font-label;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    line-height: 1.25;
-    text-transform: uppercase;
-    white-space: normal;
-    word-break: break-word;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
 }
 
 // Text-only papers: plain venue label above title
