@@ -545,12 +545,6 @@ body {
         text-transform: none;
         box-shadow: none;
 
-        + .paper-link::before {
-            content: '·';
-            margin: 0 0.45rem;
-            color: $site-text-muted;
-        }
-
         &:hover {
             background: none;
             border-color: transparent;
