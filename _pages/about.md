@@ -22,11 +22,11 @@ redirect_from:
 
 <div class="page-intro">
 
-<p>Hi! I'm <strong>Yurun Chen (陈雨润)</strong>, a <strong>Ph.D. student</strong> at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> and <a href="https://person.zju.edu.cn/ykt">Keting Yin</a>.</p>
+<p>Hi! I'm <strong>Yurun Chen</strong>, a <strong>Ph.D. student</strong> at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> and <a href="https://person.zju.edu.cn/ykt">Keting Yin</a>.</p>
 
 <p>I work on the safety of Computer-Using Agents (CUAs). My research centers on two complementary questions: how to equip CUAs with effective guardrails for robust task execution under real-world noise and uncertainty, and how to systematically develop red-teaming strategies that uncover safety vulnerabilities in realistic deployment settings.</p>
 
-<p><strong>Open to collaborations</strong> on CUA red-teaming, CUA safety, guardrails, and agent evaluation. Reach out via <a href="mailto:yurunchen.research@gmail.com">email</a>.</p>
+<p><strong>Open to collaborations</strong> on CUA red-teaming, safety, guardrails, and evaluation. Reach out via <a href="mailto:yurunchen.research@gmail.com">email</a>.</p>
 
 <p class="page-stat">Google Scholar · <strong><span id="total_cit">—</span></strong> citations</p>
 
@@ -342,7 +342,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 # Service & Awards
 
 <ul class="site-list">
-<li><strong>Reviewer</strong> — ACL 2025, AAAI 2026</li>
+<li><strong>Reviewer</strong> — ACL 2025, AAAI 2026, ACM MM 2026</li>
 <li><strong>Open Source</strong> — <a href="https://github.com/YurunChen/Graph2Eval">Graph2Eval</a>, <a href="https://github.com/YurunChen/HarmonyGuard">HarmonyGuard</a>, <a href="https://github.com/YurunChen/SafePred">SafePred</a>, <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey">OS-Agent-Survey</a></li>
 <li><strong>2025.06</strong> — Outstanding Graduate of Beijing; Top 100 Graduates of BJUT</li>
 <li><strong>2024.10</strong> — Xiaomi Scholarship</li>
