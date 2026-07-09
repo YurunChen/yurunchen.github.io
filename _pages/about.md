@@ -40,6 +40,11 @@ redirect_from:
 
 <div class="news-list-wrapper" id="news-list-wrapper">
 <div class="news-item">
+<span class="news-time">Jun 2026</span>
+Published on arXiv: <em><a href="https://arxiv.org/abs/2606.20636" target="_blank">"SkillHarness: Harnessing Safe Skills for Computer-Use Agents"</a></em>!
+</div>
+
+<div class="news-item">
 <span class="news-time">Feb 2026</span>
 Paper <em><a href="https://arxiv.org/abs/2510.00507" target="_blank">"Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs"</a></em> accepted by CVPR 2026!
 </div>
@@ -154,6 +159,24 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 # Publications
 
 <div class="publications-list">
+
+<div class="publication-item">
+    <div class="paper-box">
+        <div class="paper-box-image">
+            <img src="images/SkillHarness.png" alt="SkillHarness" width="100%">
+            <span class="paper-thumb-badge">arXiv</span>
+        </div>
+        <div class="paper-box-text">
+            <h3><a href="https://arxiv.org/abs/2606.20636">SkillHarness: Harnessing Safe Skills for Computer-Use Agents</a></h3>
+            <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Keting Yin, Shengyu Zhang</p>
+            <p class="paper-abstract">A framework for safe skill learning and selective reuse in dynamic CUA environments, reducing unsafe learned skills by 57.1% while improving execution stability.</p>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2606.20636" class="paper-link" target="_blank">Paper</a>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:0EnyYjriUFMC"></span>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="publication-item">
     <div class="paper-box">
