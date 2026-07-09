@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yurun Chen (陈雨润)"
   avatar           : "images/photo.jpg"
-  bio              : "CUA security · multi-agent systems"
+  bio              :
   location         :
   employer         : "Zhejiang University"
   pubmed           : 
@@ -45,7 +45,7 @@ author:
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : yurun-chen-4a7a43294/
-  dblp             : "https://dblp.org/pid/400/5097.html"
+  dblp             :
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
   soundcloud       :
@@ -55,6 +55,7 @@ author:
   twitter          : "YRChen_AIsafety"
   vine             :
   weibo            :
+  xiaohongshu      : "https://www.xiaohongshu.com/user/profile/606aafd300000000010036a3"
   xing             :
   youtube          :
   wikipedia        :
