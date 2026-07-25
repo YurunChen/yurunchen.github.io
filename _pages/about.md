@@ -365,7 +365,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 # Service & Awards
 
 <ul class="site-list">
-<li><strong>Reviewer</strong> — ACL 2025, AAAI 2026, ACM MM 2026</li>
+<li><strong>Reviewer</strong> — ACL 2025, AAAI 2026, ACM MM 2026, AAAI 2027</li>
 <li><strong>Open Source</strong> — <a href="https://github.com/YurunChen/Graph2Eval">Graph2Eval</a>, <a href="https://github.com/YurunChen/HarmonyGuard">HarmonyGuard</a>, <a href="https://github.com/YurunChen/SafePred">SafePred</a>, <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey">OS-Agent-Survey</a></li>
 <li><strong>2025.06</strong> — Outstanding Graduate of Beijing; Top 100 Graduates of BJUT</li>
 <li><strong>2024.10</strong> — Xiaomi Scholarship</li>
