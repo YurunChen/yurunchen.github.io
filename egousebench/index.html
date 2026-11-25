@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EgoUseBench</title>
+  <meta name="description" content="EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts">
+  <link rel="icon" href="/egousebench/static/lens.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..800;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/egousebench/static/site.css">
+</head>
+<body class="home">
+  <header class="top">
+    <span class="brand">
+      <img class="brand-mark" src="/egousebench/static/egousebench-logo.png" alt="" width="28" height="28">
+      EgoUseBench
+    </span>
+    <div class="top-logos">
+      <img class="logo-lab" src="/egousebench/static/ai4gc-lab-logo.png" alt="AI4GC Lab" width="33" height="30">
+      <img class="logo-uni" src="/egousebench/static/zhejiang-university-logo.png" alt="Zhejiang University" width="104" height="29">
+    </div>
+  </header>
+  <main>
+
+
+<section class="hero-stage">
+  <div class="hero-inner">
+    <div class="hero-intro">
+  <h1>EgoUseBench</h1>
+  <p class="sub">Benchmarking computer-use agents under evolving first-person contexts</p>
+  <ul class="credits" aria-label="Authors" role="list">
+
+    <li><a href="https://yurunchen.github.io/">Yurun Chen</a></li>
+
+    <li>Biao Yi</li>
+
+    <li>Qihang Yu</li>
+
+    <li>Keting Yin</li>
+
+    <li>Shengyu Zhang</li>
+
+  </ul>
+  <nav class="hero-links" aria-label="Project resources">
+    <a class="button" href="#abstract">Paper</a>
+    <a class="button" href="https://github.com/YurunChen/EgoUseBench" target="_blank" rel="noopener">Code</a>
+    <a class="button" href="https://huggingface.co/datasets/egousebench/egousebench" target="_blank" rel="noopener">Dataset</a>
+    <a class="button" href="https://ai4gc.org/" target="_blank" rel="noopener">AI4GC Lab</a>
+  </nav>
+</div>
+  </div>
+</section>
+
+
+<section class="exhibit" id="abstract" aria-labelledby="abstract-title">
+  <div class="abstract-copy">
+    <h2 id="abstract-title">Abstract:</h2>
+    <p>EgoUseBench evaluates how computer-use agents handle changing first-person context. Across 693 task instances, the benchmark compares explicit requests, recordings available before execution, and observations delivered while an agent acts.</p>
+  </div>
+</section>
+
+<section class="exhibit" aria-labelledby="leaderboard-title">
+  <h2 id="leaderboard-title">Leaderboard</h2>
+
+<p class="lede">Evaluation results are not included in this release.</p>
+
+</section>
+
+<section class="exhibit cite" id="citation" aria-labelledby="citation-title">
+  <div class="cite-head">
+    <h2 id="citation-title">Citation</h2>
+    <div class="cite-actions">
+      <button class="cite-copy" type="button" hidden>Copy BibTeX</button>
+      <span class="cite-status" role="status"></span>
+    </div>
+  </div>
+  <pre>@misc{egousebench2026,
+  title = {EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts},
+  author = {Yurun Chen and Biao Yi and Qihang Yu and Keting Yin and Shengyu Zhang},
+  year = {2026}
+}</pre>
+</section>
+
+  </main>
+  <footer class="foot">
+    <span class="foot-lab">AI4GC Lab · Zhejiang University</span>
+    <div class="foot-links">
+
+      <a href="https://github.com/YurunChen/EgoUseBench">Code</a>
+      <a href="https://huggingface.co/datasets/egousebench/egousebench">Dataset</a>
+    </div>
+  </footer>
+
+<script>
+  (() => {
+    const citation = document.querySelector("#citation");
+    if (!navigator.clipboard) return;
+    const button = citation.querySelector("button");
+    const status = citation.querySelector('[role="status"]');
+    button.hidden = false;
+    button.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(citation.querySelector("pre").textContent);
+        status.textContent = "Copied";
+      } catch {
+        status.textContent = "Select the BibTeX below to copy it.";
+      }
+    });
+  })();
+</script>
+
+
+</body>
+</html>

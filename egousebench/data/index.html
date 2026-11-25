@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data · EgoUseBench</title>
+  <meta name="description" content="EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts">
+  <link rel="icon" href="/egousebench/static/lens.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..800;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/egousebench/static/site.css">
+</head>
+<body class="page">
+  <header class="top">
+    <span class="brand">
+      <img class="brand-mark" src="/egousebench/static/egousebench-logo.png" alt="" width="28" height="28">
+      EgoUseBench
+    </span>
+    <div class="top-logos">
+      <img class="logo-lab" src="/egousebench/static/ai4gc-lab-logo.png" alt="AI4GC Lab" width="33" height="30">
+      <img class="logo-uni" src="/egousebench/static/zhejiang-university-logo.png" alt="Zhejiang University" width="104" height="29">
+    </div>
+  </header>
+  <main>
+
+<h1>Data</h1>
+<p class="lede">693 tasks from 74 hours of first-person recordings. The main evaluation uses 200 Online tasks. The Hugging Face repository will contain task definitions, frozen website snapshots, and observations cleared for release.</p>
+<p>Ego2Web, Ego4D-derived sources, and EgoLife are listed by source. Obtain restricted recordings through the original dataset providers.</p>
+
+<p>This Hugging Face repository is not public yet.</p>
+
+<p><a class="button primary" href="https://huggingface.co/datasets/egousebench/egousebench">Dataset on Hugging Face ↗</a></p>
+
+<h2>Main tasks</h2>
+
+<div class="stats">
+  <div class="stat-group stat-tracks">
+    <h3>Change type</h3>
+    <div class="stack" role="img" aria-label="Graft 142, Refresh 30, Clarify 28">
+
+      <span class="stack-part track-bg-graft" style="flex: 142"></span>
+
+      <span class="stack-part track-bg-refresh" style="flex: 30"></span>
+
+      <span class="stack-part track-bg-clarify" style="flex: 28"></span>
+
+    </div>
+    <dl class="track-list">
+
+      <div>
+        <dt><span class="track track-graft">Graft</span> <b>142</b></dt>
+        <dd>refine 73 · augment 47 · replace 14 · drop 8</dd>
+      </div>
+
+      <div>
+        <dt><span class="track track-refresh">Refresh</span> <b>30</b></dt>
+        <dd>retain 15 · replace 15</dd>
+      </div>
+
+      <div>
+        <dt><span class="track track-clarify">Clarify</span> <b>28</b></dt>
+        <dd>resolve 28</dd>
+      </div>
+
+    </dl>
+  </div>
+
+  <div class="stat-group">
+    <h3>Website</h3>
+
+    <ul class="bars">
+
+      <li><span class="bar-name">EgoMedia</span><span class="bar"><i style="width: 100.0%"></i></span><b>117</b></li>
+
+      <li><span class="bar-name">EgoMart</span><span class="bar"><i style="width: 70.1%"></i></span><b>82</b></li>
+
+      <li><span class="bar-name">EgoMaps</span><span class="bar"><i style="width: 0.9%"></i></span><b>1</b></li>
+
+    </ul>
+  </div>
+
+  <div class="stat-group">
+    <h3>Source recordings</h3>
+
+    <ul class="bars">
+
+      <li class="is-private"><span class="bar-name">Ego2Web</span><span class="bar"><i style="width: 100.0%"></i></span><b>132</b></li>
+
+      <li class="is-public"><span class="bar-name">HD-EPIC</span><span class="bar"><i style="width: 21.2%"></i></span><b>28</b></li>
+
+      <li class="is-public"><span class="bar-name">CaptainCook4D</span><span class="bar"><i style="width: 21.2%"></i></span><b>28</b></li>
+
+      <li class="is-public"><span class="bar-name">EgoOops</span><span class="bar"><i style="width: 4.5%"></i></span><b>6</b></li>
+
+      <li class="is-public"><span class="bar-name">HoloAssist</span><span class="bar"><i style="width: 3.0%"></i></span><b>4</b></li>
+
+      <li class="is-private"><span class="bar-name">EgoLife</span><span class="bar"><i style="width: 0.8%"></i></span><b>1</b></li>
+
+      <li class="is-private"><span class="bar-name">EgoSchema / Ego4D</span><span class="bar"><i style="width: 0.8%"></i></span><b>1</b></li>
+
+    </ul>
+    <p class="stat-note"><i class="dot-public"></i> Sources eligible for public replay selection. Other sources are listed as counts only.</p>
+  </div>
+</div>
+
+
+
+  </main>
+  <footer class="foot">
+    <span class="foot-lab">AI4GC Lab · Zhejiang University</span>
+    <div class="foot-links">
+      <a href="/egousebench/">Home</a>
+      <a href="https://github.com/YurunChen/EgoUseBench">Code</a>
+      <a href="https://huggingface.co/datasets/egousebench/egousebench">Dataset</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benchmark · EgoUseBench</title>
+  <meta name="description" content="EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts">
+  <link rel="icon" href="/egousebench/static/lens.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..800;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/egousebench/static/site.css">
+</head>
+<body class="page">
+  <header class="top">
+    <span class="brand">
+      <img class="brand-mark" src="/egousebench/static/egousebench-logo.png" alt="" width="28" height="28">
+      EgoUseBench
+    </span>
+    <div class="top-logos">
+      <img class="logo-lab" src="/egousebench/static/ai4gc-lab-logo.png" alt="AI4GC Lab" width="33" height="30">
+      <img class="logo-uni" src="/egousebench/static/zhejiang-university-logo.png" alt="Zhejiang University" width="104" height="29">
+    </div>
+  </header>
+  <main>
+
+<h1>Benchmark</h1>
+<p class="lede">Three records move on their own clocks. The final website state decides whether the task is done.</p>
+<section class="index">
+
+  <article>
+    <h2>First-person observations</h2>
+    <p>Frames arrive on the replay clock.</p>
+  </article>
+
+  <article>
+    <h2>User requirements</h2>
+    <p>Requests and answers arrive as the wearer speaks.</p>
+  </article>
+
+  <article>
+    <h2>Website state</h2>
+    <p>The cart, saves, and fields change through the agent&#39;s actions.</p>
+  </article>
+
+</section>
+<h2 class="section">How information changes</h2>
+<section class="index">
+
+  <article class="change-graft">
+    <h2><span class="track track-graft">Graft</span></h2>
+    <p>The wearer revises the request.</p>
+  </article>
+
+  <article class="change-refresh">
+    <h2><span class="track track-refresh">Refresh</span></h2>
+    <p>A later view changes what the earlier scene could show.</p>
+  </article>
+
+  <article class="change-clarify">
+    <h2><span class="track track-clarify">Clarify</span></h2>
+    <p>The agent asks once, and the wearer answers.</p>
+  </article>
+
+</section>
+<h2 class="section">Websites</h2>
+<section class="index">
+
+  <article>
+    <h2>Product selection</h2>
+    <p>Add the item the wearer is using.</p>
+  </article>
+
+  <article>
+    <h2>Tutorial retrieval</h2>
+    <p>Find a tutorial for the activity underway.</p>
+  </article>
+
+  <article>
+    <h2>Place bookmarking</h2>
+    <p>Save a place that fits the request.</p>
+  </article>
+
+</section>
+<h2 class="section">Main evaluation</h2>
+<p>The main Online evaluation uses 200 tasks: 142 Graft, 30 Refresh, and 28 Clarify. Each task runs once per condition for at most 20 steps. The same 200 tasks are also run as Computer-Use and as Offline Ego Use.</p>
+<ul class="settings">
+
+  <li><strong>Computer-Use.</strong> Explicit instructions, with no first-person recording.</li>
+
+  <li><strong>Offline Ego Use.</strong> The recording is available before execution.</li>
+
+  <li><strong>Online Ego Use.</strong> Observations and requests arrive while the agent acts.</li>
+
+</ul>
+<p>93 additional Online tasks combine multiple change types and are reported in the paper.</p>
+
+  </main>
+  <footer class="foot">
+    <span class="foot-lab">AI4GC Lab · Zhejiang University</span>
+    <div class="foot-links">
+      <a href="/egousebench/">Home</a>
+      <a href="https://github.com/YurunChen/EgoUseBench">Code</a>
+      <a href="https://huggingface.co/datasets/egousebench/egousebench">Dataset</a>
+    </div>
+  </footer>
+
+</body>
+</html>
