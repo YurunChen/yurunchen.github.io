@@ -206,7 +206,7 @@ main { width: var(--page); margin: 0 auto; }
 .exhibit + .exhibit, .player + .exhibit { margin-top: 56px; }
 .exhibit h2 { margin-bottom: 20px; font-size: clamp(28px, 3.2vw, 38px); line-height: 1.1; letter-spacing: -0.03em; }
 .exhibit .lede { margin-bottom: 16px; font-size: 15px; }
-.abstract-copy { max-width: 76ch; color: var(--ink-2); font-size: 17px; line-height: 1.65; }
+.abstract-copy { color: var(--ink-2); font-size: 17px; line-height: 1.65; }
 .abstract-copy h2 { color: var(--ink); font-size: inherit; line-height: inherit; letter-spacing: normal; }
 .abstract-copy h2, .abstract-copy p:first-of-type { display: inline; }
 .abstract-copy p + p { margin-top: 12px; }
