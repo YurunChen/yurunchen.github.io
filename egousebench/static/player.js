@@ -112,8 +112,8 @@
     viewport.querySelectorAll("img").forEach((page) => page.remove());
     pages = run.steps.map((step) => {
       const img = make("img");
-      img.src = `${data.base}${run.id}/page-${step.step}.jpg`;
-      img.alt = `Page the agent saw at step ${step.step}`;
+      img.src = `${data.base}${run.id}/page-${step.step}.svg`;
+      img.alt = `Reconstructed EgoMart state at step ${step.step}`;
       img.width = 1134;
       img.height = 600;
       viewport.prepend(img);

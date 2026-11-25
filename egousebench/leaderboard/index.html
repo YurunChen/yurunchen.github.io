@@ -27,7 +27,71 @@
 
 <h1>Leaderboard</h1>
 
-<p class="lede">Evaluation results are not included in this release.</p>
+<p class="lede">Success rates (%) on the same 200 tasks in all three settings.</p>
+<div class="sheet">
+  <table aria-label="Model success rates">
+    <thead>
+      <tr>
+        <th scope="col">Model</th>
+        <th scope="col">Computer-Use</th>
+        <th scope="col">Offline Ego Use</th>
+        <th scope="col">Online Ego Use</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr class="group"><th colspan="4">Closed-weight</th></tr>
+
+      <tr>
+        <th scope="row">GPT-6.1 Terra</th>
+        <td>94.0</td>
+        <td>84.0</td>
+        <td class="online">87.0</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Gemini 3.8 Flash</th>
+        <td>89.5</td>
+        <td>76.5</td>
+        <td class="online">76.0</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Doubao Seed 2.1 Pro</th>
+        <td>92.0</td>
+        <td>76.5</td>
+        <td class="online">75.0</td>
+      </tr>
+
+
+      <tr class="group"><th colspan="4">Open-weight</th></tr>
+
+      <tr>
+        <th scope="row">DeepSeek-V4.1-Flash</th>
+        <td>89.0</td>
+        <td>66.0</td>
+        <td class="online">62.5</td>
+      </tr>
+
+      <tr>
+        <th scope="row">qwen3.5-27b</th>
+        <td>74.5</td>
+        <td>41.5</td>
+        <td class="online">41.0</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Kimi K2.6</th>
+        <td>77.5</td>
+        <td>40.5</td>
+        <td class="online">39.0</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+  <p class="note">Scores are taken from Figure 4 and Table 1 of the paper.</p>
+</div>
 
 
   </main>

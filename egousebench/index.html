@@ -26,9 +26,15 @@
   <main>
 
 
-<section class="hero-stage">
-  <div class="hero-inner">
-    <div class="hero-intro">
+
+
+
+<section class="player" id="player" aria-label="Archived runs replayed through the wearer's glasses">
+  <script type="application/json" id="player-data">{"base": "/egousebench/static/samples/", "labels": {"candidate-mart-clarify-position-2026102901": "One of the two in my hands", "candidate-mart-graft-p-22": "Tortillas, then a 2 kg spread", "candidate-mart-graft-replace-2026101601": "Spice jar, then a refill bag", "candidate-mart-refresh-replace-2026110501": "Coffee, then milk goes in", "candidate-mart-refresh-retain-2026110522": "A flashlight like this one"}, "lanes": [{"kind": "view", "name": "View"}, {"kind": "say", "name": "Speech"}, {"kind": "act", "name": "Cart"}], "notes": {"clarify-position-2026102901--gpt": "Added a carving knife without asking which tool the wearer meant.", "graft-p-22--qwen3.5": "Added crunchy peanut butter; the wearer asked for the smooth spread.", "graft-replace-2026101601--deepseek": "Searched for cumin for most of the run and ended with an empty cart.", "refresh-replace-2026110501--kimi": "Added a dark chocolate mocha.", "refresh-retain-2026110522--kimi": "Added an LED pen light."}, "samples": [{"license": "Apache 2.0", "runs": [{"asked": false, "final_cart": ["La Tortilla Factory 7.5\u201d Keto 1g Net Carb High Fibre \u0026 Protein Wheat Tortillas, 8 Tortillas, 320g", "Kraft Smooth Peanut Butter, 2kg"], "id": "graft-p-22--gpt", "model": "GPT-6.1 Terra", "steps": [{"action": {"text": "", "verb": "wait"}, "cart_after": 0, "events": [], "messages": [{"text": "Add one retail pack of the food I spread the filling onto so I can make this snack again. A different brand is fine; I don\u0027t need a meal kit or a bulk case.", "who": "wearer"}], "path": "/", "step": 1}, {"action": {"text": "Mission tortillas", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/", "step": 2}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "Mission tortillas"}], "messages": [], "path": "/", "step": 3}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "open", "text": "La Tortilla Factory 7.5\u201d Keto 1g Net Carb High Fibre \u0026 Protein Wheat Tortillas, 8 Tortillas, 320g"}], "messages": [], "path": "/search?q=Mission+tortillas", "step": 4}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "add", "text": "La Tortilla Factory 7.5\u201d Keto 1g Net Carb High Fibre \u0026 Protein Wheat Tortillas, 8 Tortillas, 320g"}], "messages": [], "path": "/product/p_9f24b1a1ac44", "step": 5}, {"action": {"text": "Added one 8-count pack of La Tortilla Factory wheat tortillas to your cart.", "verb": "standby"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 6}, {"action": {"text": "smooth peanut butter 2 kg", "verb": "type"}, "cart_after": 1, "events": [], "messages": [{"text": "Also add one regular 2-kilogram jar of the smooth spread I scoop from in the next stage.", "who": "wearer"}], "path": "/cart/add", "step": 7}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "search", "text": "smooth peanut butter 2 kg"}], "messages": [], "path": "/cart/add", "step": 8}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "open", "text": "Kraft Smooth Peanut Butter, 2kg"}], "messages": [], "path": "/search?q=smooth+peanut+butter+2+kg", "step": 9}, {"action": {"text": "", "verb": "click"}, "cart_after": 2, "events": [{"kind": "add", "text": "Kraft Smooth Peanut Butter, 2kg"}], "messages": [], "path": "/product/p_1f5bda27579e", "step": 10}, {"action": {"text": "Added one 8-count pack of wheat tortillas and one 2 kg jar of smooth peanut butter to your cart.", "verb": "done"}, "cart_after": 2, "events": [], "messages": [], "path": "/cart/add", "step": 11}], "success": true}, {"asked": false, "final_cart": ["La Tortilla Factory 7.5\u201d Keto 1g Net Carb High Fibre \u0026 Protein Wheat Tortillas, 8 Tortillas, 320g", "Kraft Crunchy Peanut Butter, 2kg"], "id": "graft-p-22--qwen3.5", "model": "qwen3.5-27b", "steps": [{"action": {"text": "tortillas", "verb": "type"}, "cart_after": 0, "events": [], "messages": [{"text": "Add one retail pack of the food I spread the filling onto so I can make this snack again. A different brand is fine; I don\u0027t need a meal kit or a bulk case.", "who": "wearer"}], "path": "/", "step": 1}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "tortillas"}], "messages": [], "path": "/", "step": 2}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "open", "text": "La Tortilla Factory 7.5\u201d Keto 1g Net Carb High Fibre \u0026 Protein Wheat Tortillas, 8 Tortillas, 320g"}], "messages": [], "path": "/search?q=tortillas", "step": 3}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "add", "text": "La Tortilla Factory 7.5\u201d Keto 1g Net Carb High Fibre \u0026 Protein Wheat Tortillas, 8 Tortillas, 320g"}], "messages": [], "path": "/product/p_9f24b1a1ac44", "step": 4}, {"action": {"text": "", "verb": "noop"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 5}, {"action": {"text": "", "verb": "noop"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 6}, {"action": {"text": "", "verb": "noop"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 7}, {"action": {"text": "", "verb": "noop"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 8}, {"action": {"text": "", "verb": "noop"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 9}, {"action": {"text": "peanut butter", "verb": "type"}, "cart_after": 1, "events": [], "messages": [{"text": "Also add one regular 2-kilogram jar of the smooth spread I scoop from in the next stage.", "who": "wearer"}], "path": "/cart/add", "step": 10}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "search", "text": "peanut butter"}], "messages": [], "path": "/cart/add", "step": 11}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "open", "text": "Kraft Crunchy Peanut Butter, 2kg"}], "messages": [], "path": "/search?q=peanut+butter", "step": 12}, {"action": {"text": "", "verb": "click"}, "cart_after": 2, "events": [{"kind": "add", "text": "Kraft Crunchy Peanut Butter, 2kg"}], "messages": [], "path": "/product/p_06e6062b635e", "step": 13}, {"action": {"text": "", "verb": "noop"}, "cart_after": 2, "events": [], "messages": [], "path": "/cart/add", "step": 14}, {"action": {"text": "", "verb": "noop"}, "cart_after": 2, "events": [], "messages": [], "path": "/cart/add", "step": 15}, {"action": {"text": "", "verb": "noop"}, "cart_after": 2, "events": [], "messages": [], "path": "/cart/add", "step": 16}, {"action": {"text": "", "verb": "noop"}, "cart_after": 2, "events": [], "messages": [], "path": "/cart/add", "step": 17}, {"action": {"text": "", "verb": "noop"}, "cart_after": 2, "events": [], "messages": [], "path": "/cart/add", "step": 18}, {"action": {"text": "", "verb": "noop"}, "cart_after": 2, "events": [], "messages": [], "path": "/cart/add", "step": 19}, {"action": {"text": "Added tortillas and peanut butter to cart.", "verb": "done"}, "cart_after": 2, "events": [], "messages": [], "path": "/cart/add", "step": 20}], "success": false}], "site": "egomart", "source": "CaptainCook4D", "task_id": "candidate-mart-graft-p-22", "track": "graft", "transition": "augment"}, {"license": "CC BY 4.0", "runs": [{"asked": false, "final_cart": ["Yupik Ground Cinnamon Powder 1kg, Vegan, Kosher, Finely Milled Aromatic Spice for Baking, Cooking, Drinks \u0026 Savory Dishes"], "id": "graft-replace-2026101601--gpt", "model": "GPT-6.1 Terra", "steps": [{"action": {"text": "ground cinnamon", "verb": "type"}, "cart_after": 0, "events": [], "messages": [{"text": "I\u0027m almost out of the ground spice in the jar I just opened. Add one single jar of up to 100g; any brand is fine.", "who": "wearer"}], "path": "/", "step": 1}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "ground cinnamon"}], "messages": [], "path": "/", "step": 2}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "open", "text": "Yupik Ground Cinnamon Powder 1kg, Vegan, Kosher, Finely Milled Aromatic Spice for Baking, Cooking, Drinks \u0026 Savory Dishes"}], "messages": [{"text": "I use it a lot and have empty jars to refill, so swap that for one 1kg refill bag of the same ground spice.", "who": "wearer"}], "path": "/search?q=ground+cinnamon", "step": 3}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "add", "text": "Yupik Ground Cinnamon Powder 1kg, Vegan, Kosher, Finely Milled Aromatic Spice for Baking, Cooking, Drinks \u0026 Savory Dishes"}], "messages": [], "path": "/product/p_5b1d3296e967", "step": 4}, {"action": {"text": "Added one 1 kg bag of ground cinnamon to your cart.", "verb": "done"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 5}], "success": true}, {"asked": true, "final_cart": [], "id": "graft-replace-2026101601--deepseek", "model": "DeepSeek-V4.1-Flash", "steps": [{"action": {"text": "", "verb": "no valid action"}, "cart_after": 0, "events": [], "messages": [{"text": "I\u0027m almost out of the ground spice in the jar I just opened. Add one single jar of up to 100g; any brand is fine.", "who": "wearer"}], "path": "/", "step": 1}, {"action": {"text": "ground cumin 100g", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/", "step": 2}, {"action": {"text": "ground cumin 1kg refill bag", "verb": "type"}, "cart_after": 0, "events": [], "messages": [{"text": "I use it a lot and have empty jars to refill, so swap that for one 1kg refill bag of the same ground spice.", "who": "wearer"}], "path": "/", "step": 3}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "ground cumin 1kg refill bag"}], "messages": [], "path": "/", "step": 4}, {"action": {"text": "ground cumin 1kg", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/search?q=ground+cumin+1kg+refill+bag", "step": 5}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "ground cumin 1kg"}], "messages": [], "path": "/search?q=ground+cumin+1kg+refill+bag", "step": 6}, {"action": {"text": "Yupik ground cumin 1kg", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/search?q=ground+cumin+1kg", "step": 7}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "Yupik ground cumin 1kg"}], "messages": [], "path": "/search?q=ground+cumin+1kg", "step": 8}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "Yupik"}], "messages": [], "path": "/search?q=Yupik+ground+cumin+1kg", "step": 9}, {"action": {"text": "cumin", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/search?q=Yupik", "step": 10}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "cumin"}], "messages": [], "path": "/search?q=Yupik", "step": 11}, {"action": {"text": "", "verb": "go to"}, "cart_after": 0, "events": [{"kind": "search", "text": "ground cumin 1kg"}], "messages": [], "path": "/search?q=cumin", "step": 12}, {"action": {"text": "", "verb": "no valid action"}, "cart_after": 0, "events": [], "messages": [], "path": "/search?q=ground+cumin+1kg\u0026page=2", "step": 13}, {"action": {"text": "I can pull up the catalog, but I can\u0027t read the label on the jar you just opened in the camera view. Which ground spice is it (e.g., cumin, cinnamon, paprika, garlic powder)? I need it to swap to the matching 1 kg refill bag.", "verb": "ask"}, "cart_after": 0, "events": [], "messages": [{"text": "I can pull up the catalog, but I can\u0027t read the label on the jar you just opened in the camera view. Which ground spice is it (e.g., cumin, cinnamon, paprika, garlic powder)? I need it to swap to the matching 1 kg refill bag.", "who": "agent"}, {"text": "Just what I asked for.", "who": "wearer"}], "path": "/search?q=ground+cumin+1kg\u0026page=2", "step": 14}, {"action": {"text": "", "verb": "go to"}, "cart_after": 0, "events": [{"kind": "open", "text": "Club House Herbs \u0026 Spices, Ground Cumin, 425 g"}], "messages": [], "path": "/search?q=ground+cumin+1kg\u0026page=2", "step": 15}, {"action": {"text": "cumin pouch", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/product/p_55567635abbc", "step": 16}, {"action": {"text": "Simply Ingredient ground cumin refill", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/product/p_55567635abbc", "step": 17}, {"action": {"text": "Menol Spices cumin powder 1kg bulk", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/product/p_55567635abbc", "step": 18}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "add", "text": "Club House Herbs \u0026 Spices, Ground Cumin, 425 g"}], "messages": [], "path": "/product/p_55567635abbc", "step": 19}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "remove", "text": "Club House Herbs \u0026 Spices, Ground Cumin, 425 g"}], "messages": [], "path": "/cart/add", "step": 20}], "success": false}], "site": "egomart", "source": "HD-EPIC", "task_id": "candidate-mart-graft-replace-2026101601", "track": "graft", "transition": "replace"}, {"license": "CDLA Permissive 2.0", "runs": [{"asked": false, "final_cart": ["High Brew Coffee Double Espresso, 8 Fl Oz (12 Count)"], "id": "refresh-replace-2026110501--gpt", "model": "GPT-6.1 Terra", "steps": [{"action": {"text": "illy ready to drink espresso coffee", "verb": "type"}, "cart_after": 0, "events": [], "messages": [{"text": "Could you add a ready-to-drink coffee like the one I\u0027m making to my cart? I\u0027d like to take it to work.", "who": "wearer"}], "path": "/", "step": 1}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "illy ready to drink espresso coffee"}], "messages": [], "path": "/", "step": 2}, {"action": {"text": "illy ready to drink latte", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/search?q=illy+ready+to+drink+espresso+coffee", "step": 3}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "illy ready to drink latte"}], "messages": [], "path": "/search?q=illy+ready+to+drink+espresso+coffee", "step": 4}, {"action": {"text": "High Brew Coffee Double Espresso 8 Fl Oz", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/search?q=illy+ready+to+drink+latte", "step": 5}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "High Brew Coffee Double Espresso 8 Fl Oz"}], "messages": [], "path": "/search?q=illy+ready+to+drink+latte", "step": 6}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "open", "text": "High Brew Coffee Double Espresso, 8 Fl Oz (12 Count)"}], "messages": [], "path": "/search?q=High+Brew+Coffee+Double+Espresso+8+Fl+Oz", "step": 7}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "add", "text": "High Brew Coffee Double Espresso, 8 Fl Oz (12 Count)"}], "messages": [], "path": "/product/p_735ad4431b7a", "step": 8}, {"action": {"text": "Added High Brew Double Espresso ready-to-drink coffee (12-pack) to your cart for $33.75.", "verb": "done"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 9}], "success": true}, {"asked": false, "final_cart": ["High Brew Coffee Coffee - Ready To Drink - Dark Chocolate Mocha - 8 Oz - Case Of 12"], "id": "refresh-replace-2026110501--kimi", "model": "Kimi K2.6", "steps": [{"action": {"text": "ready to drink coffee", "verb": "type"}, "cart_after": 0, "events": [], "messages": [{"text": "Could you add a ready-to-drink coffee like the one I\u0027m making to my cart? I\u0027d like to take it to work.", "who": "wearer"}], "path": "/", "step": 1}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "ready to drink coffee"}], "messages": [], "path": "/", "step": 2}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "open", "text": "High Brew Coffee Coffee - Ready To Drink - Dark Chocolate Mocha - 8 Oz - Case Of 12"}], "messages": [], "path": "/search?q=ready+to+drink+coffee", "step": 3}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "add", "text": "High Brew Coffee Coffee - Ready To Drink - Dark Chocolate Mocha - 8 Oz - Case Of 12"}], "messages": [], "path": "/product/p_6b2ea790f876", "step": 4}, {"action": {"text": "I found a ready-to-drink coffee similar to what you were making (a mocha with milk) and added it to your cart. Specifically, I added: High Brew Coffee - Ready To Drink - Dark Chocolate Mocha - 8 Oz - Case Of 12, priced at $107.71. The cart now shows 1 item.", "verb": "done"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 5}], "success": false}], "site": "egomart", "source": "HoloAssist", "task_id": "candidate-mart-refresh-replace-2026110501", "track": "refresh", "transition": "replace"}, {"license": "CC BY-SA 4.0", "runs": [{"asked": false, "final_cart": ["Vansky 12 LED UV Blacklight Flashlight, Pets Ultra Violet Urine and Stain Detector Fluorescent Whitening Agents Detector, Find Dry Stains on Carpets, Rugs, Floor (3 x AAA Batteries Included)"], "id": "refresh-retain-2026110522--gpt", "model": "GPT-6.1 Terra", "steps": [{"action": {"text": "UV blacklight flashlight", "verb": "type"}, "cart_after": 0, "events": [], "messages": [{"text": "Could you put one like this in my cart?", "who": "wearer"}], "path": "/", "step": 1}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "UV blacklight flashlight"}], "messages": [], "path": "/", "step": 2}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "open", "text": "Vansky 12 LED UV Blacklight Flashlight, Pets Ultra Violet Urine and Stain Detector Fluorescent Whitening Agents Detector, Find Dry Stains on Carpets, Rugs, Floor (3 x AAA Batteries Included)"}], "messages": [], "path": "/search?q=UV+blacklight+flashlight", "step": 3}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "add", "text": "Vansky 12 LED UV Blacklight Flashlight, Pets Ultra Violet Urine and Stain Detector Fluorescent Whitening Agents Detector, Find Dry Stains on Carpets, Rugs, Floor (3 x AAA Batteries Included)"}], "messages": [], "path": "/product/p_6dca3c2eb17e", "step": 4}, {"action": {"text": "Added one UV blacklight flashlight to your cart for $12.99.", "verb": "done"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 5}], "success": true}, {"asked": false, "final_cart": ["WORKPRO LED Pen Light, Aluminum Pocket Pen Flashlights with Clip"], "id": "refresh-retain-2026110522--kimi", "model": "Kimi K2.6", "steps": [{"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [], "messages": [{"text": "Could you put one like this in my cart?", "who": "wearer"}], "path": "/", "step": 1}, {"action": {"text": "WORKPRO LED Pen Light", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/", "step": 2}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "WORKPRO LED Pen Light"}], "messages": [], "path": "/", "step": 3}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "open", "text": "WORKPRO LED Pen Light, Aluminum Pocket Pen Flashlights with Clip"}], "messages": [], "path": "/search?q=WORKPRO+LED+Pen+Light", "step": 4}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "add", "text": "WORKPRO LED Pen Light, Aluminum Pocket Pen Flashlights with Clip"}], "messages": [], "path": "/product/p_8e30acb15bd2", "step": 5}, {"action": {"text": "The WORKPRO LED Pen Light, Aluminum Pocket Pen Flashlights with Clip has been successfully added to the cart. The cart now shows 1 item with a subtotal of $15.99.", "verb": "done"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 6}], "success": false}], "site": "egomart", "source": "EgoOops", "task_id": "candidate-mart-refresh-retain-2026110522", "track": "refresh", "transition": "retain"}, {"license": "CC BY 4.0", "runs": [{"asked": true, "final_cart": ["Stainless Steel Carving Fork Barbecue Fork BBQ Tools Meat Fork 11 Inch"], "id": "clarify-position-2026102901--doubao", "model": "Doubao Seed 2.1 Pro", "steps": [{"action": {"text": "Would you like me to add a spare carving knife or a spare carving fork? I\u2019ll choose a single utensil rather than a set.", "verb": "ask"}, "cart_after": 0, "events": [], "messages": [{"text": "I\u0027d like a spare of one of these two I\u0027m carving with. Add just that single utensil, not a multi-utensil set; any brand, handle colour or length is fine.", "who": "wearer"}, {"text": "Would you like me to add a spare carving knife or a spare carving fork? I\u2019ll choose a single utensil rather than a set.", "who": "agent"}, {"text": "The one in my left hand.", "who": "wearer"}], "path": "/", "step": 1}, {"action": {"text": "carving fork", "verb": "type"}, "cart_after": 0, "events": [], "messages": [], "path": "/", "step": 2}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "carving fork"}], "messages": [], "path": "/", "step": 3}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "open", "text": "Stainless Steel Carving Fork Barbecue Fork BBQ Tools Meat Fork 11 Inch"}], "messages": [], "path": "/search?q=carving+fork", "step": 4}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "add", "text": "Stainless Steel Carving Fork Barbecue Fork BBQ Tools Meat Fork 11 Inch"}], "messages": [], "path": "/product/p_2210faf502df", "step": 5}, {"action": {"text": "Added one single carving fork, matching the utensil in your left hand, to the cart. Quantity is 1 and the subtotal is $13.99.", "verb": "done"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 6}], "success": true}, {"asked": false, "final_cart": ["PAUDIN Carving Knife 8 inch, Ultra Sharp Brisket Slicing Knives, Premium Meat Cutting Knife, Japanese Sushi Sashimi Knife, BBQ Knife with Ergonomic Handle, for Slicing Roast, Meats and Vegetables"], "id": "clarify-position-2026102901--gpt", "model": "GPT-6.1 Terra", "steps": [{"action": {"text": "carving knife", "verb": "type"}, "cart_after": 0, "events": [], "messages": [{"text": "I\u0027d like a spare of one of these two I\u0027m carving with. Add just that single utensil, not a multi-utensil set; any brand, handle colour or length is fine.", "who": "wearer"}], "path": "/", "step": 1}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "search", "text": "carving knife"}], "messages": [], "path": "/", "step": 2}, {"action": {"text": "", "verb": "click"}, "cart_after": 0, "events": [{"kind": "open", "text": "PAUDIN Carving Knife 8 inch, Ultra Sharp Brisket Slicing Knives, Premium Meat Cutting Knife, Japanese Sushi Sashimi Knife, BBQ Knife with Ergonomic Handle, for Slicing Roast, Meats and Vegetables"}], "messages": [], "path": "/search?q=carving+knife", "step": 3}, {"action": {"text": "", "verb": "click"}, "cart_after": 1, "events": [{"kind": "add", "text": "PAUDIN Carving Knife 8 inch, Ultra Sharp Brisket Slicing Knives, Premium Meat Cutting Knife, Japanese Sushi Sashimi Knife, BBQ Knife with Ergonomic Handle, for Slicing Roast, Meats and Vegetables"}], "messages": [], "path": "/product/p_177210e55116", "step": 4}, {"action": {"text": "Added one PAUDIN carving knife to your cart for $23.19.", "verb": "done"}, "cart_after": 1, "events": [], "messages": [], "path": "/cart/add", "step": 5}], "success": false}], "site": "egomart", "source": "HD-EPIC", "task_id": "candidate-mart-clarify-position-2026102901", "track": "clarify", "transition": "resolve"}], "seconds": 3.2, "sites": {"egomaps": "EgoMaps", "egomart": "EgoMart", "egomedia": "EgoMedia"}, "targets": {}}</script>
+
+  <div class="hero-stage hero-stage-live">
+    <div class="hero-inner">
+      <div class="hero-intro">
   <h1>EgoUseBench</h1>
   <p class="sub">Benchmarking computer-use agents under evolving first-person contexts</p>
   <ul class="credits" aria-label="Authors" role="list">
@@ -51,21 +57,183 @@
     <a class="button" href="https://ai4gc.org/" target="_blank" rel="noopener">AI4GC Lab</a>
   </nav>
 </div>
+      <div class="hero-optics">
+        <svg class="optical-floor" viewBox="0 0 840 220" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M362 0 28 220 M384 0 170 220 M402 0 298 220 M420 0v220 M438 0l104 220 M456 0l214 220 M478 0l334 220 M346 10h148 M316 30h208 M272 56h296 M212 91h416 M133 139h574 M25 204h790"/>
+        </svg>
+        <div class="glasses">
+          <div class="frame">
+            <div class="lens-media" style="--lens: url('/egousebench/static/lens.svg')">
+              <video data-video muted playsinline preload="auto"
+                     poster="/egousebench/static/samples/graft-p-22--gpt/poster.jpg"
+                     src="/egousebench/static/samples/graft-p-22--gpt/wearer.mp4"></video>
+            </div>
+            <svg class="rim" viewBox="0 0 1000 460" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M500 52C430 18 300 10 170 14C60 18 14 60 12 150C10 260 40 380 140 420C240 458 360 452 420 400C450 372 470 330 500 326C530 330 550 372 580 400C640 452 760 458 860 420C960 380 990 260 988 150C986 60 940 18 830 14C700 10 570 18 500 52Z"/>
+            </svg>
+            <p class="hud" aria-hidden="true"><i class="rec"></i>Wearer view <span data-clock>step 01</span></p>
+          </div>
+          <div class="talk" data-talk aria-live="polite">
+            <p class="msg msg-wearer">Add one retail pack of the food I spread the filling onto so I can make this snack again. A different brand is fine; I don&#39;t need a meal kit or a bulk case.</p>
+          </div>
+
+          <figure class="browser">
+            <div class="chrome">
+              <span class="url"><b data-host>egomart</b><span data-url>/</span></span>
+              <span class="cart" data-cart-box>Cart <b data-cart>0</b></span>
+            </div>
+            <div class="viewport" data-viewport>
+              <img src="/egousebench/static/samples/graft-p-22--gpt/page-1.svg" class="is-on"
+                   alt="Reconstructed EgoMart state at step 1" width="1134" height="600">
+              <span class="cursor" data-cursor aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 2l15 9-6.5 1.6L16 20l-3 1.4-3.4-7.3L4 18z"/></svg>
+              </span>
+              <span class="typing" data-typing aria-hidden="true"></span>
+              <p class="standby" data-standby>The agent reports done. The session skips ahead to the next request.</p>
+            </div>
+            <figcaption class="log" data-log>step 01</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="deck">
+    <div class="picker">
+      <p class="deck-label" id="task-label">Task</p>
+      <ol class="tasks" role="tablist" aria-labelledby="task-label" data-tasks>
+
+        <li><button type="button" role="tab" data-task="0" aria-selected="true">
+          <span class="track track-graft">Graft</span>
+          <span class="task-name">Tortillas, then a 2 kg spread</span>
+        </button></li>
+
+        <li><button type="button" role="tab" data-task="1" aria-selected="false">
+          <span class="track track-graft">Graft</span>
+          <span class="task-name">Spice jar, then a refill bag</span>
+        </button></li>
+
+        <li><button type="button" role="tab" data-task="2" aria-selected="false">
+          <span class="track track-refresh">Refresh</span>
+          <span class="task-name">Coffee, then milk goes in</span>
+        </button></li>
+
+        <li><button type="button" role="tab" data-task="3" aria-selected="false">
+          <span class="track track-refresh">Refresh</span>
+          <span class="task-name">A flashlight like this one</span>
+        </button></li>
+
+        <li><button type="button" role="tab" data-task="4" aria-selected="false">
+          <span class="track track-clarify">Clarify</span>
+          <span class="task-name">One of the two in my hands</span>
+        </button></li>
+
+      </ol>
+    </div>
+    <div class="runs-col">
+      <p class="deck-label" id="run-label">Agent</p>
+      <div class="runs" role="tablist" aria-labelledby="run-label" data-runs></div>
+      <p class="meta" data-meta></p>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <button class="play" type="button" data-play aria-label="Pause replay">
+      <svg class="i-pause" viewBox="0 0 16 16" width="12" height="12"><path d="M4 2h3v12H4zM9 2h3v12H9z"/></svg>
+      <svg class="i-play" viewBox="0 0 16 16" width="12" height="12"><path d="M4 2l10 6-10 6z"/></svg>
+    </button>
+    <div class="lanes-scroll">
+      <div class="lanes" data-lanes></div>
+    </div>
+  </div>
+  <p class="meta">EgoMart views are reconstructed from the replay. <a href="/egousebench/media-credits.html">Media credits</a>.</p>
+  <section class="outcome" aria-labelledby="final-cart-title">
+    <div class="outcome-head">
+      <h2 id="final-cart-title">Final cart <span data-cart-count></span></h2>
+      <span class="outcome-result" data-outcome></span>
+    </div>
+    <p class="outcome-note" data-outcome-note></p>
+    <ul class="cart-items" data-cart-items></ul>
+    <p class="cart-empty" data-cart-empty hidden>The cart is empty.</p>
+  </section>
 </section>
 
 
 <section class="exhibit" id="abstract" aria-labelledby="abstract-title">
   <div class="abstract-copy">
     <h2 id="abstract-title">Abstract:</h2>
-    <p>EgoUseBench evaluates how computer-use agents handle changing first-person context. Across 693 task instances, the benchmark compares explicit requests, recordings available before execution, and observations delivered while an agent acts.</p>
+    <p>AI wearables, such as smart glasses, extend the context available to agents beyond digital environments to users&#39; everyday physical surroundings. With these devices, computer tasks can originate from users&#39; ongoing real-world activities rather than solely from explicit instructions. Through first-person observations, agents can identify objects and activities relevant to user requests and ground digital tasks in the surrounding context. We call this interaction paradigm Ego Use. However, first-person observations are limited by the wearer&#39;s viewpoint and may provide incomplete or ambiguous evidence of ongoing activities. As new observations arrive, agents may need to revise their understanding of the physical context and user intent, and reassess whether prior digital actions remain valid. Whether current agents can reliably handle these changes remains insufficiently evaluated.</p><p>We introduce EgoUseBench, a benchmark for evaluating Ego Use across three interaction settings with different levels of first-person context. Computer-Use relies on explicit instructions, Offline Ego Use provides prerecorded first-person context before execution, and Online Ego Use provides continuous observations as user intent evolves. Based on over 74 hours of real-world first-person recordings, we construct 693 tasks across the three interaction settings. To capture task evolution, we track first-person observations, user requirements, and website state separately. We further group tasks by how information changes during execution, resulting in three types: Graft (revised user requirements), Refresh (new first-person observations), and Clarify (agent-initiated information seeking). We evaluate several advanced models and find that average success rates in Online Ego Use are 26.3% lower than in Computer-Use. This result reveals the difficulty of keeping task execution aligned with evolving first-person context and user intent.</p>
   </div>
 </section>
 
 <section class="exhibit" aria-labelledby="leaderboard-title">
   <h2 id="leaderboard-title">Leaderboard</h2>
 
-<p class="lede">Evaluation results are not included in this release.</p>
+<p class="lede">Success rates (%) on the same 200 tasks in all three settings.</p>
+<div class="sheet">
+  <table aria-label="Model success rates">
+    <thead>
+      <tr>
+        <th scope="col">Model</th>
+        <th scope="col">Computer-Use</th>
+        <th scope="col">Offline Ego Use</th>
+        <th scope="col">Online Ego Use</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr class="group"><th colspan="4">Closed-weight</th></tr>
+
+      <tr>
+        <th scope="row">GPT-6.1 Terra</th>
+        <td>94.0</td>
+        <td>84.0</td>
+        <td class="online">87.0</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Gemini 3.8 Flash</th>
+        <td>89.5</td>
+        <td>76.5</td>
+        <td class="online">76.0</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Doubao Seed 2.1 Pro</th>
+        <td>92.0</td>
+        <td>76.5</td>
+        <td class="online">75.0</td>
+      </tr>
+
+
+      <tr class="group"><th colspan="4">Open-weight</th></tr>
+
+      <tr>
+        <th scope="row">DeepSeek-V4.1-Flash</th>
+        <td>89.0</td>
+        <td>66.0</td>
+        <td class="online">62.5</td>
+      </tr>
+
+      <tr>
+        <th scope="row">qwen3.5-27b</th>
+        <td>74.5</td>
+        <td>41.5</td>
+        <td class="online">41.0</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Kimi K2.6</th>
+        <td>77.5</td>
+        <td>40.5</td>
+        <td class="online">39.0</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+  <p class="note">Scores are taken from Figure 4 and Table 1 of the paper.</p>
+</div>
 
 </section>
 
@@ -111,6 +279,8 @@
     });
   })();
 </script>
+
+<script src="/egousebench/static/player.js" defer></script>
 
 
 </body>
