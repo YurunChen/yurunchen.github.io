@@ -84,7 +84,7 @@ redirect_from:
                 <a href="https://github.com/YurunChen/EgoUseBench" class="paper-link" target="_blank" rel="noopener">Code</a>
                 <a href="https://yurunchen.github.io/egousebench/" class="paper-link" target="_blank" rel="noopener">Website</a>
                 <a href="https://huggingface.co/datasets/yurun-chen/EgoUseBench" class="paper-link" target="_blank" rel="noopener">Dataset</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.egousebench | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.egousebench | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
             </div>
         </div>
         <div class="paper-media">
@@ -105,7 +105,7 @@ redirect_from:
             <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2606.20636" class="paper-link" target="_blank">Paper</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.skillharness | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.skillharness | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:0EnyYjriUFMC"></span>
             </div>
         </div>
@@ -125,7 +125,7 @@ redirect_from:
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2602.01725" class="paper-link" target="_blank">Paper</a>
                 <a href="https://github.com/YurunChen/SafePred" class="paper-link" target="_blank">Code</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.safepred | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.safepred | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:UebtZRa9Y70C"></span>
             </div>
         </div>
@@ -145,7 +145,7 @@ redirect_from:
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2510.00507" class="paper-link" target="_blank">Paper</a>
                 <a href="https://github.com/YurunChen/Graph2Eval" class="paper-link" target="_blank">Code</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.graph2eval | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.graph2eval | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:LkGwnXOMwfcC"></span>
             </div>
         </div>
@@ -164,7 +164,7 @@ redirect_from:
             <p class="paper-authors">Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2505.05440" class="paper-link" target="_blank">Paper</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.ecoagent | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.ecoagent | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:Tyk-4Ss8FVUC"></span>
             </div>
         </div>
@@ -184,7 +184,7 @@ redirect_from:
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2502.13053" class="paper-link" target="_blank">Paper</a>
                 <a href="https://github.com/YurunChen/AEIA" class="paper-link" target="_blank">Code</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.aeia | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.aeia | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:W7OEmFMy1HYC"></span>
             </div>
         </div>
@@ -204,7 +204,7 @@ redirect_from:
             <div class="paper-links">
                 <a href="https://aclanthology.org/2025.acl-long.369/" class="paper-link" target="_blank">Paper</a>
                 <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="paper-link" target="_blank">Project</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.os_agents | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.os_agents | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:eQOLeE2rZwMC"></span>
             </div>
         </div>
@@ -224,7 +224,7 @@ redirect_from:
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2508.04010" class="paper-link" target="_blank">Paper</a>
                 <a href="https://github.com/YurunChen/HarmonyGuard" class="paper-link" target="_blank">Code</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.harmonyguard | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.harmonyguard | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:ufrVoPGSRksC"></span>
             </div>
         </div>
@@ -243,7 +243,7 @@ redirect_from:
             <p class="paper-authors">Tao Xiong, Xueyu Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://aclanthology.org/2026.emnlp-main.1304/" class="paper-link" target="_blank">Paper</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.gui_pra | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.gui_pra | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:roLk4NBRz8UC"></span>
             </div>
         </div>
@@ -262,7 +262,7 @@ redirect_from:
             <p class="paper-authors">Haiyang Yu, <strong>Yurun Chen</strong>, Shen Su∗, Jian Su∗, Yuwen Chen, Zhen Yang</p>
             <div class="paper-links">
                 <a href="https://ieeexplore.ieee.org/document/11187397" class="paper-link" target="_blank">Paper</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.dart | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.dart | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:Se3iqnhoufwC"></span>
             </div>
         </div>
@@ -278,7 +278,7 @@ redirect_from:
             <p class="paper-authors">Xiaohu Shan, Haiyang Yu, <strong>Yurun Chen</strong>, Yuwen Chen, Zhen Yang</p>
             <div class="paper-links">
                 <a href="https://ieeexplore.ieee.org/document/10886974" class="paper-link" target="_blank">Paper</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.s2a_p2fs | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.s2a_p2fs | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:qjMakFHDy7sC"></span>
             </div>
         </div>
@@ -294,7 +294,7 @@ redirect_from:
             <p class="paper-authors">Haiyang Yu, <strong>Yurun Chen</strong>, Zhen Yang, Yuwen Chen, Shui Yu</p>
             <div class="paper-links">
                 <a href="https://ieeexplore.ieee.org/document/10568383" class="paper-link" target="_blank">Paper</a>
-                <button type="button" class="paper-link" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.edcoma | escape }}">BibTeX</button>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.edcoma | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:u-x6o8ySG0sC"></span>
             </div>
         </div>
@@ -341,10 +341,11 @@ redirect_from:
     }
 
     if (fallback) fallback.remove();
-    button.textContent = 'Copied!';
+    const label = button.querySelector('span');
+    label.textContent = 'Copied!';
     status.textContent = 'BibTeX copied to clipboard.';
     clearTimeout(feedback.get(button));
-    feedback.set(button, setTimeout(() => { button.textContent = 'BibTeX'; }, 1600));
+    feedback.set(button, setTimeout(() => { label.textContent = 'BibTeX'; }, 1600));
   });
 })();
 </script>

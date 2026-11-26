@@ -538,14 +538,35 @@ body {
     }
 }
 
-.paper-links button.paper-link {
-    min-width: 3.2rem;
+.bibtex-copy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    min-width: 4.4rem;
+    min-height: 1.75rem;
     padding: 0;
     border: 0;
     background: none;
+    color: $site-text-muted;
     font-family: inherit;
+    font-size: $font-small;
+    font-weight: 500;
     line-height: inherit;
     cursor: pointer;
+
+    .fa-copy {
+        font-size: 0.85em;
+    }
+
+    &:hover,
+    &:focus-visible {
+        color: $site-link-hover;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $site-link;
+        outline-offset: 2px;
+    }
 }
 
 .bibtex-fallback {
