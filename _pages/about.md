@@ -24,9 +24,9 @@ redirect_from:
 
 <p>I’m a <strong>Ph.D. student</strong> at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> and <a href="https://person.zju.edu.cn/ykt">Keting Yin</a>.</p>
 
-<p>I work on the safety of Computer-Using Agents (CUAs). My research centers on two complementary questions: how to equip CUAs with effective guardrails for robust task execution under real-world noise and uncertainty, and how to systematically develop red-teaming strategies that uncover safety vulnerabilities in realistic deployment settings.</p>
+<p>I build benchmarks and guardrails for computer-use agents that must act safely as user intent and real-world context change.</p>
 
-<p><strong>Open to collaborations</strong> on CUA red-teaming, safety, guardrails, and evaluation. Reach out via <a href="mailto:yurunchen.research@gmail.com">email</a>.</p>
+<p><strong>Open to collaborations</strong> on agent safety, red-teaming, and evaluation. <a href="mailto:yurunchen.research@gmail.com">Email me</a>.</p>
 
 <p class="page-stat">Google Scholar · <strong><span id="total_cit">—</span></strong> citations</p>
 
@@ -68,7 +68,7 @@ redirect_from:
       {% assign total = accepted | plus: published %}
       <li class="news-item">
         <time class="news-time" datetime="{{ year.name }}">[{{ year.name }}]</time>
-        <span>{{ total }} {% if total == 1 %}paper{% else %}papers{% endif %}{% if accepted > 0 and published > 0 %}: {{ accepted }} accepted at {{ conferences | array_to_sentence_string }}; {{ published }} published in {{ journals | array_to_sentence_string }}{% elsif accepted > 0 %} accepted at {{ conferences | array_to_sentence_string }}{% else %} published in {{ journals | array_to_sentence_string }}{% endif %}.</span>
+        <span>{{ total }} {% if total == 1 %}paper{% else %}papers{% endif %}{% if accepted > 0 and published > 0 %} accepted! {{ accepted }} at {{ conferences | array_to_sentence_string }}; {{ published }} published in {{ journals | array_to_sentence_string }}{% elsif accepted > 0 %} accepted at {{ conferences | array_to_sentence_string }}{% else %} published in {{ journals | array_to_sentence_string }}{% endif %}.</span>
       </li>
     {% endif %}
   {% endfor %}
@@ -106,19 +106,20 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
+        <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
         <div class="paper-box-text">
-            <h3>SkillHarness: Harnessing Safe Skills for Computer-Use Agents</h3>
-            <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
-            <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Keting Yin, Shengyu Zhang</p>
+            <h3>Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</h3>
+            <p class="paper-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), <time datetime="2026">2026</time></p>
+            <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
-                <a href="https://arxiv.org/abs/2606.20636" class="paper-link" target="_blank">Paper</a>
-                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.skillharness | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:0EnyYjriUFMC"></span>
+                <a href="https://arxiv.org/abs/2510.00507" class="paper-link" target="_blank">Paper</a>
+                <a href="https://github.com/YurunChen/Graph2Eval" class="paper-link" target="_blank">Code</a>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.graph2eval | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:LkGwnXOMwfcC"></span>
             </div>
         </div>
         <div class="paper-media">
-            <img src="images/SkillHarness.webp" alt="SkillHarness" width="768" height="510" loading="lazy" decoding="async">
+            <img src="images/Methods4_00.webp" alt="Graph2Eval" width="768" height="481" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -143,22 +144,40 @@ redirect_from:
     </div>
 </div>
 
+<div class="publication-item" id="webharbor">
+    <div class="paper-box paper-box--text-only">
+        <div class="paper-meta"><span class="badge">arXiv</span></div>
+        <div class="paper-box-text">
+            <h3>WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</h3>
+            <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
+            <p class="paper-authors">Zhaoyang Wang, Qianhui Wu, Boyu Gou, …, <strong>Yurun Chen</strong>, et al.</p>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2611.03634" class="paper-link" target="_blank" rel="noopener">Paper</a>
+                <a href="https://github.com/aiming-lab/WebHarbor" class="paper-link" target="_blank" rel="noopener">Code</a>
+                <a href="https://aiming-lab.github.io/WebHarbor/" class="paper-link" target="_blank" rel="noopener">Website</a>
+                <a href="https://huggingface.co/datasets/ChilleD/WebHarbor-Tasks" class="paper-link" target="_blank" rel="noopener">Dataset</a>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.webharbor | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:3fE2CSJIrl8C"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
+        <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
-            <h3>Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</h3>
-            <p class="paper-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), <time datetime="2026">2026</time></p>
-            <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
+            <h3>SkillHarness: Harnessing Safe Skills for Computer-Use Agents</h3>
+            <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
+            <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
-                <a href="https://arxiv.org/abs/2510.00507" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/YurunChen/Graph2Eval" class="paper-link" target="_blank">Code</a>
-                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.graph2eval | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:LkGwnXOMwfcC"></span>
+                <a href="https://arxiv.org/abs/2606.20636" class="paper-link" target="_blank">Paper</a>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.skillharness | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:0EnyYjriUFMC"></span>
             </div>
         </div>
         <div class="paper-media">
-            <img src="images/Methods4_00.webp" alt="Graph2Eval" width="768" height="481" loading="lazy" decoding="async">
+            <img src="images/SkillHarness.webp" alt="SkillHarness" width="768" height="510" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -264,8 +283,8 @@ redirect_from:
     </div>
 </div>
 
-<div class="publication-item">
-    <div class="paper-box paper-box--text-only">
+<div class="publication-item" id="journal-publications">
+    <div class="paper-box">
         <div class="paper-meta"><span class="badge">TIFS 2025</span></div>
         <div class="paper-box-text">
             <h3>DART: Distributed Zero Knowledge Data Auditing with Retrievability for Blockchain-Based Decentralized Storage Networks</h3>
@@ -277,11 +296,14 @@ redirect_from:
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:Se3iqnhoufwC"></span>
             </div>
         </div>
+        <div class="paper-media">
+            <img src="images/DART-system.webp" alt="DART system model from Figure 1" width="768" height="616" loading="lazy" decoding="async">
+        </div>
     </div>
 </div>
 
 <div class="publication-item">
-    <div class="paper-box paper-box--text-only">
+    <div class="paper-box">
         <div class="paper-meta"><span class="badge">TMC 2025</span></div>
         <div class="paper-box-text">
             <h3>S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT</h3>
@@ -293,11 +315,14 @@ redirect_from:
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:qjMakFHDy7sC"></span>
             </div>
         </div>
+        <div class="paper-media">
+            <img src="images/S2A-P2FS-system.webp" alt="S2A-P2FS system model from Figure 2" width="768" height="417" loading="lazy" decoding="async">
+        </div>
     </div>
 </div>
 
 <div class="publication-item">
-    <div class="paper-box paper-box--text-only">
+    <div class="paper-box">
         <div class="paper-meta"><span class="badge">TSC 2024</span></div>
         <div class="paper-box-text">
             <h3>EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage</h3>
@@ -308,6 +333,9 @@ redirect_from:
                 <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.edcoma | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:u-x6o8ySG0sC"></span>
             </div>
+        </div>
+        <div class="paper-media">
+            <img src="images/EDCOMA-system.webp" alt="EDCOMA decentralized storage network architecture" width="768" height="512" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -352,11 +380,11 @@ redirect_from:
     }
 
     if (fallback) fallback.remove();
-    const label = button.querySelector('span');
-    label.textContent = 'Copied!';
+    const icon = button.querySelector('i');
+    icon.classList.replace('fa-copy', 'fa-check');
     status.textContent = 'BibTeX copied to clipboard.';
     clearTimeout(feedback.get(button));
-    feedback.set(button, setTimeout(() => { label.textContent = 'BibTeX'; }, 1600));
+    feedback.set(button, setTimeout(() => { icon.classList.replace('fa-check', 'fa-copy'); }, 1600));
   });
 })();
 </script>

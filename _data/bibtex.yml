@@ -212,3 +212,69 @@ edcoma: |-
     pages = {2273--2286},
     doi = {10.1109/tsc.2024.3417337}
   }
+
+webharbor: |-
+  @misc{wang2026webharbor,
+    title = {{WebHarbor: Docking Real Websites for Evolving GUI Agent Environments}},
+    author = {Wang, Zhaoyang and
+      Wu, Qianhui and
+      Gou, Boyu and
+      Wang, Demi and
+      Zhang, Jiacheng and
+      Hua, Peichun and
+      Li, Qize and
+      Qiu, Shi and
+      Jiang, Yifan and
+      Zhang, Yifan and
+      Jin, Zexu and
+      Peng, Baolin and
+      Shen, Bolin and
+      Bansal, Chetan and
+      Kong, Dehan and
+      Lei, Deren and
+      Peng, Dongshen and
+      Jiang, Fengqing and
+      Cheng, Hao and
+      Wang, Haoqing and
+      Shan, Jiaming and
+      Wang, Jicheng and
+      Zhou, Jingguang and
+      He, Jixuan and
+      Zeng, Kaide and
+      Zhu, Kangyu and
+      Moukheiber, Lama and
+      Qiu, Mufan and
+      Xia, Peng and
+      Sun, Qihan and
+      Lin, Qingwei and
+      Sun, Qiushi and
+      Zhang, Ruichen and
+      Luo, Shuqing and
+      Qin, Si and
+      Fan, Sicheng and
+      Xiong, Tao and
+      Yao, Wenlin and
+      Zhang, Xinyu and
+      Zeng, Xinyue and
+      Li, Xuanrui and
+      Zhang, Xuchao and
+      Wang, Yian and
+      Liu, Yichao and
+      Liang, Yiming and
+      Zhou, Yiyang and
+      Jiao, Yizhu and
+      Li, Yuetai and
+      Chen, Yurun and
+      Zhang, Yuxuan and
+      Yang, Zheyuan and
+      Yao, Zhiyuan and
+      Li, Zhongyang and
+      Li, Zihao and
+      Wang, Zili and
+      Gao, Jianfeng and
+      Yao, Huaxiu},
+    year = {2026},
+    eprint = {2611.03634},
+    archivePrefix = {arXiv},
+    url = {https://arxiv.org/abs/2611.03634}
+  }

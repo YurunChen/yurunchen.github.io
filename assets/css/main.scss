@@ -507,6 +507,16 @@ body {
     align-items: center;
     gap: 0.3rem 0.85rem;
 
+    .paper-link,
+    .bibtex-copy {
+        -webkit-tap-highlight-color: transparent;
+        transition: none;
+    }
+
+    .bibtex-copy > * {
+        transition: none;
+    }
+
     .show_paper_citations {
         &:empty {
             display: none;
@@ -564,8 +574,10 @@ body {
     line-height: inherit;
     cursor: pointer;
 
-    .fa-copy {
+    > i {
         font-size: 0.85em;
+        width: 1em;
+        text-align: center;
     }
 
     &:hover,
@@ -617,6 +629,10 @@ h1:before, .anchor:before {
 }
 
 // Publications share one rhythm without enclosing each entry in a card.
+.publication-item[id] {
+    scroll-margin-top: 4rem;
+}
+
 .publication-item + .publication-item {
     border-top: 1px solid $site-border-light;
 }
