@@ -145,7 +145,7 @@ redirect_from:
 </div>
 
 <div class="publication-item" id="webharbor">
-    <div class="paper-box paper-box--text-only">
+    <div class="paper-box">
         <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
             <h3>WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</h3>
@@ -159,6 +159,9 @@ redirect_from:
                 <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.webharbor | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:3fE2CSJIrl8C"></span>
             </div>
+        </div>
+        <div class="paper-media">
+            <img src="images/WebHarbor-method.webp" alt="WebHarbor workflow: live websites are reconstructed and audited to produce resettable environments for GUI agents" width="960" height="344" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
