@@ -317,12 +317,12 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv</span></div>
-            <h3><a href="https://arxiv.org/abs/2509.23263">GUI-PRA: Process Reward Agent for GUI Tasks</a></h3>
-            <p class="paper-authors">Tao Xiong, Xavier Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
+            <div class="paper-meta"><span class="badge">EMNLP 2026</span></div>
+            <h3><a href="https://aclanthology.org/2026.emnlp-main.1304/">GUI-PRA: Process Reward Agents for GUI Tasks</a></h3>
+            <p class="paper-authors">Tao Xiong, Xueyu Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
             <p class="paper-abstract">A judge agent with dynamic memory and adaptive UI perception for more accurate process rewards on GUI tasks.</p>
             <div class="paper-links">
-                <a href="https://arxiv.org/abs/2509.23263" class="paper-link" target="_blank">Paper</a>
+                <a href="https://aclanthology.org/2026.emnlp-main.1304/" class="paper-link" target="_blank">Paper</a>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:roLk4NBRz8UC"></span>
             </div>
         </div>
