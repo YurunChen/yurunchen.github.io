@@ -163,7 +163,9 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-image">
-            <img src="/egousebench/static/egousebench-logo.png" alt="EgoUseBench mascot" width="100%" style="object-fit: contain; object-position: center; padding: 0.5rem;">
+            <a href="/images/EgoUseBench-method.png" target="_blank" rel="noopener">
+                <img src="/images/EgoUseBench-method.png" alt="EgoUseBench method: task construction, first-person replay, and final website-state checks" width="100%" style="object-fit: contain; object-position: center; padding-top: 1.4rem;">
+            </a>
             <span class="paper-thumb-badge">arXiv</span>
         </div>
         <div class="paper-box-text">
