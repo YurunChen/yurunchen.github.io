@@ -336,83 +336,19 @@ body {
 }
 
 .paper-box {
-    display: flex;
-    flex-direction: column;
-    gap: 0.85rem;
-    padding: 1.35rem 0;
-    margin: 0;
-    border: none;
-    border-bottom: none;
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
-
-    .paper-box-image {
-        display: block;
-        width: 100%;
-        margin: 0;
-        flex-shrink: 0;
-
-        img {
-            display: block;
-            width: 100%;
-            max-width: 100%;
-            aspect-ratio: 16 / 10;
-            height: auto;
-            border: 1px solid $site-border;
-            border-radius: $site-radius-sm;
-            box-shadow: none;
-            object-fit: cover;
-            object-position: top center;
-        }
-    }
-
-    &:not(.paper-box--text-only) .paper-box-image {
-        position: relative;
-        overflow: hidden;
-        border: 1px solid $site-border;
-        border-radius: $site-radius-sm;
-        line-height: 0;
-
-        img {
-            border: none;
-            border-radius: 0;
-        }
-
-        .paper-thumb-badge {
-            position: absolute;
-            top: 0.35rem;
-            left: 0.35rem;
-            z-index: 2;
-            display: inline-block;
-            max-width: calc(100% - 0.7rem);
-            padding: 0.22em 0.55em;
-            background: rgba(20, 20, 20, 0.82);
-            color: #fff;
-            border-radius: $site-radius-sm;
-            font-size: $font-label;
-            font-weight: 600;
-            letter-spacing: 0.03em;
-            line-height: 1.25;
-            text-transform: uppercase;
-            white-space: normal;
-            word-break: break-word;
-            pointer-events: none;
-            -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
-        }
-    }
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.9rem;
+    padding: 1.25rem 0;
 
     .paper-box-text {
-        display: flex;
-        flex-direction: column;
         min-width: 0;
 
         h3 {
-            margin: 0 0 0.4em;
+            margin: 0 0 0.35em;
             font-size: $font-title;
             font-weight: 600;
-            line-height: 1.45;
+            line-height: 1.4;
             color: $site-text;
             letter-spacing: -0.02em;
 
@@ -427,73 +363,42 @@ body {
                 }
             }
         }
-
-        .paper-meta {
-            margin: 0 0 0.35em;
-        }
-
-        .paper-links,
-        .paper-buttons {
-            margin-top: 0.45em;
-        }
     }
 
     @include breakpoint($medium) {
-        $paper-thumb-width: 176px;
-
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 1.25rem;
-
-        .paper-box-image {
-            width: $paper-thumb-width;
-            flex: 0 0 $paper-thumb-width;
-
-            img {
-                width: $paper-thumb-width;
-                max-width: $paper-thumb-width;
-            }
+        &:not(.paper-box--text-only) {
+            grid-template-columns: minmax(0, 1fr) clamp(10rem, 20vw, 13.5rem);
+            gap: 1.35rem;
         }
+    }
+}
 
-        .paper-box-text {
-            flex: 1 1 auto;
-        }
+.paper-media {
+    align-self: start;
+    width: 100%;
+    max-width: 28rem;
+    overflow: hidden;
+    border: 1px solid $site-border;
+    border-radius: $site-radius-sm;
+
+    img,
+    video {
+        display: block;
+        width: 100%;
+        height: auto;
     }
 }
 
 .paper-meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.35rem 0.65rem;
-}
+    margin-bottom: 0.35rem;
 
-.badge {
-    position: static;
-    display: inline-block;
-    padding: 0.18em 0.6em;
-    margin: 0;
-    color: $site-accent;
-    background: rgba(30, 58, 95, 0.07);
-    font-size: $font-label;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border-radius: 999px;
-    box-shadow: none;
-    z-index: auto;
-}
-
-// Text-only papers: plain venue label above title
-.publications-list .paper-box--text-only .paper-box-text .badge {
-    padding: 0;
-    background: none;
-    border-radius: 0;
-    color: $site-accent;
-    font-size: $font-caption;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    .badge {
+        color: $site-accent;
+        font-size: $font-label;
+        font-weight: 600;
+        letter-spacing: 0.045em;
+        text-transform: uppercase;
+    }
 }
 
 .paper-authors,
@@ -512,10 +417,10 @@ body {
 
 .paper-abstract,
 .paper-description {
-    margin: 0 0 0.65em;
+    margin: 0 0 0.6em;
     font-size: $font-small;
     line-height: 1.6;
-    color: $site-text-muted;
+    color: $site-text-secondary;
     font-style: normal;
     font-weight: 400;
     max-width: 40rem;
@@ -554,11 +459,13 @@ body {
 
     .paper-link,
     .btn {
-        display: inline;
-        padding: 0;
-        border: none;
-        border-radius: 0;
-        background: none;
+        display: inline-flex;
+        align-items: center;
+        min-height: 1.85rem;
+        padding: 0.08rem 0.55rem;
+        border: 1px solid $site-border;
+        border-radius: $site-radius-sm;
+        background: transparent;
         color: $site-link;
         font-size: $font-small;
         font-weight: 500;
@@ -568,18 +475,14 @@ body {
         box-shadow: none;
 
         &:hover {
-            background: none;
-            border-color: transparent;
+            background: $site-border-light;
             color: $site-link-hover;
-            text-decoration: underline;
-            text-underline-offset: 3px;
         }
-    }
-}
 
-.paper-box--text-only {
-    .paper-box-image {
-        display: none;
+        &:focus-visible {
+            outline: 2px solid $site-link;
+            outline-offset: 2px;
+        }
     }
 }
 
@@ -605,13 +508,9 @@ h1:before, .anchor:before {
     margin-top: -$scroll_offset;
 }
 
-// Publications styling
-.publication-item {
-    margin-bottom: 0;
-
-    .paper-box {
-        margin: 0;
-    }
+// Publications share one rhythm without enclosing each entry in a card.
+.publication-item + .publication-item {
+    border-top: 1px solid $site-border-light;
 }
 
 // Legacy journal block — keep minimal if referenced elsewhere
