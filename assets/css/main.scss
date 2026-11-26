@@ -401,8 +401,7 @@ body {
     }
 }
 
-.paper-authors,
-.paper-box-text > p:not(.paper-abstract):not(.paper-venue-line) {
+.paper-authors {
     margin: 0 0 0.45em;
     font-size: $font-meta;
     line-height: 1.55;
@@ -413,17 +412,6 @@ body {
         color: $site-text;
         font-weight: 600;
     }
-}
-
-.paper-abstract,
-.paper-description {
-    margin: 0 0 0.6em;
-    font-size: $font-small;
-    line-height: 1.6;
-    color: $site-text-secondary;
-    font-style: normal;
-    font-weight: 400;
-    max-width: 40rem;
 }
 
 .show_paper_citations {
