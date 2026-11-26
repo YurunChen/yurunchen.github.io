@@ -96,7 +96,7 @@ redirect_from:
             </div>
         </div>
         <div class="paper-media">
-            <video controls playsinline preload="none" poster="/images/EgoUseBench-explainer.webp" width="1280" height="720" aria-label="EgoUseBench in 41 seconds">
+            <video controls playsinline preload="none" poster="/images/EgoUseBench-explainer.webp" width="1280" height="720" aria-label="EgoUseBench explainer">
                 <source src="/files/egousebench-explainer.mp4" type="video/mp4">
                 <a href="/files/egousebench-explainer.mp4">Watch the EgoUseBench explainer</a>
             </video>
