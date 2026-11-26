@@ -538,6 +538,32 @@ body {
     }
 }
 
+.paper-links button.paper-link {
+    min-width: 3.2rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-family: inherit;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+.bibtex-fallback {
+    display: block;
+    margin-top: 0.4rem;
+    color: $site-text-secondary;
+    font-size: $font-small;
+
+    textarea {
+        margin: 0.2rem 0 0;
+        opacity: 1;
+        color: $site-text;
+        font: inherit;
+        font-family: monospace;
+        cursor: text;
+    }
+}
+
 .paper-box-text .paper-venue-line {
     margin: 0 0 0.4em;
     font-size: $font-small;

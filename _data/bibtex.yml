@@ -1,0 +1,214 @@
+egousebench: |-
+  @misc{chen2026egousebench,
+    title = {{EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts}},
+    author = {Chen, Yurun and
+      Yi, Biao and
+      Yu, Qihang and
+      Yin, Keting and
+      Zhang, Shengyu},
+    year = {2026},
+    eprint = {2611.34466},
+    archivePrefix = {arXiv},
+    url = {https://arxiv.org/abs/2611.34466}
+  }
+
+skillharness: |-
+  @misc{chen2026skillharness,
+    title = {{SkillHarness: Harnessing Safe Skills for Computer-Use Agents}},
+    author = {Chen, Yurun and
+      Yi, Biao and
+      Yin, Keting and
+      Zhang, Shengyu},
+    year = {2026},
+    eprint = {2606.20636},
+    archivePrefix = {arXiv},
+    url = {https://arxiv.org/abs/2606.20636}
+  }
+
+safepred: |-
+  @misc{chen2026safepred,
+    title = {{SafePred: A Predictive Guardrail for Computer-Using Agents via World Models}},
+    author = {Chen, Yurun and
+      Liao, Zeyi and
+      Yin, Ping and
+      Xie, Taotao and
+      Yin, Keting and
+      Zhang, Shengyu},
+    year = {2026},
+    eprint = {2602.01725},
+    archivePrefix = {arXiv},
+    url = {https://arxiv.org/abs/2602.01725}
+  }
+
+graph2eval: |-
+  @inproceedings{chen2026graph2eval,
+    title = {{Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs}},
+    author = {Chen, Yurun and
+      Hu, Xueyu and
+      Liu, Yuhan and
+      Wang, Ziqi and
+      Liao, Zeyi and
+      Chen, Lin and
+      Wei, Feng and
+      Qian, Yuxi and
+      Zheng, Bo and
+      Yin, Keting and
+      Zhang, Shengyu},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year = {2026},
+    pages = {735--744},
+    url = {https://openaccess.thecvf.com/content/CVPR2026/html/Chen_Graph2Eval_Automatic_Multimodal_Task_Generation_for_Agents_via_Knowledge_Graphs_CVPR_2026_paper.html}
+  }
+
+ecoagent: |-
+  @article{yi2026ecoagent,
+    title = {{EcoAgent: An Efficient Device-Cloud Collaborative Multi-Agent Framework for Mobile Automation}},
+    author = {Yi, Biao and
+      Hu, Xueyu and
+      Chen, Yurun and
+      Zhang, Shengyu and
+      Yang, Hongxia and
+      Wu, Fan},
+    journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+    year = {2026},
+    volume = {40},
+    number = {35},
+    pages = {29838--29846},
+    doi = {10.1609/aaai.v40i35.40230}
+  }
+
+aeia: |-
+  @inproceedings{chen2025aeia,
+    title = {{Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks}},
+    author = {Chen, Yurun and
+      Hu, Xueyu and
+      Yin, Keting and
+      Li, Juncheng and
+      Zhang, Shengyu},
+    booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
+    year = {2025},
+    pages = {11648--11656},
+    doi = {10.1145/3746027.3755646}
+  }
+
+os_agents: |-
+  @inproceedings{hu2025osagents,
+    title = {{{OS} Agents: A Survey on {MLLM}-based Agents for Computer, Phone and Browser Use}},
+    author = {Hu, Xueyu and
+      Xiong, Tao and
+      Yi, Biao and
+      Wei, Zishu and
+      Xiao, Ruixuan and
+      Chen, Yurun and
+      Ye, Jiasheng and
+      Tao, Meiling and
+      Zhou, Xiangxin and
+      Zhao, Ziyu and
+      Li, Yuhuai and
+      Xu, Shengze and
+      Wang, Shenzhi and
+      Xu, Xinchen and
+      Qiao, Shuofei and
+      Wang, Zhaokai and
+      Kuang, Kun and
+      Zeng, Tieyong and
+      Wang, Liang and
+      Li, Jiwei and
+      Jiang, Yuchen Eleanor and
+      Zhou, Wangchunshu and
+      Wang, Guoyin and
+      Yin, Keting and
+      Zhao, Zhou and
+      Yang, Hongxia and
+      Wu, Fan and
+      Zhang, Shengyu and
+      Wu, Fei},
+    booktitle = {Proceedings of the 63rd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)},
+    year = {2025},
+    url = {https://aclanthology.org/2025.acl-long.369/},
+    doi = {10.18653/v1/2025.acl-long.369},
+    pages = {7436--7465}
+  }
+
+harmonyguard: |-
+  @misc{chen2025harmonyguard,
+    title = {{HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization}},
+    author = {Chen, Yurun and
+      Hu, Xavier and
+      Liu, Yuhan and
+      Yin, Keting and
+      Li, Juncheng and
+      Zhang, Zhuosheng and
+      Zhang, Shengyu},
+    year = {2025},
+    eprint = {2508.04010},
+    archivePrefix = {arXiv},
+    url = {https://arxiv.org/abs/2508.04010}
+  }
+
+gui_pra: |-
+  @inproceedings{xiong2026guipra,
+    title = {{{GUI}-{PRA}: Process Reward Agents for {GUI} Tasks}},
+    author = {Xiong, Tao and
+      Hu, Xueyu and
+      Chen, Yurun and
+      Liu, Yuhang and
+      Wu, Changqiao and
+      Gao, Pengzhi and
+      Liu, Wei and
+      Luan, Jian and
+      Zhang, Shengyu},
+    booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+    year = {2026},
+    url = {https://aclanthology.org/2026.emnlp-main.1304/},
+    doi = {10.18653/2026.emnlp-main.1304},
+    pages = {29695--29716}
+  }
+
+dart: |-
+  @article{yu2025dart,
+    title = {{DART: Distributed Zero Knowledge Data Auditing With Retrievability for Blockchain-Based Decentralized Storage Networks}},
+    author = {Yu, Haiyang and
+      Chen, Yurun and
+      Su, Shen and
+      Su, Jian and
+      Chen, Yuwen and
+      Yang, Zhen},
+    journal = {IEEE Transactions on Information Forensics and Security},
+    year = {2025},
+    volume = {20},
+    pages = {11264--11278},
+    doi = {10.1109/tifs.2025.3616646}
+  }
+
+s2a_p2fs: |-
+  @article{shan2025s2ap2fs,
+    title = {{S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT}},
+    author = {Shan, Xiaohu and
+      Yu, Haiyang and
+      Chen, Yurun and
+      Chen, Yuwen and
+      Yang, Zhen},
+    journal = {IEEE Transactions on Mobile Computing},
+    year = {2025},
+    volume = {24},
+    number = {7},
+    pages = {5699--5715},
+    doi = {10.1109/tmc.2025.3538057}
+  }
+
+edcoma: |-
+  @article{yu2024edcoma,
+    title = {{EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage}},
+    author = {Yu, Haiyang and
+      Chen, Yurun and
+      Yang, Zhen and
+      Chen, Yuwen and
+      Yu, Shui},
+    journal = {IEEE Transactions on Services Computing},
+    year = {2024},
+    volume = {17},
+    number = {5},
+    pages = {2273--2286},
+    doi = {10.1109/tsc.2024.3417337}
+  }
