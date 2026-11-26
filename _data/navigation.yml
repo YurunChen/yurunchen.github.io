@@ -3,9 +3,6 @@ main:
   - title: "About"
     url: "/#about-me"
 
-  - title: "Research"
-    url: "/#-research"
-
   - title: "News"
     url: "/#-news"
 
@@ -14,3 +11,6 @@ main:
 
   - title: "Service & Awards"
     url: "/#-service-and-awards"
+
+  - title: "People"
+    url: "/#-people"

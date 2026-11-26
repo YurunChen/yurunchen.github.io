@@ -1,33 +1,33 @@
-- date: "2026-11"
-  event: released
-  paper: EgoUseBench
-  note: a benchmark, dataset, and code for computer-use agents under evolving first-person contexts
 - date: "2026-08"
   event: accepted
-  paper: GUI-PRA
   venue: EMNLP 2026
-- date: "2026-06"
-  event: released
-  paper: SkillHarness
-  note: safe skill learning and reuse for computer-use agents
+  papers: 1
 - date: "2026-02"
   event: accepted
-  paper: Graph2Eval
   venue: CVPR 2026
-- date: "2026-02"
-  event: released
-  paper: SafePred
-  note: a predictive guardrail for computer-use agents via world models
+  papers: 1
 - date: "2025-11"
   event: accepted
-  paper: EcoAgent
   venue: AAAI 2026
+  papers: 1
 - date: "2025-07"
   event: accepted
-  paper: AEIA
   venue: ACM MM 2025
+  papers: 1
+- date: "2025-07"
+  event: published
+  venue: IEEE TMC
+  papers: 1
 - date: "2025-04"
   event: accepted
-  paper: OS Agents survey
   venue: ACL 2025
   note: Oral
+  papers: 1
+- date: "2025"
+  event: published
+  venue: IEEE TIFS
+  papers: 1
+- date: "2024-09"
+  event: published
+  venue: IEEE TSC
+  papers: 1
