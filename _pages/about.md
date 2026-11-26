@@ -18,11 +18,11 @@ redirect_from:
 
 <div class="page-hero">
 
-# Who I Am
+<h1>Yurun Chen</h1>
 
 <div class="page-intro">
 
-<p>Hi! I'm <strong>Yurun Chen</strong>, a <strong>Ph.D. student</strong> at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> and <a href="https://person.zju.edu.cn/ykt">Keting Yin</a>.</p>
+<p>I’m a <strong>Ph.D. student</strong> at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> and <a href="https://person.zju.edu.cn/ykt">Keting Yin</a>.</p>
 
 <p>I work on the safety of Computer-Using Agents (CUAs). My research centers on two complementary questions: how to equip CUAs with effective guardrails for robust task execution under real-world noise and uncertainty, and how to systematically develop red-teaming strategies that uncover safety vulnerabilities in realistic deployment settings.</p>
 
@@ -38,121 +38,28 @@ redirect_from:
 
 # News
 
-<div class="news-list-wrapper" id="news-list-wrapper">
-<div class="news-item">
-<span class="news-time">Jun 2026</span>
-Published on arXiv: <em><a href="https://arxiv.org/abs/2606.20636" target="_blank">"SkillHarness: Harnessing Safe Skills for Computer-Use Agents"</a></em>!
-</div>
-
-<div class="news-item">
-<span class="news-time">Feb 2026</span>
-Paper <em><a href="https://arxiv.org/abs/2510.00507" target="_blank">"Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs"</a></em> accepted by CVPR 2026!
-</div>
-
-<div class="news-item">
-<span class="news-time">Feb 2026</span>
-Published on arXiv: <em><a href="https://arxiv.org/abs/2602.01725" target="_blank">"SafePred: A Predictive Guardrail for Computer-Using Agents via World Models"</a></em>!
-</div>
-
-<div class="news-item">
-<span class="news-time">Oct 2025</span>
-Released project <em><a href="https://github.com/YurunChen/Graph2Eval" target="_blank">"Graph2Eval"</a></em>!
-</div>
-
-<div class="news-item">
-<span class="news-time">Oct 2025</span>
-Published on arXiv: <em><a href="https://arxiv.org/abs/2510.00507" target="_blank">"Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs"</a></em>!
-</div>
-
-<div class="news-item">
-<span class="news-time">Aug 2025</span>
-Published on arXiv: <em><a href="https://arxiv.org/abs/2508.04482" target="_blank">"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</a></em>!
-</div>
-
-<div class="news-item">
-<span class="news-time">Aug 2025</span>
-Published on arXiv: <em><a href="https://arxiv.org/abs/2508.04010" target="_blank">"HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization"</a></em>!
-</div>
-
-<div class="news-item">
-<span class="news-time">Aug 2025</span>
-Released project <em><a href="https://github.com/YurunChen/HarmonyGuard" target="_blank">"HarmonyGuard"</a></em>!
-</div>
-
-<div class="news-item">
-<span class="news-time">Jul 2025</span>
-Paper <em><a href="https://arxiv.org/abs/2502.13053" target="_blank">"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</a></em> accepted by ACM MM 2025!
-</div>
-
-<div class="news-item">
-<span class="news-time">Jun 2025</span>
-Survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> selected as Oral Paper!
-</div>
-
-<div class="news-item">
-<span class="news-time">Apr 2025</span>
-Survey paper <em>"OS Agents: A Survey on MLLM-based Agents for Use on General Computing Devices"</em> accepted by ACL 2025!
-</div>
-
-<div class="news-item">
-<span class="news-time">Feb 2025</span>
-Published on arXiv: <em><a href="https://arxiv.org/abs/2502.13053" target="_blank">"Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks"</a></em>!
-</div>
-
-<div class="news-item">
-<span class="news-time">Dec 2024</span>
-Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blank">"OS Agents: A Survey on MLLM-based Agents for Computer, Phone, and Browser Use"</a></em>!
-</div>
-</div>
-
-<p class="news-view-more-wrap">
-<button type="button" class="news-view-more-btn" id="news-view-more-btn" aria-expanded="false">Show more</button>
-</p>
-
-<script>
-(function() {
-  var NEWS_SHOW_COUNT = 5; // Number of news items visible by default; change this to show more/fewer
-
-  function initNewsFold() {
-    var wrapper = document.getElementById('news-list-wrapper');
-    var btn = document.getElementById('news-view-more-btn');
-    if (!wrapper || !btn) return;
-    var items = wrapper.querySelectorAll('.news-item');
-    var folded = [];
-    for (var i = NEWS_SHOW_COUNT; i < items.length; i++) folded.push(items[i]);
-    if (folded.length === 0) {
-      var wrap = btn.parentElement;
-      if (wrap) wrap.style.display = 'none';
-      return;
-    }
-    function hideFolded() {
-      for (var i = 0; i < folded.length; i++) folded[i].style.display = 'none';
-    }
-    function showFolded() {
-      for (var i = 0; i < folded.length; i++) folded[i].style.display = 'block';
-    }
-    hideFolded();
-    btn.addEventListener('click', function() {
-      if (wrapper.classList.contains('show-all')) {
-        wrapper.classList.remove('show-all');
-        hideFolded();
-        btn.setAttribute('aria-expanded', 'false');
-        btn.textContent = 'Show more';
-      } else {
-        wrapper.classList.add('show-all');
-        showFolded();
-        btn.setAttribute('aria-expanded', 'true');
-        btn.textContent = 'Show less';
-      }
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initNewsFold);
-  } else {
-    initNewsFold();
-  }
-})();
-</script>
+<ul class="news-list-wrapper" role="list">
+  <li class="news-item">
+    <time class="news-time" datetime="2026-08">[08/2026]</time>
+    <span>One paper accepted at <strong>EMNLP 2026</strong>.</span>
+  </li>
+  <li class="news-item">
+    <time class="news-time" datetime="2026-02">[02/2026]</time>
+    <span>One paper accepted at <strong>CVPR 2026</strong>.</span>
+  </li>
+  <li class="news-item">
+    <time class="news-time" datetime="2025-11">[11/2025]</time>
+    <span>One paper accepted at <strong>AAAI 2026</strong>.</span>
+  </li>
+  <li class="news-item">
+    <time class="news-time" datetime="2025-07">[07/2025]</time>
+    <span>One paper accepted at <strong>ACM MM 2025</strong>.</span>
+  </li>
+  <li class="news-item">
+    <time class="news-time" datetime="2025-04">[04/2025]</time>
+    <span>One paper accepted at <strong>ACL 2025</strong> (Oral).</span>
+  </li>
+</ul>
 
 <span class='anchor' id='-publications'></span>
 
@@ -162,9 +69,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box">
+        <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv</span></div>
             <h3><a href="https://arxiv.org/abs/2611.34466">EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts</a></h3>
+            <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Qihang Yu, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2611.34466" class="paper-link" target="_blank" rel="noopener">Paper</a>
@@ -184,9 +92,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box">
+        <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv</span></div>
             <h3><a href="https://arxiv.org/abs/2606.20636">SkillHarness: Harnessing Safe Skills for Computer-Use Agents</a></h3>
+            <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2606.20636" class="paper-link" target="_blank">Paper</a>
@@ -201,9 +110,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box">
+        <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv</span></div>
             <h3><a href="https://arxiv.org/abs/2602.01725">SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</a></h3>
+            <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Zeyi Liao, Ping Yin, Taotao Xie, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2602.01725" class="paper-link" target="_blank">Paper</a>
@@ -219,9 +129,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box">
+        <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
             <h3><a href="https://arxiv.org/abs/2510.00507">Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</a></h3>
+            <p class="paper-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition, <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2510.00507" class="paper-link" target="_blank">Paper</a>
@@ -237,9 +148,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box">
+        <div class="paper-meta"><span class="badge">AAAI 2026</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">AAAI 2026</span></div>
             <h3><a href="https://arxiv.org/abs/2505.05440">EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</a></h3>
+            <p class="paper-venue-line">AAAI Conference on Artificial Intelligence, <time datetime="2026">2026</time></p>
             <p class="paper-authors">Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2505.05440" class="paper-link" target="_blank">Paper</a>
@@ -254,9 +166,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box">
+        <div class="paper-meta"><span class="badge">ACM MM 2025</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">ACM MM 2025</span></div>
             <h3><a href="https://arxiv.org/abs/2502.13053">Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</a></h3>
+            <p class="paper-venue-line">ACM International Conference on Multimedia, <time datetime="2025">2025</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2502.13053" class="paper-link" target="_blank">Paper</a>
@@ -272,9 +185,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box">
+        <div class="paper-meta"><span class="badge">ACL 2025 Oral</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">ACL 2025 Oral</span></div>
             <h3><a href="https://arxiv.org/abs/2508.04482">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
+            <p class="paper-venue-line">Annual Meeting of the Association for Computational Linguistics (Oral), <time datetime="2025">2025</time></p>
             <p class="paper-authors">Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong>, et al.</p>
             <div class="paper-links">
                 <a href="https://aclanthology.org/2025.acl-long.369/" class="paper-link" target="_blank">Paper</a>
@@ -290,9 +204,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box">
+        <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">arXiv</span></div>
             <h3><a href="https://arxiv.org/abs/2508.04010">HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization</a></h3>
+            <p class="paper-venue-line">arXiv, <time datetime="2025">2025</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Keting Yin, Juncheng Li, Zhuosheng Zhang, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2508.04010" class="paper-link" target="_blank">Paper</a>
@@ -308,9 +223,10 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box">
+        <div class="paper-meta"><span class="badge">EMNLP 2026</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">EMNLP 2026</span></div>
             <h3><a href="https://aclanthology.org/2026.emnlp-main.1304/">GUI-PRA: Process Reward Agents for GUI Tasks</a></h3>
+            <p class="paper-venue-line">Conference on Empirical Methods in Natural Language Processing, <time datetime="2026">2026</time></p>
             <p class="paper-authors">Tao Xiong, Xueyu Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://aclanthology.org/2026.emnlp-main.1304/" class="paper-link" target="_blank">Paper</a>
@@ -325,11 +241,11 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box paper-box--text-only">
+        <div class="paper-meta"><span class="badge">TIFS 2025</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta"><span class="badge">TIFS 2025</span></div>
             <h3><a href="https://ieeexplore.ieee.org/document/11187397">DART: Distributed Zero Knowledge Data Auditing with Retrievability for Blockchain-Based Decentralized Storage Networks</a></h3>
+            <p class="paper-venue-line">IEEE Transactions on Information Forensics and Security, <time datetime="2025">2025</time></p>
             <p class="paper-authors">Haiyang Yu, <strong>Yurun Chen</strong>, Shen Su∗, Jian Su∗, Yuwen Chen, Zhen Yang</p>
-            <p class="paper-venue-line"><em>IEEE Transactions on Information Forensics and Security</em>, 2025</p>
             <div class="paper-links">
                 <a href="https://ieeexplore.ieee.org/document/11187397" class="paper-link" target="_blank">Paper</a>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:Se3iqnhoufwC"></span>
@@ -340,13 +256,11 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box paper-box--text-only">
+        <div class="paper-meta"><span class="badge">TMC 2025</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta">
-                <span class="badge">TMC 2025</span>
-            </div>
             <h3><a href="https://ieeexplore.ieee.org/document/10886974">S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT</a></h3>
+            <p class="paper-venue-line">IEEE Transactions on Mobile Computing, <time datetime="2025">2025</time></p>
             <p class="paper-authors">Xiaohu Shan, Haiyang Yu, <strong>Yurun Chen</strong>, Yuwen Chen, Zhen Yang</p>
-            <p class="paper-venue-line"><em>IEEE Transactions on Mobile Computing</em>, 2025</p>
             <div class="paper-links">
                 <a href="https://ieeexplore.ieee.org/document/10886974" class="paper-link" target="_blank">Paper</a>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:qjMakFHDy7sC"></span>
@@ -357,13 +271,11 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 
 <div class="publication-item">
     <div class="paper-box paper-box--text-only">
+        <div class="paper-meta"><span class="badge">TSC 2024</span></div>
         <div class="paper-box-text">
-            <div class="paper-meta">
-                <span class="badge">TSC 2024</span>
-            </div>
             <h3><a href="https://ieeexplore.ieee.org/document/10568383">EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage</a></h3>
+            <p class="paper-venue-line">IEEE Transactions on Services Computing, <time datetime="2024">2024</time></p>
             <p class="paper-authors">Haiyang Yu, <strong>Yurun Chen</strong>, Zhen Yang, Yuwen Chen, Shui Yu</p>
-            <p class="paper-venue-line"><em>IEEE Transactions on Services Computing</em>, 2024</p>
             <div class="paper-links">
                 <a href="https://ieeexplore.ieee.org/document/10568383" class="paper-link" target="_blank">Paper</a>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:u-x6o8ySG0sC"></span>
@@ -379,7 +291,7 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 # Service & Awards
 
 <ul class="site-list">
-<li><strong>Reviewer</strong> — ACL 2025, AAAI 2026, ACM MM 2026, AAAI 2027, ACM MM 2027</li>
+<li><strong>Reviewer</strong> — ACL 2025, AAAI 2026, ACM MM 2026, AAAI 2027, ICLR 2027, ACM MM 2027</li>
 <li><strong>Open Source</strong> — <a href="https://github.com/YurunChen/Graph2Eval">Graph2Eval</a>, <a href="https://github.com/YurunChen/HarmonyGuard">HarmonyGuard</a>, <a href="https://github.com/YurunChen/SafePred">SafePred</a>, <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey">OS-Agent-Survey</a></li>
 <li><strong>2025.06</strong> — Outstanding Graduate of Beijing; Top 100 Graduates of BJUT</li>
 <li><strong>2024.10</strong> — Xiaomi Scholarship</li>
