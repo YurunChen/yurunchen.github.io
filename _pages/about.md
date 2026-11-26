@@ -7,12 +7,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
 
@@ -24,113 +18,83 @@ redirect_from:
 
 <p>I’m a <strong>Ph.D. student</strong> at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>, advised by <a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> and <a href="https://person.zju.edu.cn/ykt">Keting Yin</a>.</p>
 
-<p>I build benchmarks and guardrails for computer-use agents that must act safely as user intent and real-world context change.</p>
+<p>My research asks how <strong>computer-use agents</strong> can stay safe when the world, and the user, keep changing. I approach this from both sides: stress-testing agents in realistic and adversarial environments, and building guardrails that anticipate risk before an agent acts.</p>
 
-<p><strong>Open to collaborations</strong> on agent safety, red-teaming, and evaluation. <a href="mailto:yurunchen.research@gmail.com">Email me</a>.</p>
+<p class="page-stat"><strong><span id="total_cit">310</span></strong> citations<span class="page-stat-sep">·</span><strong>640+</strong> GitHub stars</p>
 
-<p class="page-stat">Google Scholar · <strong><span id="total_cit">—</span></strong> citations</p>
+<p class="page-contact">I’m happy to talk about agent safety, red-teaming, and evaluation. <a href="mailto:yurunchen.research@gmail.com">Email me</a>.</p>
+
+</div>
 
 </div>
 
-</div>
+<span class='anchor' id='-research'></span>
+
+# Research
+
+<dl class="research-list">
+  <dt>Stress-testing agents in the real world</dt>
+  <dd>How do agents behave when interfaces are adversarial and user context keeps shifting? <a href="#aeia">AEIA</a> · <a href="#graph2eval">Graph2Eval</a> · <a href="#egousebench">EgoUseBench</a></dd>
+  <dt>Guardrails that look ahead</dt>
+  <dd>Safety mechanisms that predict consequences instead of reacting to them. <a href="#safepred">SafePred</a> · <a href="#harmonyguard">HarmonyGuard</a> · <a href="#skillharness">SkillHarness</a></dd>
+  <dt>Mapping the field</dt>
+  <dd>A systematic view of agents that operate computers, phones, and browsers. <a href="#os-agents">OS Agents survey</a> (ACL 2025 Oral)</dd>
+</dl>
 
 <span class='anchor' id='-news'></span>
 
 # News
 
-{% assign current_year = site.time | date: "%Y" %}
 {% assign news_entries = site.data.news | sort: "date" | reverse %}
-{% assign news_years = news_entries | group_by_exp: "item", "item.date | slice: 0, 4" %}
 <ul class="news-list-wrapper" role="list">
-  {% for year in news_years %}
-    {% if year.name == current_year %}
-      {% for item in year.items %}
-        <li class="news-item">
-          <time class="news-time" datetime="{{ item.date }}">[{% if item.date.size == 7 %}{{ item.date | slice: 5, 2 }}/{% endif %}{{ year.name }}]</time>
-          <span>{% if item.papers == 1 %}One paper{% else %}{{ item.papers }} papers{% endif %} {% if item.event == 'published' %}published in{% else %}accepted at{% endif %} <strong>{{ item.venue | escape }}</strong>{% if item.note %} ({{ item.note | escape }}){% endif %}.</span>
-        </li>
-      {% endfor %}
-    {% else %}
-      {% assign accepted = 0 %}
-      {% assign published = 0 %}
-      {% assign conferences = "" | split: "," %}
-      {% assign journals = "" | split: "," %}
-      {% for item in year.items %}
-        {% capture venue %}<strong>{{ item.venue | escape }}</strong>{% if item.note %} ({{ item.note | escape }}){% endif %}{% if item.papers > 1 %} ({{ item.papers }} papers){% endif %}{% endcapture %}
-        {% if item.event == 'published' %}
-          {% assign published = published | plus: item.papers %}
-          {% assign journals = journals | push: venue %}
-        {% else %}
-          {% assign accepted = accepted | plus: item.papers %}
-          {% assign conferences = conferences | push: venue %}
-        {% endif %}
-      {% endfor %}
-      {% assign total = accepted | plus: published %}
-      <li class="news-item">
-        <time class="news-time" datetime="{{ year.name }}">[{{ year.name }}]</time>
-        <span>{{ total }} {% if total == 1 %}paper{% else %}papers{% endif %}{% if accepted > 0 and published > 0 %} accepted! {{ accepted }} at {{ conferences | array_to_sentence_string }}; {{ published }} published in {{ journals | array_to_sentence_string }}{% elsif accepted > 0 %} accepted at {{ conferences | array_to_sentence_string }}{% else %} published in {{ journals | array_to_sentence_string }}{% endif %}.</span>
-      </li>
-    {% endif %}
+  {% for item in news_entries limit: 8 %}
+    <li class="news-item">
+      <time class="news-time" datetime="{{ item.date }}">{% if item.date.size == 7 %}{{ item.date | slice: 5, 2 }}/{% endif %}{{ item.date | slice: 0, 4 }}</time>
+      <span>{% if item.event == 'released' %}Released <em>{{ item.paper | escape }}</em>{% if item.note %}, {{ item.note | escape }}{% endif %}.{% else %}<em>{{ item.paper | escape }}</em> {% if item.event == 'published' %}published in{% else %}accepted at{% endif %} <strong>{{ item.venue | escape }}</strong>{% if item.note %} ({{ item.note | escape }}){% endif %}.{% endif %}</span>
+    </li>
   {% endfor %}
 </ul>
 
 <span class='anchor' id='-publications'></span>
 
-# Publications
+# Selected Publications
 
 <div class="publications-list">
 
-<div class="publication-item">
+<div class="publication-item publication-item--highlight" id="egousebench">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
+        <div class="paper-meta"><span class="badge badge--preprint">Preprint</span></div>
         <div class="paper-box-text">
             <h3>EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Qihang Yu, Keting Yin, Shengyu Zhang</p>
+            <p class="paper-tldr">A benchmark for evaluating how computer-use agents adapt as first-person observations and user requests change during web tasks.</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2611.34466" class="paper-link" target="_blank" rel="noopener">Paper</a>
                 <a href="https://github.com/YurunChen/EgoUseBench" class="paper-link" target="_blank" rel="noopener">Code</a>
                 <a href="https://yurunchen.github.io/egousebench/" class="paper-link" target="_blank" rel="noopener">Website</a>
                 <a href="https://huggingface.co/datasets/yurun-chen/EgoUseBench" class="paper-link" target="_blank" rel="noopener">Dataset</a>
+                <a href="/files/egousebench-explainer.mp4" class="paper-link" target="_blank" rel="noopener">Full video</a>
                 <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.egousebench | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
             </div>
         </div>
         <div class="paper-media">
-            <video controls playsinline preload="none" poster="/images/EgoUseBench-explainer.webp" width="1280" height="720" aria-label="EgoUseBench explainer">
-                <source src="/files/egousebench-explainer.mp4" type="video/mp4">
-                <a href="/files/egousebench-explainer.mp4">Watch the EgoUseBench explainer</a>
-            </video>
+            <picture>
+                <source media="(prefers-reduced-motion: reduce)" srcset="/images/EgoUseBench-explainer.webp">
+                <img src="/images/EgoUseBench-preview.gif" width="416" height="234" loading="lazy" decoding="async" alt="EgoUseBench demo: the user switches to a 1 kg spice refill, and the agent adds it to the cart.">
+            </picture>
         </div>
     </div>
 </div>
 
-<div class="publication-item">
+<div class="publication-item publication-item--highlight" id="safepred">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
-        <div class="paper-box-text">
-            <h3>Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</h3>
-            <p class="paper-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), <time datetime="2026">2026</time></p>
-            <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
-            <div class="paper-links">
-                <a href="https://arxiv.org/abs/2510.00507" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/YurunChen/Graph2Eval" class="paper-link" target="_blank">Code</a>
-                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.graph2eval | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:LkGwnXOMwfcC"></span>
-            </div>
-        </div>
-        <div class="paper-media">
-            <img src="images/Methods4_00.webp" alt="Graph2Eval" width="768" height="481" loading="lazy" decoding="async">
-        </div>
-    </div>
-</div>
-
-<div class="publication-item">
-    <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
+        <div class="paper-meta"><span class="badge badge--preprint">Preprint</span></div>
         <div class="paper-box-text">
             <h3>SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Zeyi Liao, Ping Yin, Taotao Xie, Keting Yin, Shengyu Zhang</p>
+            <p class="paper-tldr">A predictive guardrail that uses world models to anticipate short- and long-term risks, reducing high-risk actions by 97%+ while improving task performance.</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2602.01725" class="paper-link" target="_blank">Paper</a>
                 <a href="https://github.com/YurunChen/SafePred" class="paper-link" target="_blank">Code</a>
@@ -144,9 +108,117 @@ redirect_from:
     </div>
 </div>
 
+<div class="publication-item publication-item--highlight" id="graph2eval">
+    <div class="paper-box">
+        <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
+        <div class="paper-box-text">
+            <h3>Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</h3>
+            <p class="paper-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), <time datetime="2026">2026</time></p>
+            <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
+            <p class="paper-tldr">A knowledge-graph framework that automatically generates multimodal document and web interaction tasks for comprehensive agent evaluation.</p>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2510.00507" class="paper-link" target="_blank">Paper</a>
+                <a href="https://github.com/YurunChen/Graph2Eval" class="paper-link" target="_blank">Code</a>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.graph2eval | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:LkGwnXOMwfcC"></span>
+            </div>
+        </div>
+        <div class="paper-media">
+            <img src="images/Methods4_00.webp" alt="Graph2Eval" width="768" height="481" loading="lazy" decoding="async">
+        </div>
+    </div>
+</div>
+
+<div class="publication-item" id="os-agents">
+    <div class="paper-box">
+        <div class="paper-meta"><span class="badge">ACL 2025 Oral</span></div>
+        <div class="paper-box-text">
+            <h3>OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</h3>
+            <p class="paper-venue-line">Annual Meeting of the Association for Computational Linguistics (ACL), <time datetime="2025">2025</time> (Oral)</p>
+            <p class="paper-authors">Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong>, et al.</p>
+            <p class="paper-tldr">A survey on agents that operate computers, phones, and browsers, covering components, construction, benchmarks, and open challenges; its companion repository has 490+ GitHub stars.</p>
+            <div class="paper-links">
+                <a href="https://aclanthology.org/2025.acl-long.369/" class="paper-link" target="_blank">Paper</a>
+                <a href="https://os-agent-survey.github.io/" class="paper-link" target="_blank" rel="noopener">Project</a>
+                <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="paper-link" target="_blank" rel="noopener">GitHub</a>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.os_agents | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:eQOLeE2rZwMC"></span>
+            </div>
+        </div>
+        <div class="paper-media">
+            <img src="images/1_teaser_os_agent_00.webp" alt="OS Agents Survey" width="768" height="395" loading="lazy" decoding="async">
+        </div>
+    </div>
+</div>
+
+<div class="publication-item" id="aeia">
+    <div class="paper-box">
+        <div class="paper-meta"><span class="badge">ACM MM 2025</span></div>
+        <div class="paper-box-text">
+            <h3>Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</h3>
+            <p class="paper-venue-line">ACM International Conference on Multimedia (ACM MM), <time datetime="2025">2025</time></p>
+            <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
+            <p class="paper-tldr">Introduces Active Environment Injection Attacks (AEIA), which disguise malicious inputs as UI elements and reach up to 93% attack success against advanced agents.</p>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2502.13053" class="paper-link" target="_blank">Paper</a>
+                <a href="https://github.com/YurunChen/AEIA" class="paper-link" target="_blank">Code</a>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.aeia | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:W7OEmFMy1HYC"></span>
+            </div>
+        </div>
+        <div class="paper-media">
+            <img src="images/Attack_Methods7_00.webp" alt="AEIA" width="768" height="484" loading="lazy" decoding="async">
+        </div>
+    </div>
+</div>
+
+<div class="publication-item" id="harmonyguard">
+    <div class="paper-box">
+        <div class="paper-meta"><span class="badge badge--preprint">Preprint</span></div>
+        <div class="paper-box-text">
+            <h3>HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization</h3>
+            <p class="paper-venue-line">arXiv, <time datetime="2025">2025</time></p>
+            <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Keting Yin, Juncheng Li, Zhuosheng Zhang, Shengyu Zhang</p>
+            <p class="paper-tldr">A multi-agent framework that jointly improves utility and safety in web agents via adaptive policy enhancement and dual-objective optimization.</p>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2508.04010" class="paper-link" target="_blank">Paper</a>
+                <a href="https://github.com/YurunChen/HarmonyGuard" class="paper-link" target="_blank">Code</a>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.harmonyguard | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:ufrVoPGSRksC"></span>
+            </div>
+        </div>
+        <div class="paper-media">
+            <img src="images/HarmonyGuard_00.webp" alt="HarmonyGuard" width="768" height="444" loading="lazy" decoding="async">
+        </div>
+    </div>
+</div>
+
+<div class="publication-item" id="skillharness">
+    <div class="paper-box">
+        <div class="paper-meta"><span class="badge badge--preprint">Preprint</span></div>
+        <div class="paper-box-text">
+            <h3>SkillHarness: Harnessing Safe Skills for Computer-Use Agents</h3>
+            <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
+            <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Keting Yin, Shengyu Zhang</p>
+            <p class="paper-tldr">A framework for safe skill learning and selective reuse in dynamic environments, reducing unsafe learned skills by 57.1% while improving execution stability.</p>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2606.20636" class="paper-link" target="_blank">Paper</a>
+                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.skillharness | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
+                <span class="show_paper_citations" data="DGRecXEAAAAJ:0EnyYjriUFMC"></span>
+            </div>
+        </div>
+        <div class="paper-media">
+            <img src="images/SkillHarness.webp" alt="SkillHarness" width="768" height="510" loading="lazy" decoding="async">
+        </div>
+    </div>
+</div>
+
+<details class="more-publications">
+<summary>More publications</summary>
+
 <div class="publication-item" id="webharbor">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
+        <div class="paper-meta"><span class="badge badge--preprint">Preprint</span></div>
         <div class="paper-box-text">
             <h3>WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
@@ -162,25 +234,6 @@ redirect_from:
         </div>
         <div class="paper-media">
             <img src="images/WebHarbor-method.webp" alt="WebHarbor workflow: live websites are reconstructed and audited to produce resettable environments for GUI agents" width="960" height="344" loading="lazy" decoding="async">
-        </div>
-    </div>
-</div>
-
-<div class="publication-item">
-    <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
-        <div class="paper-box-text">
-            <h3>SkillHarness: Harnessing Safe Skills for Computer-Use Agents</h3>
-            <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
-            <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Keting Yin, Shengyu Zhang</p>
-            <div class="paper-links">
-                <a href="https://arxiv.org/abs/2606.20636" class="paper-link" target="_blank">Paper</a>
-                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.skillharness | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:0EnyYjriUFMC"></span>
-            </div>
-        </div>
-        <div class="paper-media">
-            <img src="images/SkillHarness.webp" alt="SkillHarness" width="768" height="510" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -207,67 +260,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">ACM MM 2025</span></div>
-        <div class="paper-box-text">
-            <h3>Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</h3>
-            <p class="paper-venue-line">ACM International Conference on Multimedia (ACM MM), <time datetime="2025">2025</time></p>
-            <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
-            <div class="paper-links">
-                <a href="https://arxiv.org/abs/2502.13053" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/YurunChen/AEIA" class="paper-link" target="_blank">Code</a>
-                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.aeia | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:W7OEmFMy1HYC"></span>
-            </div>
-        </div>
-        <div class="paper-media">
-            <img src="images/Attack_Methods7_00.webp" alt="AEIA" width="768" height="484" loading="lazy" decoding="async">
-        </div>
-    </div>
-</div>
-
-<div class="publication-item">
-    <div class="paper-box">
-        <div class="paper-meta"><span class="badge">ACL 2025 Oral</span></div>
-        <div class="paper-box-text">
-            <h3>OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</h3>
-            <p class="paper-venue-line">Annual Meeting of the Association for Computational Linguistics (ACL), <time datetime="2025">2025</time> (Oral)</p>
-            <p class="paper-authors">Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong>, et al.</p>
-            <div class="paper-links">
-                <a href="https://aclanthology.org/2025.acl-long.369/" class="paper-link" target="_blank">Paper</a>
-                <a href="https://os-agent-survey.github.io/" class="paper-link" target="_blank" rel="noopener">Project</a>
-                <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="paper-link" target="_blank" rel="noopener">GitHub</a>
-                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.os_agents | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:eQOLeE2rZwMC"></span>
-            </div>
-        </div>
-        <div class="paper-media">
-            <img src="images/1_teaser_os_agent_00.webp" alt="OS Agents Survey" width="768" height="395" loading="lazy" decoding="async">
-        </div>
-    </div>
-</div>
-
-<div class="publication-item">
-    <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
-        <div class="paper-box-text">
-            <h3>HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization</h3>
-            <p class="paper-venue-line">arXiv, <time datetime="2025">2025</time></p>
-            <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Keting Yin, Juncheng Li, Zhuosheng Zhang, Shengyu Zhang</p>
-            <div class="paper-links">
-                <a href="https://arxiv.org/abs/2508.04010" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/YurunChen/HarmonyGuard" class="paper-link" target="_blank">Code</a>
-                <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.harmonyguard | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
-                <span class="show_paper_citations" data="DGRecXEAAAAJ:ufrVoPGSRksC"></span>
-            </div>
-        </div>
-        <div class="paper-media">
-            <img src="images/HarmonyGuard_00.webp" alt="HarmonyGuard" width="768" height="444" loading="lazy" decoding="async">
-        </div>
-    </div>
-</div>
-
-<div class="publication-item">
-    <div class="paper-box">
         <div class="paper-meta"><span class="badge">EMNLP 2026</span></div>
         <div class="paper-box-text">
             <h3>GUI-PRA: Process Reward Agents for GUI Tasks</h3>
@@ -285,6 +277,8 @@ redirect_from:
         </div>
     </div>
 </div>
+
+<h4 class="publications-subhead">Earlier work on data security</h4>
 
 <div class="publication-item" id="journal-publications">
     <div class="paper-box">
@@ -343,6 +337,8 @@ redirect_from:
     </div>
 </div>
 
+</details>
+
 </div>
 
 <div id="bibtex-status" class="visually-hidden" role="status"></div>
@@ -397,24 +393,8 @@ redirect_from:
 # Service & Awards
 
 <ul class="site-list">
-<li><strong>Reviewer</strong> — ACL 2025, AAAI 2026, ACM MM 2026, AAAI 2027, ICLR 2027, ACM MM 2027</li>
-<li><strong>Open Source</strong> — <a href="https://github.com/YurunChen/Graph2Eval">Graph2Eval</a>, <a href="https://github.com/YurunChen/HarmonyGuard">HarmonyGuard</a>, <a href="https://github.com/YurunChen/SafePred">SafePred</a>, <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey">OS-Agent-Survey</a></li>
-<li><strong>2025.06</strong> — Outstanding Graduate of Beijing; Top 100 Graduates of BJUT</li>
-<li><strong>2024.10</strong> — Xiaomi Scholarship</li>
-<li><strong>2024.09</strong> — National Scholarship</li>
-<li><strong>2023.08</strong> — Provincial Second Prize, Graduate Electronic Design Competition</li>
-<li><strong>2023.02</strong> — Excellence Award, CCF&ATEC Undergraduate Blockchain Security Competition</li>
-</ul>
-
-<span class='anchor' id='-people'></span>
-
-# People & Network
-
-<ul class="site-list">
-<li><a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> — Zhejiang University</li>
-<li><a href="https://person.zju.edu.cn/ykt">Keting Yin</a> — Zhejiang University</li>
-<li><a href="https://person.zju.edu.cn/juncheng#0">Juncheng Li</a> — Zhejiang University</li>
-<li>Xavier Hu — Zhejiang University</li>
-<li>Biao Yi — Zhejiang University</li>
-<li><a href="https://yuhan0802.github.io/">Yuhan Liu</a> — Xiamen University</li>
+<li><strong>Reviewer</strong> — ICLR, ACL, AAAI, ACM MM</li>
+<li><strong>Outstanding Graduate of Beijing</strong>, 2025</li>
+<li><strong>Xiaomi Scholarship</strong>, 2024</li>
+<li><strong>National Scholarship</strong>, 2024</li>
 </ul>
