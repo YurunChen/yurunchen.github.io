@@ -409,17 +409,6 @@ body {
             line-height: 1.33;
             color: $site-text;
             letter-spacing: -0.014em;
-
-            a {
-                color: inherit;
-                text-decoration: none;
-
-                &:hover {
-                    color: $site-link;
-                    text-decoration: underline;
-                    text-underline-offset: 3px;
-                }
-            }
         }
     }
 }
@@ -501,13 +490,12 @@ body {
     font-variant-numeric: tabular-nums;
 }
 
-.paper-links,
-.paper-buttons {
+.paper-links {
     margin-top: 0.45em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.4rem 0.5rem;
+    gap: 0.3rem 0.85rem;
 
     .show_paper_citations {
         &:empty {
@@ -525,38 +513,27 @@ body {
         }
     }
 
-    .paper-link,
-    .btn {
+    .paper-link {
         display: inline-flex;
         align-items: center;
-        min-height: 2.1rem;
-        padding: 0.08rem 0.68rem;
-        border: 1px solid $site-border;
-        border-radius: $site-radius-sm;
-        background: transparent;
+        min-height: 1.75rem;
         color: $site-link;
         font-size: $font-small;
         font-weight: 500;
-        letter-spacing: 0;
-        text-decoration: none;
-        text-transform: none;
-        box-shadow: none;
-
-        &:first-child {
-            border-color: $site-border;
-            background: $site-accent-surface;
-            font-weight: 600;
-        }
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
 
         &:hover {
-            border-color: $site-link;
-            background: $site-accent-surface;
             color: $site-link-hover;
         }
 
+        &:focus {
+            outline: none;
+        }
+
         &:focus-visible {
-            outline: 2px solid $site-link;
-            outline-offset: 2px;
+            color: $site-link-hover;
+            text-decoration-thickness: 0.17em;
         }
     }
 }

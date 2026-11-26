@@ -38,27 +38,32 @@ redirect_from:
 
 # News
 
+{% assign current_year = site.time | date: "%Y" %}
+{% assign acceptances = site.data.news | sort: "accepted" | reverse %}
+{% assign news_years = acceptances | group_by_exp: "item", "item.accepted | slice: 0, 4" %}
 <ul class="news-list-wrapper" role="list">
-  <li class="news-item">
-    <time class="news-time" datetime="2026-08">[08/2026]</time>
-    <span>One paper accepted at <strong>EMNLP 2026</strong>.</span>
-  </li>
-  <li class="news-item">
-    <time class="news-time" datetime="2026-02">[02/2026]</time>
-    <span>One paper accepted at <strong>CVPR 2026</strong>.</span>
-  </li>
-  <li class="news-item">
-    <time class="news-time" datetime="2025-11">[11/2025]</time>
-    <span>One paper accepted at <strong>AAAI 2026</strong>.</span>
-  </li>
-  <li class="news-item">
-    <time class="news-time" datetime="2025-07">[07/2025]</time>
-    <span>One paper accepted at <strong>ACM MM 2025</strong>.</span>
-  </li>
-  <li class="news-item">
-    <time class="news-time" datetime="2025-04">[04/2025]</time>
-    <span>One paper accepted at <strong>ACL 2025</strong> (Oral).</span>
-  </li>
+  {% for year in news_years %}
+    {% if year.name == current_year %}
+      {% for item in year.items %}
+        <li class="news-item">
+          <time class="news-time" datetime="{{ item.accepted }}">[{{ item.accepted | slice: 5, 2 }}/{{ year.name }}]</time>
+          <span>{% if item.papers == 1 %}One paper{% else %}{{ item.papers }} papers{% endif %} accepted at <strong>{{ item.venue | escape }}</strong>{% if item.note %} ({{ item.note | escape }}){% endif %}.</span>
+        </li>
+      {% endfor %}
+    {% else %}
+      {% assign total = 0 %}
+      {% assign venues = "" | split: "," %}
+      {% for item in year.items %}
+        {% assign total = total | plus: item.papers %}
+        {% capture venue %}{{ item.papers }} at <strong>{{ item.venue | escape }}</strong>{% if item.note %} ({{ item.note | escape }}){% endif %}{% endcapture %}
+        {% assign venues = venues | push: venue %}
+      {% endfor %}
+      <li class="news-item">
+        <time class="news-time" datetime="{{ year.name }}">[{{ year.name }}]</time>
+        <span>{{ total }} {% if total == 1 %}paper{% else %}papers{% endif %} accepted: {{ venues | array_to_sentence_string }}.</span>
+      </li>
+    {% endif %}
+  {% endfor %}
 </ul>
 
 <span class='anchor' id='-publications'></span>
@@ -71,7 +76,7 @@ redirect_from:
     <div class="paper-box">
         <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://arxiv.org/abs/2611.34466">EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts</a></h3>
+            <h3>EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Qihang Yu, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
@@ -94,7 +99,7 @@ redirect_from:
     <div class="paper-box">
         <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://arxiv.org/abs/2606.20636">SkillHarness: Harnessing Safe Skills for Computer-Use Agents</a></h3>
+            <h3>SkillHarness: Harnessing Safe Skills for Computer-Use Agents</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
@@ -112,7 +117,7 @@ redirect_from:
     <div class="paper-box">
         <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://arxiv.org/abs/2602.01725">SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</a></h3>
+            <h3>SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Zeyi Liao, Ping Yin, Taotao Xie, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
@@ -131,7 +136,7 @@ redirect_from:
     <div class="paper-box">
         <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://arxiv.org/abs/2510.00507">Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</a></h3>
+            <h3>Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</h3>
             <p class="paper-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition, <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
@@ -150,7 +155,7 @@ redirect_from:
     <div class="paper-box">
         <div class="paper-meta"><span class="badge">AAAI 2026</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://arxiv.org/abs/2505.05440">EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</a></h3>
+            <h3>EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</h3>
             <p class="paper-venue-line">AAAI Conference on Artificial Intelligence, <time datetime="2026">2026</time></p>
             <p class="paper-authors">Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
             <div class="paper-links">
@@ -168,7 +173,7 @@ redirect_from:
     <div class="paper-box">
         <div class="paper-meta"><span class="badge">ACM MM 2025</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://arxiv.org/abs/2502.13053">Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</a></h3>
+            <h3>Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</h3>
             <p class="paper-venue-line">ACM International Conference on Multimedia, <time datetime="2025">2025</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
             <div class="paper-links">
@@ -187,7 +192,7 @@ redirect_from:
     <div class="paper-box">
         <div class="paper-meta"><span class="badge">ACL 2025 Oral</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://arxiv.org/abs/2508.04482">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</a></h3>
+            <h3>OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</h3>
             <p class="paper-venue-line">Annual Meeting of the Association for Computational Linguistics (Oral), <time datetime="2025">2025</time></p>
             <p class="paper-authors">Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong>, et al.</p>
             <div class="paper-links">
@@ -206,7 +211,7 @@ redirect_from:
     <div class="paper-box">
         <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://arxiv.org/abs/2508.04010">HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization</a></h3>
+            <h3>HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2025">2025</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Keting Yin, Juncheng Li, Zhuosheng Zhang, Shengyu Zhang</p>
             <div class="paper-links">
@@ -225,7 +230,7 @@ redirect_from:
     <div class="paper-box">
         <div class="paper-meta"><span class="badge">EMNLP 2026</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://aclanthology.org/2026.emnlp-main.1304/">GUI-PRA: Process Reward Agents for GUI Tasks</a></h3>
+            <h3>GUI-PRA: Process Reward Agents for GUI Tasks</h3>
             <p class="paper-venue-line">Conference on Empirical Methods in Natural Language Processing, <time datetime="2026">2026</time></p>
             <p class="paper-authors">Tao Xiong, Xueyu Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
             <div class="paper-links">
@@ -243,7 +248,7 @@ redirect_from:
     <div class="paper-box paper-box--text-only">
         <div class="paper-meta"><span class="badge">TIFS 2025</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://ieeexplore.ieee.org/document/11187397">DART: Distributed Zero Knowledge Data Auditing with Retrievability for Blockchain-Based Decentralized Storage Networks</a></h3>
+            <h3>DART: Distributed Zero Knowledge Data Auditing with Retrievability for Blockchain-Based Decentralized Storage Networks</h3>
             <p class="paper-venue-line">IEEE Transactions on Information Forensics and Security, <time datetime="2025">2025</time></p>
             <p class="paper-authors">Haiyang Yu, <strong>Yurun Chen</strong>, Shen Su∗, Jian Su∗, Yuwen Chen, Zhen Yang</p>
             <div class="paper-links">
@@ -258,7 +263,7 @@ redirect_from:
     <div class="paper-box paper-box--text-only">
         <div class="paper-meta"><span class="badge">TMC 2025</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://ieeexplore.ieee.org/document/10886974">S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT</a></h3>
+            <h3>S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT</h3>
             <p class="paper-venue-line">IEEE Transactions on Mobile Computing, <time datetime="2025">2025</time></p>
             <p class="paper-authors">Xiaohu Shan, Haiyang Yu, <strong>Yurun Chen</strong>, Yuwen Chen, Zhen Yang</p>
             <div class="paper-links">
@@ -273,7 +278,7 @@ redirect_from:
     <div class="paper-box paper-box--text-only">
         <div class="paper-meta"><span class="badge">TSC 2024</span></div>
         <div class="paper-box-text">
-            <h3><a href="https://ieeexplore.ieee.org/document/10568383">EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage</a></h3>
+            <h3>EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage</h3>
             <p class="paper-venue-line">IEEE Transactions on Services Computing, <time datetime="2024">2024</time></p>
             <p class="paper-authors">Haiyang Yu, <strong>Yurun Chen</strong>, Zhen Yang, Yuwen Chen, Shui Yu</p>
             <div class="paper-links">
