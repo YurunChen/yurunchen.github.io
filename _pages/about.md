@@ -39,28 +39,36 @@ redirect_from:
 # News
 
 {% assign current_year = site.time | date: "%Y" %}
-{% assign acceptances = site.data.news | sort: "accepted" | reverse %}
-{% assign news_years = acceptances | group_by_exp: "item", "item.accepted | slice: 0, 4" %}
+{% assign news_entries = site.data.news | sort: "date" | reverse %}
+{% assign news_years = news_entries | group_by_exp: "item", "item.date | slice: 0, 4" %}
 <ul class="news-list-wrapper" role="list">
   {% for year in news_years %}
     {% if year.name == current_year %}
       {% for item in year.items %}
         <li class="news-item">
-          <time class="news-time" datetime="{{ item.accepted }}">[{{ item.accepted | slice: 5, 2 }}/{{ year.name }}]</time>
-          <span>{% if item.papers == 1 %}One paper{% else %}{{ item.papers }} papers{% endif %} accepted at <strong>{{ item.venue | escape }}</strong>{% if item.note %} ({{ item.note | escape }}){% endif %}.</span>
+          <time class="news-time" datetime="{{ item.date }}">[{% if item.date.size == 7 %}{{ item.date | slice: 5, 2 }}/{% endif %}{{ year.name }}]</time>
+          <span>{% if item.papers == 1 %}One paper{% else %}{{ item.papers }} papers{% endif %} {% if item.event == 'published' %}published in{% else %}accepted at{% endif %} <strong>{{ item.venue | escape }}</strong>{% if item.note %} ({{ item.note | escape }}){% endif %}.</span>
         </li>
       {% endfor %}
     {% else %}
-      {% assign total = 0 %}
-      {% assign venues = "" | split: "," %}
+      {% assign accepted = 0 %}
+      {% assign published = 0 %}
+      {% assign conferences = "" | split: "," %}
+      {% assign journals = "" | split: "," %}
       {% for item in year.items %}
-        {% assign total = total | plus: item.papers %}
-        {% capture venue %}{{ item.papers }} at <strong>{{ item.venue | escape }}</strong>{% if item.note %} ({{ item.note | escape }}){% endif %}{% endcapture %}
-        {% assign venues = venues | push: venue %}
+        {% capture venue %}<strong>{{ item.venue | escape }}</strong>{% if item.note %} ({{ item.note | escape }}){% endif %}{% if item.papers > 1 %} ({{ item.papers }} papers){% endif %}{% endcapture %}
+        {% if item.event == 'published' %}
+          {% assign published = published | plus: item.papers %}
+          {% assign journals = journals | push: venue %}
+        {% else %}
+          {% assign accepted = accepted | plus: item.papers %}
+          {% assign conferences = conferences | push: venue %}
+        {% endif %}
       {% endfor %}
+      {% assign total = accepted | plus: published %}
       <li class="news-item">
         <time class="news-time" datetime="{{ year.name }}">[{{ year.name }}]</time>
-        <span>{{ total }} {% if total == 1 %}paper{% else %}papers{% endif %} accepted: {{ venues | array_to_sentence_string }}.</span>
+        <span>{{ total }} {% if total == 1 %}paper{% else %}papers{% endif %}{% if accepted > 0 and published > 0 %}: {{ accepted }} accepted at {{ conferences | array_to_sentence_string }}; {{ published }} published in {{ journals | array_to_sentence_string }}{% elsif accepted > 0 %} accepted at {{ conferences | array_to_sentence_string }}{% else %} published in {{ journals | array_to_sentence_string }}{% endif %}.</span>
       </li>
     {% endif %}
   {% endfor %}
@@ -88,7 +96,7 @@ redirect_from:
             </div>
         </div>
         <div class="paper-media">
-            <video controls playsinline preload="none" poster="/images/EgoUseBench-explainer.jpg" width="1280" height="720" aria-label="EgoUseBench in 41 seconds">
+            <video controls playsinline preload="none" poster="/images/EgoUseBench-explainer.webp" width="1280" height="720" aria-label="EgoUseBench in 41 seconds">
                 <source src="/files/egousebench-explainer.mp4" type="video/mp4">
                 <a href="/files/egousebench-explainer.mp4">Watch the EgoUseBench explainer</a>
             </video>
@@ -110,7 +118,7 @@ redirect_from:
             </div>
         </div>
         <div class="paper-media">
-            <img src="images/SkillHarness.png" alt="SkillHarness" width="100%">
+            <img src="images/SkillHarness.webp" alt="SkillHarness" width="768" height="510" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -130,7 +138,7 @@ redirect_from:
             </div>
         </div>
         <div class="paper-media">
-            <img src="images/Method9_01.png" alt="SafePred" width="100%">
+            <img src="images/Method9_01.webp" alt="SafePred" width="768" height="382" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -150,7 +158,7 @@ redirect_from:
             </div>
         </div>
         <div class="paper-media">
-            <img src="images/Methods4_00.png" alt="Graph2Eval" width="100%">
+            <img src="images/Methods4_00.webp" alt="Graph2Eval" width="768" height="481" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -164,12 +172,13 @@ redirect_from:
             <p class="paper-authors">Biao Yi, Xavier Hu, <strong>Yurun Chen</strong>, Shengyu Zhang, Hongxia Yang, Fan Wu, Fei Wu</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2505.05440" class="paper-link" target="_blank">Paper</a>
+                <a href="https://github.com/Yi-Biao/EcoAgent" class="paper-link" target="_blank" rel="noopener">Code</a>
                 <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.ecoagent | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:Tyk-4Ss8FVUC"></span>
             </div>
         </div>
         <div class="paper-media">
-            <img src="images/EcoAgent.png" alt="EcoAgent" width="100%">
+            <img src="images/EcoAgent.webp" alt="EcoAgent" width="768" height="431" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -189,7 +198,7 @@ redirect_from:
             </div>
         </div>
         <div class="paper-media">
-            <img src="images/Attack_Methods7_00.png" alt="AEIA" width="100%">
+            <img src="images/Attack_Methods7_00.webp" alt="AEIA" width="768" height="484" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -203,13 +212,14 @@ redirect_from:
             <p class="paper-authors">Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong>, et al.</p>
             <div class="paper-links">
                 <a href="https://aclanthology.org/2025.acl-long.369/" class="paper-link" target="_blank">Paper</a>
-                <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="paper-link" target="_blank">Project</a>
+                <a href="https://os-agent-survey.github.io/" class="paper-link" target="_blank" rel="noopener">Project</a>
+                <a href="https://github.com/OS-Agent-Survey/OS-Agent-Survey" class="paper-link" target="_blank" rel="noopener">GitHub</a>
                 <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.os_agents | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:eQOLeE2rZwMC"></span>
             </div>
         </div>
         <div class="paper-media">
-            <img src="images/1_teaser_os_agent_00.png" alt="OS Agents Survey" width="100%">
+            <img src="images/1_teaser_os_agent_00.webp" alt="OS Agents Survey" width="768" height="395" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -229,7 +239,7 @@ redirect_from:
             </div>
         </div>
         <div class="paper-media">
-            <img src="images/HarmonyGuard_00.png" alt="HarmonyGuard" width="100%">
+            <img src="images/HarmonyGuard_00.webp" alt="HarmonyGuard" width="768" height="444" loading="lazy" decoding="async">
         </div>
     </div>
 </div>
@@ -243,12 +253,13 @@ redirect_from:
             <p class="paper-authors">Tao Xiong, Xueyu Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://aclanthology.org/2026.emnlp-main.1304/" class="paper-link" target="_blank">Paper</a>
+                <a href="https://github.com/YuanDaoze/GUI-PRA" class="paper-link" target="_blank" rel="noopener">Code</a>
                 <button type="button" class="bibtex-copy" aria-label="Copy BibTeX" data-bibtex="{{ site.data.bibtex.gui_pra | escape }}"><i class="fas fa-copy" aria-hidden="true"></i><span>BibTeX</span></button>
                 <span class="show_paper_citations" data="DGRecXEAAAAJ:roLk4NBRz8UC"></span>
             </div>
         </div>
         <div class="paper-media">
-            <img src="images/GUI-PRA.png" alt="GUI-PRA" width="100%">
+            <img src="images/GUI-PRA.webp" alt="GUI-PRA" width="768" height="397" loading="lazy" decoding="async">
         </div>
     </div>
 </div>

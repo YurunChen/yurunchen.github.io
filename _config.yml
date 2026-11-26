@@ -22,7 +22,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yurun Chen (陈雨润)"
-  avatar           : "images/photo.jpg"
+  avatar           : "images/photo.webp"
+  avatar_width     : 420
+  avatar_height    : 560
   bio              :
   location         :
   employer         : "Zhejiang University"
