@@ -66,7 +66,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .brand-mark { width: 28px; height: 28px; flex: none; }
 .top-logos { display: flex; align-items: center; gap: 16px; margin-left: auto; }
 .top-logos img { width: auto; object-fit: contain; }
-.logo-lab { height: 30px; }
+.top-logos .logo-lab { width: 204px; height: auto; }
 .logo-uni { height: 29px; }
 
 main { width: var(--page); margin: 0 auto; }
@@ -620,9 +620,9 @@ td.online { color: var(--hot-ink); font-weight: 700; }
   .credits { gap: 4px 12px; font-size: 14px; }
   .hero-links { gap: 6px; }
   .hero-links .button { padding-inline: 11px; }
-  .top-logos { gap: 8px; }
-  .logo-lab { height: 24px; }
-  .logo-uni { height: 22px; }
+  .top-logos { flex-direction: column; align-items: flex-end; gap: 4px; }
+  .top-logos .logo-lab { width: clamp(126px, 40vw, 170px); }
+  .logo-uni { height: 17px; }
   .stats { grid-template-columns: 1fr; }
   .outcome { margin-left: 0; }
   .hud span { display: none; }
