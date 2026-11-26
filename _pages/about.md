@@ -148,7 +148,7 @@ redirect_from:
         <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
         <div class="paper-box-text">
             <h3>Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</h3>
-            <p class="paper-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition, <time datetime="2026">2026</time></p>
+            <p class="paper-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), <time datetime="2026">2026</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2510.00507" class="paper-link" target="_blank">Paper</a>
@@ -188,7 +188,7 @@ redirect_from:
         <div class="paper-meta"><span class="badge">ACM MM 2025</span></div>
         <div class="paper-box-text">
             <h3>Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</h3>
-            <p class="paper-venue-line">ACM International Conference on Multimedia, <time datetime="2025">2025</time></p>
+            <p class="paper-venue-line">ACM International Conference on Multimedia (ACM MM), <time datetime="2025">2025</time></p>
             <p class="paper-authors"><strong>Yurun Chen</strong>, Xavier Hu, Keting Yin, Juncheng Li, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://arxiv.org/abs/2502.13053" class="paper-link" target="_blank">Paper</a>
@@ -208,7 +208,7 @@ redirect_from:
         <div class="paper-meta"><span class="badge">ACL 2025 Oral</span></div>
         <div class="paper-box-text">
             <h3>OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</h3>
-            <p class="paper-venue-line">Annual Meeting of the Association for Computational Linguistics (Oral), <time datetime="2025">2025</time></p>
+            <p class="paper-venue-line">Annual Meeting of the Association for Computational Linguistics (ACL), <time datetime="2025">2025</time> (Oral)</p>
             <p class="paper-authors">Xueyu Hu, Tao Xiong, Biao Yi, Zishu Wei, Ruixuan Xiao, <strong>Yurun Chen</strong>, et al.</p>
             <div class="paper-links">
                 <a href="https://aclanthology.org/2025.acl-long.369/" class="paper-link" target="_blank">Paper</a>
@@ -249,7 +249,7 @@ redirect_from:
         <div class="paper-meta"><span class="badge">EMNLP 2026</span></div>
         <div class="paper-box-text">
             <h3>GUI-PRA: Process Reward Agents for GUI Tasks</h3>
-            <p class="paper-venue-line">Conference on Empirical Methods in Natural Language Processing, <time datetime="2026">2026</time></p>
+            <p class="paper-venue-line">Conference on Empirical Methods in Natural Language Processing (EMNLP), <time datetime="2026">2026</time></p>
             <p class="paper-authors">Tao Xiong, Xueyu Hu, <strong>Yurun Chen</strong>, Yuhang Liu, Changqiao Wu, Pengzhi Gao, Wei Liu, Jian Luan, Shengyu Zhang</p>
             <div class="paper-links">
                 <a href="https://aclanthology.org/2026.emnlp-main.1304/" class="paper-link" target="_blank">Paper</a>
