@@ -163,6 +163,24 @@ Published preprint: <em><a href="https://arxiv.org/abs/2508.04482" target="_blan
 <div class="publication-item">
     <div class="paper-box">
         <div class="paper-box-image">
+            <img src="/egousebench/static/egousebench-logo.png" alt="EgoUseBench mascot" width="100%" style="object-fit: contain; object-position: center; padding: 0.5rem;">
+            <span class="paper-thumb-badge">arXiv</span>
+        </div>
+        <div class="paper-box-text">
+            <h3><a href="https://arxiv.org/abs/2611.34466">EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts</a></h3>
+            <p class="paper-authors"><strong>Yurun Chen</strong>, Biao Yi, Qihang Yu, Keting Yin, Shengyu Zhang</p>
+            <p class="paper-abstract">A benchmark for evaluating how computer-use agents adapt as first-person observations and user requests change during web tasks.</p>
+            <div class="paper-links">
+                <a href="https://arxiv.org/abs/2611.34466" class="paper-link" target="_blank" rel="noopener">Paper</a>
+                <a href="https://github.com/YurunChen/EgoUseBench" class="paper-link" target="_blank" rel="noopener">Code</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="paper-box">
+        <div class="paper-box-image">
             <img src="images/SkillHarness.png" alt="SkillHarness" width="100%">
             <span class="paper-thumb-badge">arXiv</span>
         </div>
