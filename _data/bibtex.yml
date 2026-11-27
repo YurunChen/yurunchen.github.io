@@ -1,15 +1,12 @@
 egousebench: |-
-  @misc{chen2026egousebench,
-    title = {{EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts}},
-    author = {Chen, Yurun and
-      Yi, Biao and
-      Yu, Qihang and
-      Yin, Keting and
-      Zhang, Shengyu},
-    year = {2026},
-    eprint = {2611.34466},
-    archivePrefix = {arXiv},
-    url = {https://arxiv.org/abs/2611.34466}
+  @misc{chen2026egousebenchbenchmarkingcomputeruseagents,
+    title={EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts},
+    author={Yurun Chen and Biao Yi and Qihang Yu and Keting Yin and Shengyu Zhang},
+    year={2026},
+    eprint={2611.34466},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI},
+    url={https://arxiv.org/abs/2611.34466},
   }
 
 skillharness: |-
