@@ -359,6 +359,8 @@ body {
 }
 
 // Hero intro
+$hero-intro-width: 46rem;
+
 .page-hero {
     display: grid;
     grid-template-areas: "portrait name" "intro intro" "links links" "stats stats";
@@ -406,9 +408,9 @@ body {
 
     @include breakpoint($medium) {
         grid-template-areas: "name profile" "intro profile" "stats profile";
-        grid-template-columns: minmax(0, 1fr) clamp(10rem, 15vw, 11rem);
+        grid-template-columns: minmax(0, $hero-intro-width) clamp(10rem, 15vw, 11rem);
         grid-template-rows: auto auto 1fr;
-        column-gap: clamp(1.75rem, 5vw, 4.75rem);
+        column-gap: clamp(1.5rem, 3vw, 2.25rem);
 
         &__profile {
             grid-area: profile;
@@ -424,7 +426,7 @@ body {
 
 .page-intro {
     grid-area: intro;
-    max-width: 46rem;
+    max-width: $hero-intro-width;
     margin-top: 1.15rem;
 }
 
