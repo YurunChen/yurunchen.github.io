@@ -14,7 +14,7 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    <div id="main" role="main">
+    <div id="main" role="main"{% unless page.author_profile or layout.author_profile or page.sidebar %} class="main--single-column"{% endunless %}>
       {% include sidebar.html %}
     
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">

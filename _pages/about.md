@@ -2,23 +2,16 @@
 permalink: /
 title: ""
 excerpt: ""
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+{% assign profile = site.author %}
 
-<span class='anchor' id='about-me'></span>
+<header class="page-hero" id="about-me">
 
-<div class="page-hero">
-
-<h1>Yurun Chen</h1>
+<h1>Yurun Chen <span class="page-hero__name-local" lang="zh">陈雨润</span></h1>
 
 <div class="page-intro">
 
@@ -26,13 +19,25 @@ redirect_from:
 
 <p>I build benchmarks and guardrails for computer-use agents that must act safely as user intent and real-world context change.</p>
 
-<p><strong>Open to collaborations</strong> on agent safety, red-teaming, and evaluation. <a href="mailto:yurunchen.research@gmail.com">Email me</a>.</p>
-
-<p class="page-stat">Google Scholar · <strong><span id="total_cit">—</span></strong> citations</p>
+<p><strong>Open to collaborations</strong> on agent safety, red-teaming, and evaluation.</p>
 
 </div>
 
+<div class="page-hero__profile">
+  <img class="page-hero__portrait" src="{{ profile.avatar | relative_url }}" alt="Portrait of {{ profile.name }}" width="{{ profile.avatar_width }}" height="{{ profile.avatar_height }}" fetchpriority="high" decoding="async">
+  <nav class="profile-links" aria-label="Contact and profiles">
+    <a href="mailto:{{ profile.email }}" target="_self"><i class="profile-links__icon fas fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+    <a href="{{ profile.googlescholar }}"><svg class="profile-links__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg><span>Google Scholar</span></a>
+    <a href="https://github.com/{{ profile.github }}"><i class="profile-links__icon fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+    <a href="https://www.linkedin.com/in/{{ profile.linkedin }}"><i class="profile-links__icon fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+    <a href="https://x.com/{{ profile.twitter }}"><svg class="profile-links__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg><span>Follow on X</span></a>
+    <a href="{{ profile.xiaohongshu }}" lang="zh"><i class="profile-links__icon fas fa-book" aria-hidden="true"></i><span>小红书</span></a>
+  </nav>
 </div>
+
+<p class="page-stat" hidden><strong id="total_cit"></strong> citations</p>
+
+</header>
 
 <span class='anchor' id='-news'></span>
 
@@ -82,7 +87,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
             <h3>EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
@@ -106,7 +110,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">CVPR 2026</span></div>
         <div class="paper-box-text">
             <h3>Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</h3>
             <p class="paper-venue-line">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), <time datetime="2026">2026</time></p>
@@ -126,7 +129,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
             <h3>SafePred: A Predictive Guardrail for Computer-Using Agents via World Models</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
@@ -146,7 +148,6 @@ redirect_from:
 
 <div class="publication-item" id="webharbor">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
             <h3>WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
@@ -168,7 +169,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
             <h3>SkillHarness: Harnessing Safe Skills for Computer-Use Agents</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2026">2026</time></p>
@@ -187,7 +187,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">AAAI 2026</span></div>
         <div class="paper-box-text">
             <h3>EcoAgent: An Efficient Edge-Cloud Collaborative Multi-Agent Framework for Mobile Automation</h3>
             <p class="paper-venue-line">AAAI Conference on Artificial Intelligence, <time datetime="2026">2026</time></p>
@@ -207,7 +206,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">ACM MM 2025</span></div>
         <div class="paper-box-text">
             <h3>Evaluating the Robustness of Multimodal Agents Against Active Environmental Injection Attacks</h3>
             <p class="paper-venue-line">ACM International Conference on Multimedia (ACM MM), <time datetime="2025">2025</time></p>
@@ -227,7 +225,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">ACL 2025 Oral</span></div>
         <div class="paper-box-text">
             <h3>OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</h3>
             <p class="paper-venue-line">Annual Meeting of the Association for Computational Linguistics (ACL), <time datetime="2025">2025</time> (Oral)</p>
@@ -248,7 +245,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">arXiv</span></div>
         <div class="paper-box-text">
             <h3>HarmonyGuard: Toward Safety and Utility in Web Agents via Adaptive Policy Enhancement and Dual-Objective Optimization</h3>
             <p class="paper-venue-line">arXiv, <time datetime="2025">2025</time></p>
@@ -268,7 +264,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">EMNLP 2026</span></div>
         <div class="paper-box-text">
             <h3>GUI-PRA: Process Reward Agents for GUI Tasks</h3>
             <p class="paper-venue-line">Conference on Empirical Methods in Natural Language Processing (EMNLP), <time datetime="2026">2026</time></p>
@@ -288,7 +283,6 @@ redirect_from:
 
 <div class="publication-item" id="journal-publications">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">TIFS 2025</span></div>
         <div class="paper-box-text">
             <h3>DART: Distributed Zero Knowledge Data Auditing with Retrievability for Blockchain-Based Decentralized Storage Networks</h3>
             <p class="paper-venue-line">IEEE Transactions on Information Forensics and Security, <time datetime="2025">2025</time></p>
@@ -307,7 +301,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">TMC 2025</span></div>
         <div class="paper-box-text">
             <h3>S2A-P2FS: Secure Storage Auditing With Privacy-Preserving Flexible Data Sharing in Cloud-Assisted Industrial IoT</h3>
             <p class="paper-venue-line">IEEE Transactions on Mobile Computing, <time datetime="2025">2025</time></p>
@@ -326,7 +319,6 @@ redirect_from:
 
 <div class="publication-item">
     <div class="paper-box">
-        <div class="paper-meta"><span class="badge">TSC 2024</span></div>
         <div class="paper-box-text">
             <h3>EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain-Based Decentralized Storage</h3>
             <p class="paper-venue-line">IEEE Transactions on Services Computing, <time datetime="2024">2024</time></p>
@@ -404,17 +396,4 @@ redirect_from:
 <li><strong>2024.09</strong> — National Scholarship</li>
 <li><strong>2023.08</strong> — Provincial Second Prize, Graduate Electronic Design Competition</li>
 <li><strong>2023.02</strong> — Excellence Award, CCF&ATEC Undergraduate Blockchain Security Competition</li>
-</ul>
-
-<span class='anchor' id='-people'></span>
-
-# People & Network
-
-<ul class="site-list">
-<li><a href="https://shengyuzhang.github.io/">Shengyu Zhang</a> — Zhejiang University</li>
-<li><a href="https://person.zju.edu.cn/ykt">Keting Yin</a> — Zhejiang University</li>
-<li><a href="https://person.zju.edu.cn/juncheng#0">Juncheng Li</a> — Zhejiang University</li>
-<li>Xavier Hu — Zhejiang University</li>
-<li>Biao Yi — Zhejiang University</li>
-<li><a href="https://yuhan0802.github.io/">Yuhan Liu</a> — Xiamen University</li>
 </ul>

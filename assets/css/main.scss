@@ -64,13 +64,15 @@ $site-accent-surface: #edf2ff;
 $site-link: $site-accent;
 $site-link-hover: #183575;
 $site-display: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+$site-content-width: 69rem;
+$site-gutter: clamp(1.125rem, 4vw, 2rem);
 $site-radius-sm: 6px;
 $site-radius-md: 10px;
 $site-shadow-sm: none;
 $site-shadow-img: none;
 
 // Type scale
-$font-hero: clamp(2.05rem, 3.4vw, 2.65rem);
+$font-hero: clamp(1.95rem, 4.5vw, 3.25rem);
 $font-section: clamp(1.5rem, 2.3vw, 1.85rem);
 $font-title: clamp(1.16rem, calc(1.05rem + 0.3vw), 1.35rem);
 $font-body: 1.08rem;
@@ -107,13 +109,13 @@ body {
 // Masthead
 // ---------------------------------------------------------------------------
 .masthead {
-    border-top: 3px solid $site-accent;
-    border-bottom: 1px solid $site-border;
+    position: static;
+    border-bottom: 1px solid $site-border-light;
     background: $site-bg;
 
     &__inner-wrap {
-        padding-top: 0.65em;
-        padding-bottom: 0.65em;
+        max-width: $site-content-width;
+        padding: 0.5rem $site-gutter;
     }
 }
 
@@ -127,12 +129,6 @@ body {
         &:hover {
             color: $site-text;
         }
-    }
-
-    .masthead__menu-item--lg a {
-        color: $site-text;
-        font-weight: 600;
-        letter-spacing: -0.02em;
     }
 
     button {
@@ -185,6 +181,22 @@ body {
 
     @include breakpoint($large) {
         margin-top: 2.25rem;
+    }
+}
+
+#main.main--single-column {
+    max-width: $site-content-width;
+    padding-inline: $site-gutter;
+    margin-top: clamp(1.75rem, 5vw, 3.75rem);
+
+    @include breakpoint($medium) {
+        margin-top: 2.1rem;
+    }
+
+    .page {
+        float: none;
+        width: 100%;
+        padding: 0;
     }
 }
 
@@ -293,6 +305,16 @@ body {
         }
     }
 
+    @include breakpoint($medium) {
+        > h1 {
+            margin: 1.8rem 0 0.6rem;
+
+            &::after {
+                content: none;
+            }
+        }
+    }
+
     > p,
     .page-intro p {
         margin: 0 0 0.85em;
@@ -338,52 +360,134 @@ body {
 
 // Hero intro
 .page-hero {
-    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-areas: "portrait name" "intro intro" "links links" "stats stats";
+    grid-template-columns: clamp(4.5rem, 22vw, 6rem) minmax(0, 1fr);
+    column-gap: 1.05rem;
+    align-items: start;
 
     h1 {
-        margin-top: 0;
+        grid-area: name;
+        align-self: center;
+        margin: 0;
         font-size: $font-hero;
         font-weight: 700;
         color: $site-text;
         letter-spacing: -0.035em;
-        text-transform: none;
-        margin-bottom: 1.35rem;
+        line-height: 1.1;
 
+        &::before,
         &::after {
-            width: 2.5rem;
-            height: 3px;
-            margin-top: 0.75rem;
+            content: none;
+        }
+    }
+
+    &__name-local {
+        display: block;
+        margin-top: 0.55rem;
+        color: $site-text-muted;
+        font-family: $sans-serif;
+        font-size: 0.42em;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+    }
+
+    &__portrait {
+        grid-area: portrait;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: $site-radius-sm;
+    }
+
+    &__profile {
+        display: contents;
+    }
+
+    @include breakpoint($medium) {
+        grid-template-areas: "name profile" "intro profile" "stats profile";
+        grid-template-columns: minmax(0, 1fr) clamp(10rem, 15vw, 11rem);
+        grid-template-rows: auto auto 1fr;
+        column-gap: clamp(1.75rem, 5vw, 4.75rem);
+
+        &__profile {
+            grid-area: profile;
+            display: block;
+        }
+
+        &__name-local {
+            display: inline-block;
+            margin: 0 0 0 0.5em;
         }
     }
 }
 
 .page-intro {
-    margin-bottom: 0;
+    grid-area: intro;
+    max-width: 46rem;
+    margin-top: 1.15rem;
+}
 
-    p {
-        max-width: 44rem;
+.profile-links {
+    grid-area: links;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: clamp(0.8rem, 2vw, 1.3rem);
+
+    &__icon {
+        display: none;
     }
 
-    .page-stat {
-        margin: 1rem 0 1.1rem;
-        padding: 0;
-        font-size: $font-meta;
-        color: $site-text-muted;
-        background: none;
-        border: none;
-        border-radius: 0;
+    a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 2rem;
+        font-size: $font-small;
+        font-weight: 550;
+        white-space: nowrap;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.22em;
+    }
 
-        strong {
-            color: $site-text;
-            font-weight: 600;
-            font-variant-numeric: tabular-nums;
+    @include breakpoint($medium) {
+        justify-content: center;
+        column-gap: 0.65rem;
+        margin: 0.65rem -1rem 0;
+
+        a {
+            gap: 0.35rem;
+            font-size: $font-caption;
+            text-decoration: none;
+
+            &:hover,
+            &:focus-visible {
+                text-decoration: none;
+
+                > span {
+                    text-decoration: underline 1px;
+                    text-underline-offset: 0.22em;
+                }
+            }
+        }
+
+        &__icon {
+            display: block;
+            width: 0.85rem;
+            font-size: 0.8rem;
+            text-align: center;
+            color: $site-text-muted;
+            fill: currentColor;
         }
     }
+}
 
-    .page-representative {
-        font-size: $font-meta;
-        color: $site-text-muted;
-    }
+.page-stat {
+    grid-area: stats;
+    margin: 0.4rem 0 0;
+    font-size: $font-small;
+    color: $site-text-muted;
+    font-variant-numeric: tabular-nums;
 }
 
 // ---------------------------------------------------------------------------
@@ -433,19 +537,7 @@ body {
 
 @container publications (min-width: 48rem) {
     .paper-box:not(.paper-box--text-only) {
-        grid-template-areas: "venue text media";
-        grid-template-columns: 6.1rem minmax(0, 1fr) minmax(11rem, 23%);
-    }
-
-    .paper-box--text-only {
-        grid-template-areas: "venue text";
-        grid-template-columns: 6.1rem minmax(0, 1fr);
-        column-gap: 1.4rem;
-    }
-
-    .paper-box .paper-meta {
-        display: block;
-        padding-top: 0.2rem;
+        grid-template-columns: minmax(0, 1fr) minmax(11rem, 23%);
     }
 }
 
@@ -463,20 +555,6 @@ body {
         display: block;
         width: 100%;
         height: auto;
-    }
-}
-
-.paper-meta {
-    display: none;
-    grid-area: venue;
-    line-height: 1.35;
-
-    .badge {
-        color: $site-accent;
-        font-size: $font-label;
-        font-weight: 600;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
     }
 }
 
@@ -633,6 +711,12 @@ h1:before, .anchor:before {
     scroll-margin-top: 4rem;
 }
 
+@include breakpoint($medium) {
+    .publication-item:first-child .paper-box {
+        padding-top: 0.5rem;
+    }
+}
+
 .publication-item + .publication-item {
     border-top: 1px solid $site-border-light;
 }
@@ -737,6 +821,10 @@ h1:before, .anchor:before {
     border-bottom: 1px solid $site-border-light;
     line-height: 1.55;
     color: $site-text;
+
+    @include breakpoint($medium) {
+        padding-block: 0.35rem;
+    }
 
     strong {
         color: $site-accent;
